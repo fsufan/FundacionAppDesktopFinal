@@ -321,7 +321,7 @@ namespace AplicacionDesktop.CRUD
         private void cbxRut_Validating(object sender, CancelEventArgs e)
         {
 
-            if ((!Regex.IsMatch(this.cbxRut.Text, @"\b\d {7,8}\[K|k|0-9]")) && (cbxRut.Text != ""))
+            if ((!Regex.IsMatch(this.cbxRut.Text, @"\b\d{7,8}\[K|k|0-9]")) && (cbxRut.Text != ""))
             {
                 MessageBox.Show("Debe ingresar sólo caracteres válidos");
                 this.cbxRut.Focus();

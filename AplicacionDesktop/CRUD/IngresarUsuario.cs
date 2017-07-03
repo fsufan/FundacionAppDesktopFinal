@@ -258,7 +258,7 @@ namespace AplicacionDesktop.CRUDUsuario
 
         private void txtrut_Validating(object sender, CancelEventArgs e)
         {
-            if ((!Regex.IsMatch(this.txtrut.Text, @"\b\d {7,8}\[K|k|0-9]")) && (txtrut.Text != ""))
+            if ((!Regex.IsMatch(this.txtrut.Text, @"\b\d{7,8}\[K|k|0-9]")) && (txtrut.Text != ""))
             {
                 MessageBox.Show("Debe ingresar sólo caracteres válidos");
                 this.txtrut.Focus();

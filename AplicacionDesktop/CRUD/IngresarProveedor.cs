@@ -300,7 +300,7 @@ namespace AplicacionDesktop.CRUD
 
         private void txtRut_Validating(object sender, CancelEventArgs e)
         {
-            if ((!Regex.IsMatch(this.txtRut.Text, @"\b\d {7,8}\[K|k|0-9]")) && (txtRut.Text != ""))
+            if ((!Regex.IsMatch(this.txtRut.Text, @"\b\d{7,8}\[K|k|0-9]")) && (txtRut.Text != ""))
             {
                 MessageBox.Show("Debe ingresar sólo caracteres válidos");
                 this.txtRut.Focus();

@@ -221,7 +221,7 @@ namespace AplicacionDesktop.CRUDUsuario
 
         private void cmboxRut_Validating(object sender, CancelEventArgs e)
         {
-            if ((!Regex.IsMatch(this.cmboxRut.Text, @"\b\d {7,8}\[K|k|0-9]")) && (cmboxRut.Text != ""))
+            if ((!Regex.IsMatch(this.cmboxRut.Text, @"\b\d{7,8}\[K|k|0-9]")) && (cmboxRut.Text != ""))
             {
                 MessageBox.Show("Debe ingresar sólo caracteres válidos");
                 this.cmboxRut.Focus();
