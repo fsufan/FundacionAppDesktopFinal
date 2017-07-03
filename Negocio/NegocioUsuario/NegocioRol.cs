@@ -135,10 +135,11 @@ namespace CapaNegocio.NegocioUsuario
         public int consultaRolMO(String nombre_rol)
         {
 
-            webServiceMO.WebServiceModaOutlet wsMO = new webServiceMO.WebServiceModaOutlet();
-            int id = 0;
+            
              try
-            {
+             {
+                 webServiceMO.WebServiceModaOutlet wsMO = new webServiceMO.WebServiceModaOutlet();
+                 int id = 0;
                 Array objeto = wsMO.buscarRolPorNombre(nombre_rol);
                 foreach (webServiceMO.rol item in objeto)
                 {
@@ -149,30 +150,27 @@ namespace CapaNegocio.NegocioUsuario
             }
             catch (Exception)
             {
-
+                int id = 0;
                 return id;
             }
 
         }
-        public String rolPorNombre(string nombre)
+        public Rol rolPorNombre(string nombre)
         {
             
-            try
-            {
+            
                 webServiceFundacion.webServiceFundacion webServFund = new webServiceFundacion.webServiceFundacion();
                 Array objeto = webServFund.buscarRolPorNombre(nombre);
-                int id = 0;
+                Rol rol = new Rol();
                 foreach (webServiceFundacion.rol item in objeto)
                 {
-                    id = item.id_rol;
+                     rol.IdRol = item.id_rol;
+                     rol.NombreRol = item.nombre_rol;
+                     rol.DescripcionRol = item.descripcion_rol;
                 }
-                String ver = id.ToString();
-                return ver;
-            }
-            catch (Exception)
-            {
-                return "Rol no encontrado";
-            }
+
+                return rol;
+            
         
         }
         public Rol rolPorNombreMO(string nombre)

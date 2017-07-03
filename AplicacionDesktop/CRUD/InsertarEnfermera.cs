@@ -193,11 +193,12 @@ namespace AplicacionDesktop.CRUD
                                                                 {
 
                                                                     NegocioRol auxrol = new NegocioRol();
-                                                                    int rol = int.Parse(auxrol.rolPorNombre("Enfermera"));
+                                                                    Rol BuscaRol = new Rol();
+                                                                    BuscaRol= auxrol.rolPorNombre("ENFERMERA");
 
                                                                     usuario.RutUsuario = txtRut.Text.ToUpper().Trim();
                                                                     usuario.Contrasena = seguridad.SHA256Encrypt(txtContraseña.Text.ToUpper().Trim());
-                                                                    usuario.IdRol = rol;
+                                                                    usuario.IdRol = BuscaRol.IdRol;
 
 
                                                                     if (auxUsuario.ingresarUsuario(usuario) > 0)

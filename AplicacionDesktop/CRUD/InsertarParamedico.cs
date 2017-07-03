@@ -185,12 +185,13 @@ namespace AplicacionDesktop.CRUD
                                                             if (auxInfoPersonal.IngresarInfoPersonal(infoPersonal) > 0)
                                                             {
                                                                 NegocioRol auxrol = new NegocioRol();
-                                                                int rol = int.Parse(auxrol.rolPorNombre("PARAMEDICO"));
+                                                                Rol buscarrol = new Rol();
+                                                                buscarrol = auxrol.rolPorNombre("PARAMEDICO");
 
                                                                                                                                
                                                                 usuario.RutUsuario = txtRut.Text.ToUpper().Trim();
                                                                 usuario.Contrasena = txtContraseña.Text.ToUpper().Trim();
-                                                                usuario.IdRol = rol;
+                                                                usuario.IdRol = buscarrol.IdRol;
 
                                                                 if (auxUsuario.ingresarUsuario(usuario) > 0)
                                                                 {
