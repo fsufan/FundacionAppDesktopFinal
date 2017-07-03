@@ -155,14 +155,14 @@ namespace AplicacionDesktop
 
         private void txtUsu_TextChanged(object sender, EventArgs e)
         {
-            txtUsu.MaxLength = 9;
+            txtUsu.MaxLength = 10;
         }
 
         private void txtUsu_Validating(object sender, CancelEventArgs e)
         {
-            if ((!Regex.IsMatch(this.txtUsu.Text, @"^\d+$")) && (txtUsu.Text != ""))
+            if ((!Regex.IsMatch(this.txtUsu.Text, @"\b\d {7,8}\[K|k|0-9]")) && (txtUsu.Text != ""))
             {
-                MessageBox.Show("Debe ingresar sólo números");
+                MessageBox.Show("Debe ingresar sólo caracteres válidos");
                 this.txtUsu.Focus();
                 txtUsu.Text = "";
             }

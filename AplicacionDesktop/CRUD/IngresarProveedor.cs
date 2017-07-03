@@ -1,5 +1,6 @@
 ﻿using AplicacionDesktop.MENU;
 using Capa_DTO.Farmacia;
+using Capa_DTO.Seguridad;
 using CapaNegocio.NegocioFarmacia;
 using System;
 using System.Collections.Generic;
@@ -68,43 +69,7 @@ namespace AplicacionDesktop.CRUD
                 MessageBox.Show("No hay datos ingresados");
             }
         }
-        public bool validarRut(string rut)
-        {
-
-            bool validacion = false;
-            try
-            {
-                rut = rut.ToUpper();
-                rut = rut.Replace(".", "");
-                rut = rut.Replace("-", "");
-                int rutAux = int.Parse(rut.Substring(0, rut.Length - 1));
-
-                char dv = char.Parse(rut.Substring(rut.Length - 1, 1));
-                
-                if (rutAux>3000000&rutAux<30000000)
-                {
-                    if (dv.Equals('0'))
-                    {
-                        dv = 'K';
-                    }
-                
-                int m = 0, s = 1;
-                for (; rutAux != 0; rutAux /= 10)
-                {
-                    s = (s + rutAux % 10 * (9 - m++ % 6)) % 11;
-                }
-                if (dv == (char)(s != 0 ? s + 47 : 75))
-                {
-                    validacion = true;
-                }
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Ingrese un Rut válido");
-            }
-            return validacion;
-        }
+        
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             try
@@ -115,6 +80,8 @@ namespace AplicacionDesktop.CRUD
                 //direccion
                 NegocioDireccion direccion = new NegocioDireccion();
                 Direccion auxDir = new Direccion();
+                //seguridad
+                Seguridad seg = new Seguridad();
                 if (txtCiudad.Text!=""&txtComuna.Text!=""&txtCPostal.Text!=""&txtDireccion.Text!=""&txtRazonS.Text!="" &txtRut.Text!="")
                 {
                     if (cbxRegion.SelectedIndex!=-1)
@@ -122,7 +89,7 @@ namespace AplicacionDesktop.CRUD
                         if (!validaCampoVacio(txtDireccion) & !validaCampoVacio(txtCiudad) & !validaCampoVacio(txtRazonS) & !validaCampoVacio(txtComuna)&int.Parse(txtCPostal.Text)>0)
                         {
                             //crear metodo consultar por razon social
-                            if (validarRut(txtRut.Text))
+                            if (seg.validarRut(txtRut.Text))
                             {
                                 DialogResult dialogResult = MessageBox.Show("Desea agregar Proveedor: " +txtRazonS.Text , "Información", MessageBoxButtons.YesNo);
                                 if (dialogResult == DialogResult.Yes)
@@ -257,7 +224,7 @@ namespace AplicacionDesktop.CRUD
 
         private void txtRut_TextChanged(object sender, EventArgs e)
         {
-            txtRut.MaxLength = 9;
+            txtRut.MaxLength = 10;
         }
 
         private void txtRazonS_TextChanged(object sender, EventArgs e)
@@ -333,9 +300,9 @@ namespace AplicacionDesktop.CRUD
 
         private void txtRut_Validating(object sender, CancelEventArgs e)
         {
-            if ((!Regex.IsMatch(this.txtRut.Text, @"^\d+$")) && (txtRut.Text != ""))
+            if ((!Regex.IsMatch(this.txtRut.Text, @"\b\d {7,8}\[K|k|0-9]")) && (txtRut.Text != ""))
             {
-                MessageBox.Show("Debe ingresar sólo números y un rut valido");
+                MessageBox.Show("Debe ingresar sólo caracteres válidos");
                 this.txtRut.Focus();
                 txtRut.Text = "";
             }

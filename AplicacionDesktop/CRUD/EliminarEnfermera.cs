@@ -12,6 +12,7 @@ using Capa_DTO.Usuario;
 using CapaNegocio.NegocioResidente;
 using CapaNegocio.NegocioUsuario;
 using AplicacionDesktop.MENU;
+using System.Text.RegularExpressions;
 
 namespace AplicacionDesktop.CRUD
 {

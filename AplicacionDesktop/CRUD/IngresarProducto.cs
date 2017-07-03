@@ -42,8 +42,7 @@ namespace AplicacionDesktop.CRUD
                     Dictionary<string, string> categoria = new Dictionary<string, string>();
                     categoria.Add("CURACION", "CURACION");
                     categoria.Add("PA", "PRIMERO AUXILIOS");
-                    categoria.Add("ELEMENTOS", "ELEMENTOS");
-                    categoria.Add("INSUMOS", "INSUMOS");
+                    
                     cbxCategoria.DisplayMember = "Value";
                     cbxCategoria.ValueMember = "Key";
                     cbxCategoria.DataSource = categoria.ToArray();
@@ -53,10 +52,9 @@ namespace AplicacionDesktop.CRUD
                         cbxCategoria.Text = "Seleccione Categoria";
                     }
                     Dictionary<string, string> tipo = new Dictionary<string, string>();
-                    tipo.Add("1", "");
-                    tipo.Add("2 "," ");
-                    tipo.Add("3", "");
-                    tipo.Add("4", "");
+                    
+                    tipo.Add("ELEMENTOS", "ELEMENTOS");
+                    tipo.Add("INSUMOS", "INSUMOS");
                     cbxTipo.DisplayMember = "Value";
                     cbxTipo.ValueMember = "Key";
                     cbxTipo.DataSource = categoria.ToArray();

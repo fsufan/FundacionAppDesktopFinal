@@ -81,45 +81,7 @@ namespace AplicacionDesktop.CRUDUsuario
                 return false;
             }
         }
-        public bool validarRut(string rut)
-        {
-
-            bool validacion = false;
-            try
-            {
-                rut = rut.ToUpper();
-                rut = rut.Replace(".", "");
-                rut = rut.Replace("-", "");
-                int rutAux = int.Parse(rut.Substring(0, rut.Length - 1));
-
-                char dv = char.Parse(rut.Substring(rut.Length - 1, 1));
-                
-                if (rutAux>3000000&rutAux<30000000)
-                {
-
-                    if (dv.Equals('0'))
-                    {
-                        dv = 'K';
-                    }
-                int m = 0, s = 1;
-                for (; rutAux != 0; rutAux /= 10)
-                {
-                    s = (s + rutAux % 10 * (9 - m++ % 6)) % 11;
-                }
-                if (dv == (char)(s != 0 ? s + 47 : 75))
-                {
-                    validacion = true;
-                }
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Ingrese un Rut válido");
-            }
-            return validacion;
-        }
         
-
         private void btnModificar_Click(object sender, EventArgs e)
         {
             try
@@ -127,6 +89,7 @@ namespace AplicacionDesktop.CRUDUsuario
                 Usuario auxUsuario = new Usuario();
                 NegocioUsuario usuario = new NegocioUsuario();
                 Seguridad seg = new Seguridad();
+                NegocioRol rol = new NegocioRol();
                 DialogResult dialogResult = MessageBox.Show("¿Desea modificar al usuario? " + cmboxRut.Text.ToString(), "Información", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
@@ -137,7 +100,7 @@ namespace AplicacionDesktop.CRUDUsuario
                             if (cbxRol.SelectedIndex!=-1&cmboxRut.SelectedIndex!=-1&txtContraseña.Text != ""&txtrpass.Text!="")
                             {
                                 
-                                if (validarRut(cmboxRut.Text))
+                                if (seg.validarRut(cmboxRut.Text))
                                 {
                                     if (txtContraseña.Text.Equals(txtrpass.Text))
                                     {
@@ -151,6 +114,30 @@ namespace AplicacionDesktop.CRUDUsuario
 
                                     if (usuario.actualizarUsuario(auxUsuario) > 0)
                                     {
+                                        if (cbxRol.Text.Equals("APORTADOR") || cbxRol.Text.Equals("RECICLAR"))
+                                        {
+                                            if (rol.consultaRolMO(cbxRol.Text.ToUpper().ToString()) > 0)
+                                            {
+                                                auxUsuario = usuario.usuarioMORut(cmboxRut.Text);
+                                                int ide = rol.consultaRolMO(cbxRol.Text.ToUpper().ToString());
+                                                auxUsuario.IdRol = ide;
+                                                
+                                                
+                                                    if (usuario.modificarUsuarioMO(auxUsuario) > 0)
+                                                    {
+                                                        MessageBox.Show("Usuario web modificado");
+                                                    }
+                                                    else
+                                                    {
+                                                        MessageBox.Show("Error al modificar Usuario web");
+                                                    }
+                                                
+                                            }
+                                            else
+                                            {
+                                                MessageBox.Show("Error al buscar el Rol");
+                                            }
+                                        }
                                         MessageBox.Show("Usuario Modificado");
                                         cmboxRut.DataSource = usuario.listarUsuarios();
                                         txtContraseña.Text = "";
@@ -234,9 +221,9 @@ namespace AplicacionDesktop.CRUDUsuario
 
         private void cmboxRut_Validating(object sender, CancelEventArgs e)
         {
-            if ((!Regex.IsMatch(this.cmboxRut.Text, @"^\d+$")) && (cmboxRut.Text != ""))
+            if ((!Regex.IsMatch(this.cmboxRut.Text, @"\b\d {7,8}\[K|k|0-9]")) && (cmboxRut.Text != ""))
             {
-                MessageBox.Show("Si su Rut termina en K reemplace a un cero");
+                MessageBox.Show("Debe ingresar sólo caracteres válidos");
                 this.cmboxRut.Focus();
                 cmboxRut.Text = "";
             }

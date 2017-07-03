@@ -27,23 +27,38 @@ namespace Capa_DTO.Seguridad
 
             return output.ToString();
         }
-        //public static string Decrypt(string password)
-        //{
+        public bool validarRut(string rut)
+        {
 
-        //    if (password == null)
-        //    {
-        //        password = String.Empty;
-        //    }
+            bool validacion = false;
+            try
+            {
+                rut = rut.ToUpper();
+                rut = rut.Replace(".", "");
+                rut = rut.Replace("-", "");
+                int rutAux = int.Parse(rut.Substring(0, rut.Length - 1));
 
-        //    // Get the bytes of the string
-        //    var bytesToBeDecrypted = Convert.FromBase64String(password);
-        //    var passwordBytes = Encoding.UTF8.GetBytes(password);
+                char dv = char.Parse(rut.Substring(rut.Length - 1, 1));
 
-        //    passwordBytes = SHA256.Create().ComputeHash(passwordBytes);
+                if (rutAux > 3000000 & rutAux < 30000000)
+                {
 
-        //    var bytesDecrypted = Cipher.Decrypt(bytesToBeDecrypted, passwordBytes);
-
-        //    return Encoding.UTF8.GetString(bytesDecrypted);
-        //}
+                    int m = 0, s = 1;
+                    for (; rutAux != 0; rutAux /= 10)
+                    {
+                        s = (s + rutAux % 10 * (9 - m++ % 6)) % 11;
+                    }
+                    if (dv == (char)(s != 0 ? s + 47 : 75))
+                    {
+                        validacion = true;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            return validacion;
+        }
     }
 }

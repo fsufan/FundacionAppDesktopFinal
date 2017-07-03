@@ -26,6 +26,7 @@ namespace CapaNegocio.NegocioUsuario
             }
 
         }
+        
         public int ingresarUsuarioMO(Usuario usuario)
         {
 
@@ -39,6 +40,57 @@ namespace CapaNegocio.NegocioUsuario
             {
                 return 0;
             }
+
+        }
+        public int modificarUsuarioMO(Usuario usuario)
+        {
+
+            webServiceMO.WebServiceModaOutlet wsMO = new webServiceMO.WebServiceModaOutlet();
+            String objeto = wsMO.modificarUsuario(usuario.IdUsuario, usuario.RutUsuario, usuario.Contrasena, usuario.IdRol);
+            if (objeto != null)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+
+        }
+        public int eliminarUsuarioMO(Usuario usuario)
+        {
+
+            webServiceMO.WebServiceModaOutlet wsMO = new webServiceMO.WebServiceModaOutlet();
+            String objeto = wsMO.eliminarUsuario(usuario.IdUsuario);
+            if (objeto != null)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+
+        }
+        public Usuario usuarioMORut(String rut)
+        {
+
+            webServiceMO.WebServiceModaOutlet wsMO = new webServiceMO.WebServiceModaOutlet();
+            Array objeto = wsMO.buscarUsuarioPorRut(rut);
+            Usuario auxUsu = new Usuario();
+            if (objeto != null)
+            {
+                foreach (webServiceFundacion.usuario item in objeto)
+                {
+                    auxUsu.IdRol = item.id_rol;
+                    auxUsu.IdUsuario = item.id_usuario;
+                    auxUsu.RutUsuario = item.rut_usuario;
+                    auxUsu.Contrasena = item.contrasena;
+                }
+
+            }
+
+            return auxUsu;
 
         }
         public Array listarUsuarios()
@@ -115,14 +167,7 @@ namespace CapaNegocio.NegocioUsuario
         {
 
             webServiceFundacion.webServiceFundacion webServfund = new webServiceFundacion.webServiceFundacion();
-            //if (webServfund.buscarUsuarioPorRutUsuario(usu) != null)
-            //{
-            //    return 1;
-            //}
-            //else
-            //{
-            //    return 0;
-            //}
+            
 
 
             Array objeto = webServfund.buscarUsuarioPorRutUsuario(usu);

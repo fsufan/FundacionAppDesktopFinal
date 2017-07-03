@@ -70,6 +70,19 @@ namespace AplicacionDesktop.CRUDUsuario
 
                             if (auxNegUsuario.eliminarUsuario(auxUsuario.IdUsuario) > 0)
                             {
+                                auxUsuario = auxNegUsuario.usuarioMORut(cmbxid.Text);
+                                if (auxUsuario.IdUsuario > 0)
+                                {
+                                    
+                                    if (auxNegUsuario.eliminarUsuario(auxUsuario.IdUsuario)>0)
+                                    {
+                                        MessageBox.Show("Usuario eliminado en Moda outlet");
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("El Usuario no existe en Moda Outlet");
+                                }
                                 MessageBox.Show("Usuario eliminado.", "Información");
                                 cargarCombx();
                             }

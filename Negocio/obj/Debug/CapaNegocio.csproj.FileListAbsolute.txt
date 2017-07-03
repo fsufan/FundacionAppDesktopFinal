@@ -171,3 +171,16 @@ C:\Users\felip\Desktop\FundacionDesktopComplete-master\FundacionDesktopComplete-
 C:\Users\felip\Desktop\FundacionDesktopComplete-master\FundacionDesktopComplete-master\Negocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
 C:\Users\felip\Desktop\FundacionDesktopComplete-master\FundacionDesktopComplete-master\Negocio\obj\Debug\Negocio.dll
 C:\Users\felip\Desktop\FundacionDesktopComplete-master\FundacionDesktopComplete-master\Negocio\obj\Debug\Negocio.pdb
+C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Negocio\bin\Debug\Negocio.dll
+C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Negocio\bin\Debug\Negocio.pdb
+C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Negocio\bin\Debug\Datos.dll
+C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Negocio\bin\Debug\Entidades.dll
+C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Negocio\bin\Debug\itextsharp.dll
+C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Negocio\bin\Debug\Oracle.DataAccess.dll
+C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Negocio\bin\Debug\Datos.pdb
+C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Negocio\bin\Debug\Entidades.pdb
+C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Negocio\bin\Debug\itextsharp.xml
+C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Negocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Negocio\obj\Debug\Negocio.dll
+C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Negocio\obj\Debug\Negocio.pdb
