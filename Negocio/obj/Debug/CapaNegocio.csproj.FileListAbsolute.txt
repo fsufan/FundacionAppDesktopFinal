@@ -1,0 +1,173 @@
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.dll
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.pdb
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.dll
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.dll
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\SolucionFundacionDesktop\Negocio\bin\Debug\Oracle.DataAccess.dll
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.pdb
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.pdb
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\SolucionFundacionDesktop\Negocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.dll
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.pdb
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.dll
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.pdb
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.dll
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.dll
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\Negocio\bin\Debug\Oracle.DataAccess.dll
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.pdb
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.pdb
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\Negocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.dll
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.pdb
+C:\Users\nathalia\Documents\GitHub\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.dll
+C:\Users\nathalia\Documents\GitHub\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.pdb
+C:\Users\nathalia\Documents\GitHub\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.dll
+C:\Users\nathalia\Documents\GitHub\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.dll
+C:\Users\nathalia\Documents\GitHub\SolucionFundacionDesktop\Negocio\bin\Debug\itextsharp.dll
+C:\Users\nathalia\Documents\GitHub\SolucionFundacionDesktop\Negocio\bin\Debug\Oracle.DataAccess.dll
+C:\Users\nathalia\Documents\GitHub\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.pdb
+C:\Users\nathalia\Documents\GitHub\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.pdb
+C:\Users\nathalia\Documents\GitHub\SolucionFundacionDesktop\Negocio\bin\Debug\itextsharp.xml
+C:\Users\nathalia\Documents\GitHub\SolucionFundacionDesktop\Negocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\nathalia\Documents\GitHub\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.dll
+C:\Users\nathalia\Documents\GitHub\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopv3.1\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopv3.1\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopv3.1\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopv3.1\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopv3.1\SolucionFundacionDesktop\Negocio\bin\Debug\itextsharp.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopv3.1\SolucionFundacionDesktop\Negocio\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopv3.1\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopv3.1\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopv3.1\SolucionFundacionDesktop\Negocio\bin\Debug\itextsharp.xml
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopv3.1\SolucionFundacionDesktop\Negocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopv3.1\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopv3.1\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.pdb
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.dll
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.pdb
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.dll
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.dll
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario\SolucionFundacionDesktop\Negocio\bin\Debug\itextsharp.dll
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario\SolucionFundacionDesktop\Negocio\bin\Debug\Oracle.DataAccess.dll
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.pdb
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.pdb
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario\SolucionFundacionDesktop\Negocio\bin\Debug\itextsharp.xml
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario\SolucionFundacionDesktop\Negocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.dll
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.pdb
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.dll
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.pdb
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.dll
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.dll
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\itextsharp.dll
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\Oracle.DataAccess.dll
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.pdb
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.pdb
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\itextsharp.xml
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.dll
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.pdb
+C:\Users\nathalia\Dropbox\caso7\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\nathalia\Dropbox\caso7\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.dll
+C:\Users\nathalia\Dropbox\caso7\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.pdb
+C:\Users\nathalia\Dropbox\caso7\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.dll
+C:\Users\nathalia\Dropbox\caso7\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.dll
+C:\Users\nathalia\Dropbox\caso7\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\itextsharp.dll
+C:\Users\nathalia\Dropbox\caso7\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\Oracle.DataAccess.dll
+C:\Users\nathalia\Dropbox\caso7\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.pdb
+C:\Users\nathalia\Dropbox\caso7\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.pdb
+C:\Users\nathalia\Dropbox\caso7\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\bin\Debug\itextsharp.xml
+C:\Users\nathalia\Dropbox\caso7\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\nathalia\Dropbox\caso7\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.dll
+C:\Users\nathalia\Dropbox\caso7\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopUsuario\SolucionFundacionDesktop\Negocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopUsuario\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopUsuario\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopUsuario\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopUsuario\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopUsuario\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopUsuario\SolucionFundacionDesktop\Negocio\bin\Debug\itextsharp.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopUsuario\SolucionFundacionDesktop\Negocio\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopUsuario\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopUsuario\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopUsuario\SolucionFundacionDesktop\Negocio\bin\Debug\itextsharp.xml
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopUsuario\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopUsuario\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\itextsharp.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\itextsharp.xml
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.3\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.3\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.3\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.3\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.3\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.3\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.3\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.3\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\itextsharp.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.3\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.3\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\Datos.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.3\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\Entidades.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.3\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\bin\Debug\itextsharp.xml
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.3\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Negocio\bin\Debug\Negocio.dll
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Negocio\bin\Debug\Datos.dll
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Negocio\bin\Debug\Entidades.dll
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Negocio\bin\Debug\itextsharp.dll
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Negocio\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Negocio\bin\Debug\Datos.pdb
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Negocio\bin\Debug\Entidades.pdb
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Negocio\bin\Debug\itextsharp.xml
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Negocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Negocio\obj\Debug\Negocio.dll
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Negocio\obj\Debug\Negocio.pdb
+C:\Users\nathalia\Documents\GitHub\FundacionDesktopComplete\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\nathalia\Documents\GitHub\FundacionDesktopComplete\Negocio\bin\Debug\Negocio.dll
+C:\Users\nathalia\Documents\GitHub\FundacionDesktopComplete\Negocio\bin\Debug\Negocio.pdb
+C:\Users\nathalia\Documents\GitHub\FundacionDesktopComplete\Negocio\bin\Debug\Datos.dll
+C:\Users\nathalia\Documents\GitHub\FundacionDesktopComplete\Negocio\bin\Debug\Entidades.dll
+C:\Users\nathalia\Documents\GitHub\FundacionDesktopComplete\Negocio\bin\Debug\itextsharp.dll
+C:\Users\nathalia\Documents\GitHub\FundacionDesktopComplete\Negocio\bin\Debug\Oracle.DataAccess.dll
+C:\Users\nathalia\Documents\GitHub\FundacionDesktopComplete\Negocio\bin\Debug\Datos.pdb
+C:\Users\nathalia\Documents\GitHub\FundacionDesktopComplete\Negocio\bin\Debug\Entidades.pdb
+C:\Users\nathalia\Documents\GitHub\FundacionDesktopComplete\Negocio\bin\Debug\itextsharp.xml
+C:\Users\nathalia\Documents\GitHub\FundacionDesktopComplete\Negocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\nathalia\Documents\GitHub\FundacionDesktopComplete\Negocio\obj\Debug\Negocio.dll
+C:\Users\nathalia\Documents\GitHub\FundacionDesktopComplete\Negocio\obj\Debug\Negocio.pdb
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Negocio\bin\Debug\Negocio.dll
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Negocio\bin\Debug\Negocio.pdb
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Negocio\bin\Debug\Datos.dll
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Negocio\bin\Debug\Entidades.dll
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Negocio\bin\Debug\itextsharp.dll
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Negocio\bin\Debug\Oracle.DataAccess.dll
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Negocio\bin\Debug\Datos.pdb
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Negocio\bin\Debug\Entidades.pdb
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Negocio\bin\Debug\itextsharp.xml
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Negocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Negocio\obj\Debug\Negocio.dll
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Negocio\obj\Debug\Negocio.pdb
+C:\Users\felip\Desktop\FundacionDesktopComplete-master\FundacionDesktopComplete-master\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\felip\Desktop\FundacionDesktopComplete-master\FundacionDesktopComplete-master\Negocio\bin\Debug\Negocio.dll
+C:\Users\felip\Desktop\FundacionDesktopComplete-master\FundacionDesktopComplete-master\Negocio\bin\Debug\Negocio.pdb
+C:\Users\felip\Desktop\FundacionDesktopComplete-master\FundacionDesktopComplete-master\Negocio\bin\Debug\Datos.dll
+C:\Users\felip\Desktop\FundacionDesktopComplete-master\FundacionDesktopComplete-master\Negocio\bin\Debug\Entidades.dll
+C:\Users\felip\Desktop\FundacionDesktopComplete-master\FundacionDesktopComplete-master\Negocio\bin\Debug\itextsharp.dll
+C:\Users\felip\Desktop\FundacionDesktopComplete-master\FundacionDesktopComplete-master\Negocio\bin\Debug\Oracle.DataAccess.dll
+C:\Users\felip\Desktop\FundacionDesktopComplete-master\FundacionDesktopComplete-master\Negocio\bin\Debug\Datos.pdb
+C:\Users\felip\Desktop\FundacionDesktopComplete-master\FundacionDesktopComplete-master\Negocio\bin\Debug\Entidades.pdb
+C:\Users\felip\Desktop\FundacionDesktopComplete-master\FundacionDesktopComplete-master\Negocio\bin\Debug\itextsharp.xml
+C:\Users\felip\Desktop\FundacionDesktopComplete-master\FundacionDesktopComplete-master\Negocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\felip\Desktop\FundacionDesktopComplete-master\FundacionDesktopComplete-master\Negocio\obj\Debug\Negocio.dll
+C:\Users\felip\Desktop\FundacionDesktopComplete-master\FundacionDesktopComplete-master\Negocio\obj\Debug\Negocio.pdb

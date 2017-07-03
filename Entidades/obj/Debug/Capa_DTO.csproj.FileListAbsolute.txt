@@ -1,0 +1,77 @@
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\SolucionFundacionDesktop\Entidades\bin\Debug\Entidades.dll
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\SolucionFundacionDesktop\Entidades\bin\Debug\Entidades.pdb
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\SolucionFundacionDesktop\Entidades\obj\Debug\Capa_DTO.csprojResolveAssemblyReference.cache
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\SolucionFundacionDesktop\Entidades\obj\Debug\Entidades.dll
+C:\Users\nathalia\Dropbox\caso7\prog\escritorio\SolucionFundacionDesktop\SolucionFundacionDesktop\Entidades\obj\Debug\Entidades.pdb
+C:\Users\nathalia\Documents\GitHub\SolucionFundacionDesktop\Entidades\bin\Debug\Entidades.dll
+C:\Users\nathalia\Documents\GitHub\SolucionFundacionDesktop\Entidades\bin\Debug\Entidades.pdb
+C:\Users\nathalia\Documents\GitHub\SolucionFundacionDesktop\Entidades\bin\Debug\itextsharp.dll
+C:\Users\nathalia\Documents\GitHub\SolucionFundacionDesktop\Entidades\bin\Debug\itextsharp.xml
+C:\Users\nathalia\Documents\GitHub\SolucionFundacionDesktop\Entidades\obj\Debug\Capa_DTO.csprojResolveAssemblyReference.cache
+C:\Users\nathalia\Documents\GitHub\SolucionFundacionDesktop\Entidades\obj\Debug\Entidades.dll
+C:\Users\nathalia\Documents\GitHub\SolucionFundacionDesktop\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopv3.1\SolucionFundacionDesktop\Entidades\bin\Debug\Entidades.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopv3.1\SolucionFundacionDesktop\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopv3.1\SolucionFundacionDesktop\Entidades\bin\Debug\itextsharp.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopv3.1\SolucionFundacionDesktop\Entidades\bin\Debug\itextsharp.xml
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopv3.1\SolucionFundacionDesktop\Entidades\obj\Debug\Entidades.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopv3.1\SolucionFundacionDesktop\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopv3.1\SolucionFundacionDesktop\Entidades\obj\Debug\Capa_DTO.csprojResolveAssemblyReference.cache
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario\SolucionFundacionDesktop\Entidades\bin\Debug\Entidades.dll
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario\SolucionFundacionDesktop\Entidades\bin\Debug\Entidades.pdb
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario\SolucionFundacionDesktop\Entidades\bin\Debug\itextsharp.dll
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario\SolucionFundacionDesktop\Entidades\bin\Debug\itextsharp.xml
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario\SolucionFundacionDesktop\Entidades\obj\Debug\Capa_DTO.csprojResolveAssemblyReference.cache
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario\SolucionFundacionDesktop\Entidades\obj\Debug\Entidades.dll
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario\SolucionFundacionDesktop\Entidades\obj\Debug\Entidades.pdb
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Entidades\bin\Debug\Entidades.dll
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Entidades\bin\Debug\Entidades.pdb
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Entidades\bin\Debug\itextsharp.dll
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Entidades\bin\Debug\itextsharp.xml
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Entidades\obj\Debug\Capa_DTO.csprojResolveAssemblyReference.cache
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Entidades\obj\Debug\Entidades.dll
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Entidades\obj\Debug\Entidades.pdb
+C:\Users\nathalia\Dropbox\caso7\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Entidades\bin\Debug\Entidades.dll
+C:\Users\nathalia\Dropbox\caso7\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Entidades\bin\Debug\Entidades.pdb
+C:\Users\nathalia\Dropbox\caso7\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Entidades\bin\Debug\itextsharp.dll
+C:\Users\nathalia\Dropbox\caso7\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Entidades\bin\Debug\itextsharp.xml
+C:\Users\nathalia\Dropbox\caso7\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Entidades\obj\Debug\Entidades.dll
+C:\Users\nathalia\Dropbox\caso7\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop Residente y Usuario 2,0\SolucionFundacionDesktop\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopUsuario\SolucionFundacionDesktop\Entidades\bin\Debug\Entidades.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopUsuario\SolucionFundacionDesktop\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopUsuario\SolucionFundacionDesktop\Entidades\bin\Debug\itextsharp.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopUsuario\SolucionFundacionDesktop\Entidades\bin\Debug\itextsharp.xml
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopUsuario\SolucionFundacionDesktop\Entidades\obj\Debug\Entidades.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopUsuario\SolucionFundacionDesktop\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Entidades\bin\Debug\Entidades.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Entidades\bin\Debug\itextsharp.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Entidades\bin\Debug\itextsharp.xml
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Entidades\obj\Debug\Entidades.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.3\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Entidades\bin\Debug\Entidades.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.3\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.3\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Entidades\bin\Debug\itextsharp.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.3\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Entidades\bin\Debug\itextsharp.xml
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.3\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Entidades\obj\Debug\Entidades.dll
+C:\Users\Francisco\Desktop\SolucionFundacionDesktopCompleta 1.3\SolucionFundacionDesktopCompleta 1.2\SolucionFundacionDesktop\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Entidades\bin\Debug\Entidades.dll
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Entidades\bin\Debug\itextsharp.dll
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Entidades\bin\Debug\itextsharp.xml
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Entidades\obj\Debug\Entidades.dll
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Entidades\obj\Debug\Entidades.pdb
+C:\Users\nathalia\Documents\GitHub\FundacionDesktopComplete\Entidades\bin\Debug\Entidades.dll
+C:\Users\nathalia\Documents\GitHub\FundacionDesktopComplete\Entidades\bin\Debug\Entidades.pdb
+C:\Users\nathalia\Documents\GitHub\FundacionDesktopComplete\Entidades\bin\Debug\itextsharp.dll
+C:\Users\nathalia\Documents\GitHub\FundacionDesktopComplete\Entidades\bin\Debug\itextsharp.xml
+C:\Users\nathalia\Documents\GitHub\FundacionDesktopComplete\Entidades\obj\Debug\Entidades.dll
+C:\Users\nathalia\Documents\GitHub\FundacionDesktopComplete\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Francisco\Desktop\GitAplicacion\FundacionDesktopComplete\Entidades\obj\Debug\Capa_DTO.csprojResolveAssemblyReference.cache
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Entidades\bin\Debug\Entidades.dll
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Entidades\bin\Debug\Entidades.pdb
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Entidades\bin\Debug\itextsharp.dll
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Entidades\bin\Debug\itextsharp.xml
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Entidades\obj\Debug\Capa_DTO.csprojResolveAssemblyReference.cache
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Entidades\obj\Debug\Entidades.dll
+C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Entidades\obj\Debug\Entidades.pdb

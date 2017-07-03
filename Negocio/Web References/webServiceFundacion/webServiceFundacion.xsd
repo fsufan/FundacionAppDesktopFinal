@@ -1,0 +1,2521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://WebServices/" targetNamespace="http://WebServices/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="IngresarEnfermera" type="tns:IngresarEnfermera" />
+  <xs:element name="IngresarEnfermeraResponse" type="tns:IngresarEnfermeraResponse" />
+  <xs:element name="IngresarParamedico" type="tns:IngresarParamedico" />
+  <xs:element name="IngresarParamedicoResponse" type="tns:IngresarParamedicoResponse" />
+  <xs:element name="buscarAportadorPorId" type="tns:buscarAportadorPorId" />
+  <xs:element name="buscarAportadorPorIdResponse" type="tns:buscarAportadorPorIdResponse" />
+  <xs:element name="buscarBodegaMedPorId" type="tns:buscarBodegaMedPorId" />
+  <xs:element name="buscarBodegaMedPorIdResponse" type="tns:buscarBodegaMedPorIdResponse" />
+  <xs:element name="buscarBodegaProdPorId" type="tns:buscarBodegaProdPorId" />
+  <xs:element name="buscarBodegaProdPorIdResponse" type="tns:buscarBodegaProdPorIdResponse" />
+  <xs:element name="buscarCompraPorFecha" type="tns:buscarCompraPorFecha" />
+  <xs:element name="buscarCompraPorFechaResponse" type="tns:buscarCompraPorFechaResponse" />
+  <xs:element name="buscarCompraPorId" type="tns:buscarCompraPorId" />
+  <xs:element name="buscarCompraPorIdResponse" type="tns:buscarCompraPorIdResponse" />
+  <xs:element name="buscarContratoPorId" type="tns:buscarContratoPorId" />
+  <xs:element name="buscarContratoPorIdResponse" type="tns:buscarContratoPorIdResponse" />
+  <xs:element name="buscarDetCompraPorDescripcionYIdProd" type="tns:buscarDetCompraPorDescripcionYIdProd" />
+  <xs:element name="buscarDetCompraPorDescripcionYIdProdResponse" type="tns:buscarDetCompraPorDescripcionYIdProdResponse" />
+  <xs:element name="buscarDetCompraPorId" type="tns:buscarDetCompraPorId" />
+  <xs:element name="buscarDetCompraPorIdResponse" type="tns:buscarDetCompraPorIdResponse" />
+  <xs:element name="buscarDetContratoPorId" type="tns:buscarDetContratoPorId" />
+  <xs:element name="buscarDetContratoPorIdResponse" type="tns:buscarDetContratoPorIdResponse" />
+  <xs:element name="buscarDetSolicitudIDMedicina" type="tns:buscarDetSolicitudIDMedicina" />
+  <xs:element name="buscarDetSolicitudIDMedicinaResponse" type="tns:buscarDetSolicitudIDMedicinaResponse" />
+  <xs:element name="buscarDetSolicitudMedPorId" type="tns:buscarDetSolicitudMedPorId" />
+  <xs:element name="buscarDetSolicitudMedPorIdResponse" type="tns:buscarDetSolicitudMedPorIdResponse" />
+  <xs:element name="buscarDetSolicitudMedpormotcuida" type="tns:buscarDetSolicitudMedpormotcuida" />
+  <xs:element name="buscarDetSolicitudMedpormotcuidaResponse" type="tns:buscarDetSolicitudMedpormotcuidaResponse" />
+  <xs:element name="buscarDetSolicitudPorId" type="tns:buscarDetSolicitudPorId" />
+  <xs:element name="buscarDetSolicitudPorIdResponse" type="tns:buscarDetSolicitudPorIdResponse" />
+  <xs:element name="buscarDireccionPorCalle" type="tns:buscarDireccionPorCalle" />
+  <xs:element name="buscarDireccionPorCalleResponse" type="tns:buscarDireccionPorCalleResponse" />
+  <xs:element name="buscarDireccionPorId" type="tns:buscarDireccionPorId" />
+  <xs:element name="buscarDireccionPorIdResponse" type="tns:buscarDireccionPorIdResponse" />
+  <xs:element name="buscarDonacionPapelPorId" type="tns:buscarDonacionPapelPorId" />
+  <xs:element name="buscarDonacionPapelPorIdResponse" type="tns:buscarDonacionPapelPorIdResponse" />
+  <xs:element name="buscarDonacionPorId" type="tns:buscarDonacionPorId" />
+  <xs:element name="buscarDonacionPorIdResponse" type="tns:buscarDonacionPorIdResponse" />
+  <xs:element name="buscarEnfermeraPorId" type="tns:buscarEnfermeraPorId" />
+  <xs:element name="buscarEnfermeraPorIdInfoP" type="tns:buscarEnfermeraPorIdInfoP" />
+  <xs:element name="buscarEnfermeraPorIdInfoPResponse" type="tns:buscarEnfermeraPorIdInfoPResponse" />
+  <xs:element name="buscarEnfermeraPorIdResponse" type="tns:buscarEnfermeraPorIdResponse" />
+  <xs:element name="buscarFamiliarPorId" type="tns:buscarFamiliarPorId" />
+  <xs:element name="buscarFamiliarPorIdInfopersonal" type="tns:buscarFamiliarPorIdInfopersonal" />
+  <xs:element name="buscarFamiliarPorIdInfopersonalResponse" type="tns:buscarFamiliarPorIdInfopersonalResponse" />
+  <xs:element name="buscarFamiliarPorIdResponse" type="tns:buscarFamiliarPorIdResponse" />
+  <xs:element name="buscarFamiliarPorParentezco" type="tns:buscarFamiliarPorParentezco" />
+  <xs:element name="buscarFamiliarPorParentezcoResponse" type="tns:buscarFamiliarPorParentezcoResponse" />
+  <xs:element name="buscarFicResidentePorComSitua" type="tns:buscarFicResidentePorComSitua" />
+  <xs:element name="buscarFicResidentePorComSituaResponse" type="tns:buscarFicResidentePorComSituaResponse" />
+  <xs:element name="buscarFicResidentePorFecha" type="tns:buscarFicResidentePorFecha" />
+  <xs:element name="buscarFicResidentePorFechaResponse" type="tns:buscarFicResidentePorFechaResponse" />
+  <xs:element name="buscarFicResidentePorId" type="tns:buscarFicResidentePorId" />
+  <xs:element name="buscarFicResidentePorIdResponse" type="tns:buscarFicResidentePorIdResponse" />
+  <xs:element name="buscarHistoMedicoPorId" type="tns:buscarHistoMedicoPorId" />
+  <xs:element name="buscarHistoMedicoPorIdResponse" type="tns:buscarHistoMedicoPorIdResponse" />
+  <xs:element name="buscarIdHistoMporIdficha" type="tns:buscarIdHistoMporIdficha" />
+  <xs:element name="buscarIdHistoMporIdfichaResponse" type="tns:buscarIdHistoMporIdfichaResponse" />
+  <xs:element name="buscarInfoPersonalPorId" type="tns:buscarInfoPersonalPorId" />
+  <xs:element name="buscarInfoPersonalPorIdResponse" type="tns:buscarInfoPersonalPorIdResponse" />
+  <xs:element name="buscarInfoPersonalPorRut" type="tns:buscarInfoPersonalPorRut" />
+  <xs:element name="buscarInfoPersonalPorRutResponse" type="tns:buscarInfoPersonalPorRutResponse" />
+  <xs:element name="buscarInventarioPorFechaYObs" type="tns:buscarInventarioPorFechaYObs" />
+  <xs:element name="buscarInventarioPorFechaYObsResponse" type="tns:buscarInventarioPorFechaYObsResponse" />
+  <xs:element name="buscarInventarioPorId" type="tns:buscarInventarioPorId" />
+  <xs:element name="buscarInventarioPorIdResponse" type="tns:buscarInventarioPorIdResponse" />
+  <xs:element name="buscarMandatoPorId" type="tns:buscarMandatoPorId" />
+  <xs:element name="buscarMandatoPorIdResponse" type="tns:buscarMandatoPorIdResponse" />
+  <xs:element name="buscarMedicinaPorId" type="tns:buscarMedicinaPorId" />
+  <xs:element name="buscarMedicinaPorIdResponse" type="tns:buscarMedicinaPorIdResponse" />
+  <xs:element name="buscarMedicinaPorNombreComercial" type="tns:buscarMedicinaPorNombreComercial" />
+  <xs:element name="buscarMedicinaPorNombreComercialResponse" type="tns:buscarMedicinaPorNombreComercialResponse" />
+  <xs:element name="buscarParamedicoPorId" type="tns:buscarParamedicoPorId" />
+  <xs:element name="buscarParamedicoPorIdInfoP" type="tns:buscarParamedicoPorIdInfoP" />
+  <xs:element name="buscarParamedicoPorIdInfoPResponse" type="tns:buscarParamedicoPorIdInfoPResponse" />
+  <xs:element name="buscarParamedicoPorIdResponse" type="tns:buscarParamedicoPorIdResponse" />
+  <xs:element name="buscarProductoPorId" type="tns:buscarProductoPorId" />
+  <xs:element name="buscarProductoPorIdResponse" type="tns:buscarProductoPorIdResponse" />
+  <xs:element name="buscarProductoPorNombre" type="tns:buscarProductoPorNombre" />
+  <xs:element name="buscarProductoPorNombreResponse" type="tns:buscarProductoPorNombreResponse" />
+  <xs:element name="buscarProveedorPorId" type="tns:buscarProveedorPorId" />
+  <xs:element name="buscarProveedorPorIdResponse" type="tns:buscarProveedorPorIdResponse" />
+  <xs:element name="buscarProveedorPorRazonSocial" type="tns:buscarProveedorPorRazonSocial" />
+  <xs:element name="buscarProveedorPorRazonSocialResponse" type="tns:buscarProveedorPorRazonSocialResponse" />
+  <xs:element name="buscarResidentePorId" type="tns:buscarResidentePorId" />
+  <xs:element name="buscarResidentePorIdFichaR" type="tns:buscarResidentePorIdFichaR" />
+  <xs:element name="buscarResidentePorIdFichaRResponse" type="tns:buscarResidentePorIdFichaRResponse" />
+  <xs:element name="buscarResidentePorIdInforPersonal" type="tns:buscarResidentePorIdInforPersonal" />
+  <xs:element name="buscarResidentePorIdInforPersonalResponse" type="tns:buscarResidentePorIdInforPersonalResponse" />
+  <xs:element name="buscarResidentePorIdResponse" type="tns:buscarResidentePorIdResponse" />
+  <xs:element name="buscarRetiroPorId" type="tns:buscarRetiroPorId" />
+  <xs:element name="buscarRetiroPorIdResponse" type="tns:buscarRetiroPorIdResponse" />
+  <xs:element name="buscarRolPorId" type="tns:buscarRolPorId" />
+  <xs:element name="buscarRolPorIdResponse" type="tns:buscarRolPorIdResponse" />
+  <xs:element name="buscarRolPorNombre" type="tns:buscarRolPorNombre" />
+  <xs:element name="buscarRolPorNombreResponse" type="tns:buscarRolPorNombreResponse" />
+  <xs:element name="buscarServicioPorId" type="tns:buscarServicioPorId" />
+  <xs:element name="buscarServicioPorIdResponse" type="tns:buscarServicioPorIdResponse" />
+  <xs:element name="buscarSolicMedPorId" type="tns:buscarSolicMedPorId" />
+  <xs:element name="buscarSolicMedPorIdResponse" type="tns:buscarSolicMedPorIdResponse" />
+  <xs:element name="buscarUsuarioPorId" type="tns:buscarUsuarioPorId" />
+  <xs:element name="buscarUsuarioPorIdResponse" type="tns:buscarUsuarioPorIdResponse" />
+  <xs:element name="buscarUsuarioPorRutUsuario" type="tns:buscarUsuarioPorRutUsuario" />
+  <xs:element name="buscarUsuarioPorRutUsuarioResponse" type="tns:buscarUsuarioPorRutUsuarioResponse" />
+  <xs:element name="eliminarAportador" type="tns:eliminarAportador" />
+  <xs:element name="eliminarAportadorResponse" type="tns:eliminarAportadorResponse" />
+  <xs:element name="eliminarBodegaMed" type="tns:eliminarBodegaMed" />
+  <xs:element name="eliminarBodegaMedResponse" type="tns:eliminarBodegaMedResponse" />
+  <xs:element name="eliminarBodegaProd" type="tns:eliminarBodegaProd" />
+  <xs:element name="eliminarBodegaProdResponse" type="tns:eliminarBodegaProdResponse" />
+  <xs:element name="eliminarCompra" type="tns:eliminarCompra" />
+  <xs:element name="eliminarCompraResponse" type="tns:eliminarCompraResponse" />
+  <xs:element name="eliminarContrato" type="tns:eliminarContrato" />
+  <xs:element name="eliminarContratoResponse" type="tns:eliminarContratoResponse" />
+  <xs:element name="eliminarDetCompra" type="tns:eliminarDetCompra" />
+  <xs:element name="eliminarDetCompraResponse" type="tns:eliminarDetCompraResponse" />
+  <xs:element name="eliminarDetContrato" type="tns:eliminarDetContrato" />
+  <xs:element name="eliminarDetContratoResponse" type="tns:eliminarDetContratoResponse" />
+  <xs:element name="eliminarDetSolicitud" type="tns:eliminarDetSolicitud" />
+  <xs:element name="eliminarDetSolicitudMed" type="tns:eliminarDetSolicitudMed" />
+  <xs:element name="eliminarDetSolicitudMedResponse" type="tns:eliminarDetSolicitudMedResponse" />
+  <xs:element name="eliminarDetSolicitudResponse" type="tns:eliminarDetSolicitudResponse" />
+  <xs:element name="eliminarDireccion" type="tns:eliminarDireccion" />
+  <xs:element name="eliminarDireccionResponse" type="tns:eliminarDireccionResponse" />
+  <xs:element name="eliminarDonacion" type="tns:eliminarDonacion" />
+  <xs:element name="eliminarDonacionPapel" type="tns:eliminarDonacionPapel" />
+  <xs:element name="eliminarDonacionPapelResponse" type="tns:eliminarDonacionPapelResponse" />
+  <xs:element name="eliminarDonacionResponse" type="tns:eliminarDonacionResponse" />
+  <xs:element name="eliminarEnfermera" type="tns:eliminarEnfermera" />
+  <xs:element name="eliminarEnfermeraResponse" type="tns:eliminarEnfermeraResponse" />
+  <xs:element name="eliminarFamiliar" type="tns:eliminarFamiliar" />
+  <xs:element name="eliminarFamiliarResponse" type="tns:eliminarFamiliarResponse" />
+  <xs:element name="eliminarFicResidente" type="tns:eliminarFicResidente" />
+  <xs:element name="eliminarFicResidenteResponse" type="tns:eliminarFicResidenteResponse" />
+  <xs:element name="eliminarHistoMedico" type="tns:eliminarHistoMedico" />
+  <xs:element name="eliminarHistoMedicoResponse" type="tns:eliminarHistoMedicoResponse" />
+  <xs:element name="eliminarInfoPersonal" type="tns:eliminarInfoPersonal" />
+  <xs:element name="eliminarInfoPersonalResponse" type="tns:eliminarInfoPersonalResponse" />
+  <xs:element name="eliminarInventario" type="tns:eliminarInventario" />
+  <xs:element name="eliminarInventarioResponse" type="tns:eliminarInventarioResponse" />
+  <xs:element name="eliminarMandato" type="tns:eliminarMandato" />
+  <xs:element name="eliminarMandatoResponse" type="tns:eliminarMandatoResponse" />
+  <xs:element name="eliminarMedicina" type="tns:eliminarMedicina" />
+  <xs:element name="eliminarMedicinaPorNombre" type="tns:eliminarMedicinaPorNombre" />
+  <xs:element name="eliminarMedicinaPorNombreResponse" type="tns:eliminarMedicinaPorNombreResponse" />
+  <xs:element name="eliminarMedicinaResponse" type="tns:eliminarMedicinaResponse" />
+  <xs:element name="eliminarParamedico" type="tns:eliminarParamedico" />
+  <xs:element name="eliminarParamedicoResponse" type="tns:eliminarParamedicoResponse" />
+  <xs:element name="eliminarProducto" type="tns:eliminarProducto" />
+  <xs:element name="eliminarProductoResponse" type="tns:eliminarProductoResponse" />
+  <xs:element name="eliminarProveedor" type="tns:eliminarProveedor" />
+  <xs:element name="eliminarProveedorResponse" type="tns:eliminarProveedorResponse" />
+  <xs:element name="eliminarResidente" type="tns:eliminarResidente" />
+  <xs:element name="eliminarResidenteResponse" type="tns:eliminarResidenteResponse" />
+  <xs:element name="eliminarRetiro" type="tns:eliminarRetiro" />
+  <xs:element name="eliminarRetiroResponse" type="tns:eliminarRetiroResponse" />
+  <xs:element name="eliminarRol" type="tns:eliminarRol" />
+  <xs:element name="eliminarRolResponse" type="tns:eliminarRolResponse" />
+  <xs:element name="eliminarServicio" type="tns:eliminarServicio" />
+  <xs:element name="eliminarServicioResponse" type="tns:eliminarServicioResponse" />
+  <xs:element name="eliminarSolicMed" type="tns:eliminarSolicMed" />
+  <xs:element name="eliminarSolicMedResponse" type="tns:eliminarSolicMedResponse" />
+  <xs:element name="eliminarUsuario" type="tns:eliminarUsuario" />
+  <xs:element name="eliminarUsuarioResponse" type="tns:eliminarUsuarioResponse" />
+  <xs:element name="ingresarAportador" type="tns:ingresarAportador" />
+  <xs:element name="ingresarAportadorResponse" type="tns:ingresarAportadorResponse" />
+  <xs:element name="ingresarBodegaMed" type="tns:ingresarBodegaMed" />
+  <xs:element name="ingresarBodegaMedResponse" type="tns:ingresarBodegaMedResponse" />
+  <xs:element name="ingresarBodegaProd" type="tns:ingresarBodegaProd" />
+  <xs:element name="ingresarBodegaProdResponse" type="tns:ingresarBodegaProdResponse" />
+  <xs:element name="ingresarCompra" type="tns:ingresarCompra" />
+  <xs:element name="ingresarCompraResponse" type="tns:ingresarCompraResponse" />
+  <xs:element name="ingresarContrato" type="tns:ingresarContrato" />
+  <xs:element name="ingresarContratoResponse" type="tns:ingresarContratoResponse" />
+  <xs:element name="ingresarDetCompra" type="tns:ingresarDetCompra" />
+  <xs:element name="ingresarDetCompraResponse" type="tns:ingresarDetCompraResponse" />
+  <xs:element name="ingresarDetContrato" type="tns:ingresarDetContrato" />
+  <xs:element name="ingresarDetContratoResponse" type="tns:ingresarDetContratoResponse" />
+  <xs:element name="ingresarDetSolicitud" type="tns:ingresarDetSolicitud" />
+  <xs:element name="ingresarDetSolicitudMed" type="tns:ingresarDetSolicitudMed" />
+  <xs:element name="ingresarDetSolicitudMedResponse" type="tns:ingresarDetSolicitudMedResponse" />
+  <xs:element name="ingresarDetSolicitudResponse" type="tns:ingresarDetSolicitudResponse" />
+  <xs:element name="ingresarDireccion" type="tns:ingresarDireccion" />
+  <xs:element name="ingresarDireccionResponse" type="tns:ingresarDireccionResponse" />
+  <xs:element name="ingresarDonacion" type="tns:ingresarDonacion" />
+  <xs:element name="ingresarDonacionPapel" type="tns:ingresarDonacionPapel" />
+  <xs:element name="ingresarDonacionPapelResponse" type="tns:ingresarDonacionPapelResponse" />
+  <xs:element name="ingresarDonacionResponse" type="tns:ingresarDonacionResponse" />
+  <xs:element name="ingresarFamiliar" type="tns:ingresarFamiliar" />
+  <xs:element name="ingresarFamiliarResponse" type="tns:ingresarFamiliarResponse" />
+  <xs:element name="ingresarFicResidente" type="tns:ingresarFicResidente" />
+  <xs:element name="ingresarFicResidenteResponse" type="tns:ingresarFicResidenteResponse" />
+  <xs:element name="ingresarHistoMedico" type="tns:ingresarHistoMedico" />
+  <xs:element name="ingresarHistoMedicoResponse" type="tns:ingresarHistoMedicoResponse" />
+  <xs:element name="ingresarInfoPersonal" type="tns:ingresarInfoPersonal" />
+  <xs:element name="ingresarInfoPersonalResponse" type="tns:ingresarInfoPersonalResponse" />
+  <xs:element name="ingresarInventario" type="tns:ingresarInventario" />
+  <xs:element name="ingresarInventarioResponse" type="tns:ingresarInventarioResponse" />
+  <xs:element name="ingresarMandato" type="tns:ingresarMandato" />
+  <xs:element name="ingresarMandatoResponse" type="tns:ingresarMandatoResponse" />
+  <xs:element name="ingresarMedicina" type="tns:ingresarMedicina" />
+  <xs:element name="ingresarMedicinaResponse" type="tns:ingresarMedicinaResponse" />
+  <xs:element name="ingresarProducto" type="tns:ingresarProducto" />
+  <xs:element name="ingresarProductoResponse" type="tns:ingresarProductoResponse" />
+  <xs:element name="ingresarProveedor" type="tns:ingresarProveedor" />
+  <xs:element name="ingresarProveedorResponse" type="tns:ingresarProveedorResponse" />
+  <xs:element name="ingresarResidente" type="tns:ingresarResidente" />
+  <xs:element name="ingresarResidenteResponse" type="tns:ingresarResidenteResponse" />
+  <xs:element name="ingresarRetiro" type="tns:ingresarRetiro" />
+  <xs:element name="ingresarRetiroResponse" type="tns:ingresarRetiroResponse" />
+  <xs:element name="ingresarRol" type="tns:ingresarRol" />
+  <xs:element name="ingresarRolResponse" type="tns:ingresarRolResponse" />
+  <xs:element name="ingresarServicio" type="tns:ingresarServicio" />
+  <xs:element name="ingresarServicioResponse" type="tns:ingresarServicioResponse" />
+  <xs:element name="ingresarSolicMed" type="tns:ingresarSolicMed" />
+  <xs:element name="ingresarSolicMedResponse" type="tns:ingresarSolicMedResponse" />
+  <xs:element name="ingresarUsuario" type="tns:ingresarUsuario" />
+  <xs:element name="ingresarUsuarioResponse" type="tns:ingresarUsuarioResponse" />
+  <xs:element name="listadoAportador" type="tns:listadoAportador" />
+  <xs:element name="listadoAportadorResponse" type="tns:listadoAportadorResponse" />
+  <xs:element name="listadoBodegaMed" type="tns:listadoBodegaMed" />
+  <xs:element name="listadoBodegaMedResponse" type="tns:listadoBodegaMedResponse" />
+  <xs:element name="listadoBodegaProd" type="tns:listadoBodegaProd" />
+  <xs:element name="listadoBodegaProdResponse" type="tns:listadoBodegaProdResponse" />
+  <xs:element name="listadoCompra" type="tns:listadoCompra" />
+  <xs:element name="listadoCompraResponse" type="tns:listadoCompraResponse" />
+  <xs:element name="listadoContrato" type="tns:listadoContrato" />
+  <xs:element name="listadoContratoResponse" type="tns:listadoContratoResponse" />
+  <xs:element name="listadoDetCompra" type="tns:listadoDetCompra" />
+  <xs:element name="listadoDetCompraResponse" type="tns:listadoDetCompraResponse" />
+  <xs:element name="listadoDetContrato" type="tns:listadoDetContrato" />
+  <xs:element name="listadoDetContratoResponse" type="tns:listadoDetContratoResponse" />
+  <xs:element name="listadoDetSolicitud" type="tns:listadoDetSolicitud" />
+  <xs:element name="listadoDetSolicitudMed" type="tns:listadoDetSolicitudMed" />
+  <xs:element name="listadoDetSolicitudMedResponse" type="tns:listadoDetSolicitudMedResponse" />
+  <xs:element name="listadoDetSolicitudResponse" type="tns:listadoDetSolicitudResponse" />
+  <xs:element name="listadoDireccion" type="tns:listadoDireccion" />
+  <xs:element name="listadoDireccionResponse" type="tns:listadoDireccionResponse" />
+  <xs:element name="listadoDonacion" type="tns:listadoDonacion" />
+  <xs:element name="listadoDonacionPapel" type="tns:listadoDonacionPapel" />
+  <xs:element name="listadoDonacionPapelResponse" type="tns:listadoDonacionPapelResponse" />
+  <xs:element name="listadoDonacionResponse" type="tns:listadoDonacionResponse" />
+  <xs:element name="listadoEnfermera" type="tns:listadoEnfermera" />
+  <xs:element name="listadoEnfermeraResponse" type="tns:listadoEnfermeraResponse" />
+  <xs:element name="listadoFamiliar" type="tns:listadoFamiliar" />
+  <xs:element name="listadoFamiliarResponse" type="tns:listadoFamiliarResponse" />
+  <xs:element name="listadoFicResidente" type="tns:listadoFicResidente" />
+  <xs:element name="listadoFicResidenteResponse" type="tns:listadoFicResidenteResponse" />
+  <xs:element name="listadoHistoMedico" type="tns:listadoHistoMedico" />
+  <xs:element name="listadoHistoMedicoResponse" type="tns:listadoHistoMedicoResponse" />
+  <xs:element name="listadoInfoPersonal" type="tns:listadoInfoPersonal" />
+  <xs:element name="listadoInfoPersonalResponse" type="tns:listadoInfoPersonalResponse" />
+  <xs:element name="listadoInventario" type="tns:listadoInventario" />
+  <xs:element name="listadoInventarioResponse" type="tns:listadoInventarioResponse" />
+  <xs:element name="listadoMandato" type="tns:listadoMandato" />
+  <xs:element name="listadoMandatoResponse" type="tns:listadoMandatoResponse" />
+  <xs:element name="listadoMedicina" type="tns:listadoMedicina" />
+  <xs:element name="listadoMedicinaResponse" type="tns:listadoMedicinaResponse" />
+  <xs:element name="listadoParamedico" type="tns:listadoParamedico" />
+  <xs:element name="listadoParamedicoResponse" type="tns:listadoParamedicoResponse" />
+  <xs:element name="listadoProducto" type="tns:listadoProducto" />
+  <xs:element name="listadoProductoResponse" type="tns:listadoProductoResponse" />
+  <xs:element name="listadoProveedor" type="tns:listadoProveedor" />
+  <xs:element name="listadoProveedorResponse" type="tns:listadoProveedorResponse" />
+  <xs:element name="listadoReporteAportador" type="tns:listadoReporteAportador" />
+  <xs:element name="listadoReporteAportadorResponse" type="tns:listadoReporteAportadorResponse" />
+  <xs:element name="listadoReporteCompra" type="tns:listadoReporteCompra" />
+  <xs:element name="listadoReporteCompraResponse" type="tns:listadoReporteCompraResponse" />
+  <xs:element name="listadoReporteInventario" type="tns:listadoReporteInventario" />
+  <xs:element name="listadoReporteInventarioResponse" type="tns:listadoReporteInventarioResponse" />
+  <xs:element name="listadoReporteMensual" type="tns:listadoReporteMensual" />
+  <xs:element name="listadoReporteMensualResponse" type="tns:listadoReporteMensualResponse" />
+  <xs:element name="listadoResidente" type="tns:listadoResidente" />
+  <xs:element name="listadoResidenteResponse" type="tns:listadoResidenteResponse" />
+  <xs:element name="listadoRetiro" type="tns:listadoRetiro" />
+  <xs:element name="listadoRetiroResponse" type="tns:listadoRetiroResponse" />
+  <xs:element name="listadoRol" type="tns:listadoRol" />
+  <xs:element name="listadoRolResponse" type="tns:listadoRolResponse" />
+  <xs:element name="listadoServicio" type="tns:listadoServicio" />
+  <xs:element name="listadoServicioResponse" type="tns:listadoServicioResponse" />
+  <xs:element name="listadoSolicMed" type="tns:listadoSolicMed" />
+  <xs:element name="listadoSolicMedResponse" type="tns:listadoSolicMedResponse" />
+  <xs:element name="listadoUsuario" type="tns:listadoUsuario" />
+  <xs:element name="listadoUsuarioResponse" type="tns:listadoUsuarioResponse" />
+  <xs:element name="modificarAportador" type="tns:modificarAportador" />
+  <xs:element name="modificarAportadorResponse" type="tns:modificarAportadorResponse" />
+  <xs:element name="modificarBodegaMed" type="tns:modificarBodegaMed" />
+  <xs:element name="modificarBodegaMedResponse" type="tns:modificarBodegaMedResponse" />
+  <xs:element name="modificarBodegaProd" type="tns:modificarBodegaProd" />
+  <xs:element name="modificarBodegaProdResponse" type="tns:modificarBodegaProdResponse" />
+  <xs:element name="modificarCompra" type="tns:modificarCompra" />
+  <xs:element name="modificarCompraResponse" type="tns:modificarCompraResponse" />
+  <xs:element name="modificarContrato" type="tns:modificarContrato" />
+  <xs:element name="modificarContratoResponse" type="tns:modificarContratoResponse" />
+  <xs:element name="modificarDetCompra" type="tns:modificarDetCompra" />
+  <xs:element name="modificarDetCompraResponse" type="tns:modificarDetCompraResponse" />
+  <xs:element name="modificarDetContrato" type="tns:modificarDetContrato" />
+  <xs:element name="modificarDetContratoResponse" type="tns:modificarDetContratoResponse" />
+  <xs:element name="modificarDetSolicitud" type="tns:modificarDetSolicitud" />
+  <xs:element name="modificarDetSolicitudMed" type="tns:modificarDetSolicitudMed" />
+  <xs:element name="modificarDetSolicitudMedResponse" type="tns:modificarDetSolicitudMedResponse" />
+  <xs:element name="modificarDetSolicitudResponse" type="tns:modificarDetSolicitudResponse" />
+  <xs:element name="modificarDireccion" type="tns:modificarDireccion" />
+  <xs:element name="modificarDireccionResponse" type="tns:modificarDireccionResponse" />
+  <xs:element name="modificarDonacion" type="tns:modificarDonacion" />
+  <xs:element name="modificarDonacionPapel" type="tns:modificarDonacionPapel" />
+  <xs:element name="modificarDonacionPapelResponse" type="tns:modificarDonacionPapelResponse" />
+  <xs:element name="modificarDonacionResponse" type="tns:modificarDonacionResponse" />
+  <xs:element name="modificarEnfermera" type="tns:modificarEnfermera" />
+  <xs:element name="modificarEnfermeraResponse" type="tns:modificarEnfermeraResponse" />
+  <xs:element name="modificarFamiliar" type="tns:modificarFamiliar" />
+  <xs:element name="modificarFamiliarResponse" type="tns:modificarFamiliarResponse" />
+  <xs:element name="modificarFicResidente" type="tns:modificarFicResidente" />
+  <xs:element name="modificarFicResidenteResponse" type="tns:modificarFicResidenteResponse" />
+  <xs:element name="modificarHistoMedico" type="tns:modificarHistoMedico" />
+  <xs:element name="modificarHistoMedicoResponse" type="tns:modificarHistoMedicoResponse" />
+  <xs:element name="modificarInfoPersonal" type="tns:modificarInfoPersonal" />
+  <xs:element name="modificarInfoPersonalResponse" type="tns:modificarInfoPersonalResponse" />
+  <xs:element name="modificarInventario" type="tns:modificarInventario" />
+  <xs:element name="modificarInventarioResponse" type="tns:modificarInventarioResponse" />
+  <xs:element name="modificarMandato" type="tns:modificarMandato" />
+  <xs:element name="modificarMandatoResponse" type="tns:modificarMandatoResponse" />
+  <xs:element name="modificarMedicina" type="tns:modificarMedicina" />
+  <xs:element name="modificarMedicinaResponse" type="tns:modificarMedicinaResponse" />
+  <xs:element name="modificarParamedico" type="tns:modificarParamedico" />
+  <xs:element name="modificarParamedicoResponse" type="tns:modificarParamedicoResponse" />
+  <xs:element name="modificarProducto" type="tns:modificarProducto" />
+  <xs:element name="modificarProductoResponse" type="tns:modificarProductoResponse" />
+  <xs:element name="modificarProveedor" type="tns:modificarProveedor" />
+  <xs:element name="modificarProveedorResponse" type="tns:modificarProveedorResponse" />
+  <xs:element name="modificarResidente" type="tns:modificarResidente" />
+  <xs:element name="modificarResidenteResponse" type="tns:modificarResidenteResponse" />
+  <xs:element name="modificarRetiro" type="tns:modificarRetiro" />
+  <xs:element name="modificarRetiroResponse" type="tns:modificarRetiroResponse" />
+  <xs:element name="modificarRol" type="tns:modificarRol" />
+  <xs:element name="modificarRolResponse" type="tns:modificarRolResponse" />
+  <xs:element name="modificarServicio" type="tns:modificarServicio" />
+  <xs:element name="modificarServicioResponse" type="tns:modificarServicioResponse" />
+  <xs:element name="modificarSolicMed" type="tns:modificarSolicMed" />
+  <xs:element name="modificarSolicMedResponse" type="tns:modificarSolicMedResponse" />
+  <xs:element name="modificarUsuario" type="tns:modificarUsuario" />
+  <xs:element name="modificarUsuarioResponse" type="tns:modificarUsuarioResponse" />
+  <xs:complexType name="listadoSolicMed">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoSolicMedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:solicMed" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="solicMed">
+    <xs:sequence>
+      <xs:element name="id_det_solic_med" type="xs:int" />
+      <xs:element name="id_det_solicitud" type="xs:int" />
+      <xs:element name="id_enfermera" type="xs:int" />
+      <xs:element name="id_fic_residente" type="xs:int" />
+      <xs:element name="id_paramedico" type="xs:int" />
+      <xs:element name="id_solic_med" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarFamiliarPorIdInfopersonal">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarFamiliarPorIdInfopersonalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:familiar" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="familiar">
+    <xs:sequence>
+      <xs:element name="id_contrato" type="xs:int" />
+      <xs:element name="id_familiar" type="xs:int" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element minOccurs="0" name="parentezco" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarInfoPersonal">
+    <xs:sequence>
+      <xs:element name="id_infopersonal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarInfoPersonalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoReporteAportador">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoReporteAportadorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:reporteAportador" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reporteAportador">
+    <xs:sequence>
+      <xs:element name="monto" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="rut" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarServicio">
+    <xs:sequence>
+      <xs:element name="id_servicio" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarServicioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDetSolicitud">
+    <xs:sequence>
+      <xs:element name="id_det_solicitud" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDetSolicitudResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarFamiliarPorParentezco">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="parentezco" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarFamiliarPorParentezcoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:familiar" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarServicioPorId">
+    <xs:sequence>
+      <xs:element name="id_servicio" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarServicioPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:servicio" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="servicio">
+    <xs:sequence>
+      <xs:element name="costo_serv" type="xs:int" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element name="id_servicio" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_serv" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoDetCompra">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoDetCompraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:detCompra" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="detCompra">
+    <xs:sequence>
+      <xs:element name="cantidad" type="xs:int" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element name="id_compra" type="xs:int" />
+      <xs:element name="id_det_compra" type="xs:int" />
+      <xs:element name="id_producto" type="xs:int" />
+      <xs:element name="total" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarEnfermeraPorId">
+    <xs:sequence>
+      <xs:element name="id_enfermera" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarEnfermeraPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:enfermera" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enfermera">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="especialidad" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaIngreso" type="xs:dateTime" />
+      <xs:element name="id_enfermera" type="xs:int" />
+      <xs:element name="id_infoPersonal" type="xs:int" />
+      <xs:element name="id_usuario" type="xs:int" />
+      <xs:element minOccurs="0" name="turno" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarCompra">
+    <xs:sequence>
+      <xs:element name="id_compra" type="xs:int" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element name="montoTotal" type="xs:int" />
+      <xs:element minOccurs="0" name="fecha" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarCompraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarResidentePorIdFichaR">
+    <xs:sequence>
+      <xs:element name="id_fichaR" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarResidentePorIdFichaRResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:residente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="residente">
+    <xs:sequence>
+      <xs:element name="edad" type="xs:int" />
+      <xs:element name="id_familiar" type="xs:int" />
+      <xs:element name="id_ficresidente" type="xs:int" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element name="id_residente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarSolicMedPorId">
+    <xs:sequence>
+      <xs:element name="id_solic_med" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarSolicMedPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:solicMed" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDetContrato">
+    <xs:sequence>
+      <xs:element name="id_det_contrato" type="xs:int" />
+      <xs:element name="id_servicio" type="xs:int" />
+      <xs:element name="costo_total" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDetContratoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarBodegaProdPorId">
+    <xs:sequence>
+      <xs:element name="id_bodega_prod" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarBodegaProdPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:bodegaProd" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bodegaProd">
+    <xs:sequence>
+      <xs:element name="id_bodega_prod" type="xs:int" />
+      <xs:element name="id_inventario" type="xs:int" />
+      <xs:element name="id_producto" type="xs:int" />
+      <xs:element name="stock" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDetSolicitudMed">
+    <xs:sequence>
+      <xs:element name="id_det_solic_med" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDetSolicitudMedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarAportadorPorId">
+    <xs:sequence>
+      <xs:element name="id_aportador" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarAportadorPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:aportador" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="aportador">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_inscripcion" type="xs:dateTime" />
+      <xs:element name="id_aportador" type="xs:int" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element name="id_mandato" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarInventario">
+    <xs:sequence>
+      <xs:element name="id_inventario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarInventarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarRetiro">
+    <xs:sequence>
+      <xs:element name="id_retiro" type="xs:int" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element name="id_direccion" type="xs:int" />
+      <xs:element name="id_donacionpapel" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarRetiroResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarEnfermera">
+    <xs:sequence>
+      <xs:element name="id_enfermera" type="xs:int" />
+      <xs:element minOccurs="0" name="turno" type="xs:string" />
+      <xs:element minOccurs="0" name="especialidad" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaIngreso" type="xs:string" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarEnfermeraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoCompra">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoCompraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:compra" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="compra">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+      <xs:element name="id_compra" type="xs:int" />
+      <xs:element name="montototal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarRol">
+    <xs:sequence>
+      <xs:element name="id_rol" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_rol" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion_rol" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarRolResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarResidente">
+    <xs:sequence>
+      <xs:element name="id_residente" type="xs:int" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element name="edad" type="xs:int" />
+      <xs:element name="id_familiar" type="xs:int" />
+      <xs:element name="id_ficresidente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarResidenteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarSolicMed">
+    <xs:sequence>
+      <xs:element name="id_solic_med" type="xs:int" />
+      <xs:element name="id_det_solic_med" type="xs:int" />
+      <xs:element name="id_fic_residente" type="xs:int" />
+      <xs:element name="id_enfermera" type="xs:int" />
+      <xs:element name="id_paramedico" type="xs:int" />
+      <xs:element name="id_det_solicitud" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarSolicMedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoFicResidente">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoFicResidenteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:ficResidente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ficResidente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="comentarios" type="xs:string" />
+      <xs:element minOccurs="0" name="fec_inscripcion" type="xs:dateTime" />
+      <xs:element name="id_fic_residente" type="xs:int" />
+      <xs:element minOccurs="0" name="situacion_medica" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarSolicMed">
+    <xs:sequence>
+      <xs:element name="id_solic_med" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarSolicMedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarParamedico">
+    <xs:sequence>
+      <xs:element name="id_paramedico" type="xs:int" />
+      <xs:element minOccurs="0" name="turno" type="xs:string" />
+      <xs:element minOccurs="0" name="especialidad" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaIngreso" type="xs:string" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarParamedicoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarFicResidentePorFecha">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fec_inscripcion" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarFicResidentePorFechaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:ficResidente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDetSolicitudPorId">
+    <xs:sequence>
+      <xs:element name="id_det_solicitud" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDetSolicitudPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:detSolicitud" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="detSolicitud">
+    <xs:sequence>
+      <xs:element name="cantidad" type="xs:int" />
+      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+      <xs:element name="id_det_solicitud" type="xs:int" />
+      <xs:element name="id_medicina" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarBodegaMed">
+    <xs:sequence>
+      <xs:element name="id_bodega_med" type="xs:int" />
+      <xs:element name="id_medicina" type="xs:int" />
+      <xs:element name="stock" type="xs:int" />
+      <xs:element name="id_inventario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarBodegaMedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarServicio">
+    <xs:sequence>
+      <xs:element name="id_servicio" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_serv" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element name="costo_serv" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarServicioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarUsuario">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+      <xs:element minOccurs="0" name="rut_usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
+      <xs:element name="id_rol" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarFicResidentePorId">
+    <xs:sequence>
+      <xs:element name="id_fic_residente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarFicResidentePorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:ficResidente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoDonacionPapel">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoDonacionPapelResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:donacionpapel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="donacionpapel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado_donacionpapel" type="xs:string" />
+      <xs:element minOccurs="0" name="fec_donacionpapel" type="xs:dateTime" />
+      <xs:element name="id_donacion" type="xs:int" />
+      <xs:element name="id_donacionpapel" type="xs:int" />
+      <xs:element name="peso_donacionpapel" type="xs:int" />
+      <xs:element minOccurs="0" name="tipo_donacionpapel" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarServicio">
+    <xs:sequence>
+      <xs:element name="id_servicio" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_serv" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element name="costo_serv" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarServicioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarInventario">
+    <xs:sequence>
+      <xs:element name="id_inventario" type="xs:int" />
+      <xs:element name="cantidad_productos" type="xs:int" />
+      <xs:element minOccurs="0" name="fecha_inventario" type="xs:string" />
+      <xs:element minOccurs="0" name="observaciones" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarInventarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDireccion">
+    <xs:sequence>
+      <xs:element name="id_direccion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDireccionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoParamedico">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoParamedicoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:paramedico" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="paramedico">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="especialidad" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaIngreso" type="xs:dateTime" />
+      <xs:element name="id_infoPersonal" type="xs:int" />
+      <xs:element name="id_paramedico" type="xs:int" />
+      <xs:element name="id_usuario" type="xs:int" />
+      <xs:element minOccurs="0" name="turno" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarSolicMed">
+    <xs:sequence>
+      <xs:element name="id_solic_med" type="xs:int" />
+      <xs:element name="id_det_solic_med" type="xs:int" />
+      <xs:element name="id_fic_residente" type="xs:int" />
+      <xs:element name="id_enfermera" type="xs:int" />
+      <xs:element name="id_paramedico" type="xs:int" />
+      <xs:element name="id_det_solicitud" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarSolicMedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoDetSolicitudMed">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoDetSolicitudMedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:detSolicitudMed" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="detSolicitudMed">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cuidados_espe" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_solicitud" type="xs:string" />
+      <xs:element name="id_det_solic_med" type="xs:int" />
+      <xs:element minOccurs="0" name="motivo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoReporteMensual">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoReporteMensualResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:reporteMensual" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reporteMensual">
+    <xs:sequence>
+      <xs:element name="arecibidos" type="xs:int" />
+      <xs:element name="gastos" type="xs:int" />
+      <xs:element name="presidentes" type="xs:int" />
+      <xs:element name="total" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarBodegaMed">
+    <xs:sequence>
+      <xs:element name="id_bodega_med" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarBodegaMedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDetContrato">
+    <xs:sequence>
+      <xs:element name="id_det_contrato" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDetContratoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarBodegaProd">
+    <xs:sequence>
+      <xs:element name="id_bodega_prod" type="xs:int" />
+      <xs:element name="id_producto" type="xs:int" />
+      <xs:element name="stock" type="xs:int" />
+      <xs:element name="id_inventario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarBodegaProdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarMedicina">
+    <xs:sequence>
+      <xs:element name="id_medicina" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarMedicinaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDireccionPorCalle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="calle" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDireccionPorCalleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDireccion">
+    <xs:sequence>
+      <xs:element name="id_direccion" type="xs:int" />
+      <xs:element minOccurs="0" name="calle" type="xs:string" />
+      <xs:element minOccurs="0" name="comuna" type="xs:string" />
+      <xs:element minOccurs="0" name="ciudad" type="xs:string" />
+      <xs:element minOccurs="0" name="region" type="xs:string" />
+      <xs:element name="codigoPostal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDireccionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarInventario">
+    <xs:sequence>
+      <xs:element name="id_inventario" type="xs:int" />
+      <xs:element name="cantidad_productos" type="xs:int" />
+      <xs:element minOccurs="0" name="fecha_inventario" type="xs:string" />
+      <xs:element minOccurs="0" name="observaciones" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarInventarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDetSolicitudMed">
+    <xs:sequence>
+      <xs:element name="id_det_solic_med" type="xs:int" />
+      <xs:element minOccurs="0" name="estado_solicitud" type="xs:string" />
+      <xs:element minOccurs="0" name="motivo" type="xs:string" />
+      <xs:element minOccurs="0" name="cuidados_espe" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDetSolicitudMedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarProveedorPorRazonSocial">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="razon_social" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarProveedorPorRazonSocialResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:proveedor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="proveedor">
+    <xs:sequence>
+      <xs:element name="id_direccion" type="xs:int" />
+      <xs:element name="id_proveedor" type="xs:int" />
+      <xs:element minOccurs="0" name="razon_social" type="xs:string" />
+      <xs:element minOccurs="0" name="rut_empresa" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarFicResidente">
+    <xs:sequence>
+      <xs:element name="id_fic_residente" type="xs:int" />
+      <xs:element minOccurs="0" name="fec_inscripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="comentarios" type="xs:string" />
+      <xs:element minOccurs="0" name="situacion_medica" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarFicResidenteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarHistoMedico">
+    <xs:sequence>
+      <xs:element name="id_historialmed" type="xs:int" />
+      <xs:element minOccurs="0" name="enfermedades" type="xs:string" />
+      <xs:element minOccurs="0" name="alergias" type="xs:string" />
+      <xs:element minOccurs="0" name="tratam_especial" type="xs:string" />
+      <xs:element name="id_fic_residente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarHistoMedicoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarInfoPersonalPorRut">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="rut" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarInfoPersonalPorRutResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:infoPersonal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="infoPersonal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellidoMat" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoPat" type="xs:string" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element minOccurs="0" name="fechanac" type="xs:dateTime" />
+      <xs:element name="id_direccion" type="xs:int" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="rut" type="xs:string" />
+      <xs:element name="telefono" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarContrato">
+    <xs:sequence>
+      <xs:element name="id_contrato" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarContratoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoRetiro">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoRetiroResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:retiro" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="retiro">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element name="id_direccion" type="xs:int" />
+      <xs:element name="id_donacionpapel" type="xs:int" />
+      <xs:element name="id_retiro" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarRolPorId">
+    <xs:sequence>
+      <xs:element name="id_rol" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarRolPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:rol" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rol">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion_rol" type="xs:string" />
+      <xs:element name="id_rol" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_rol" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoHistoMedico">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoHistoMedicoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:histoMedico" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="histoMedico">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="alergias" type="xs:string" />
+      <xs:element minOccurs="0" name="enfermedades" type="xs:string" />
+      <xs:element name="id_fic_residente" type="xs:int" />
+      <xs:element name="id_historialmed" type="xs:int" />
+      <xs:element minOccurs="0" name="tratam_especial" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDetSolicitudMedPorId">
+    <xs:sequence>
+      <xs:element name="id_det_solic_med" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDetSolicitudMedPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:detSolicitudMed" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarUsuarioPorId">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarUsuarioPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:usuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="usuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
+      <xs:element name="id_rol" type="xs:int" />
+      <xs:element name="id_usuario" type="xs:int" />
+      <xs:element minOccurs="0" name="rut_usuario" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarContratoPorId">
+    <xs:sequence>
+      <xs:element name="id_contrato" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarContratoPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:contrato" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="contrato">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="condiciones_perm" type="xs:string" />
+      <xs:element name="id_contrato" type="xs:int" />
+      <xs:element name="id_det_contrato" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarFamiliarPorId">
+    <xs:sequence>
+      <xs:element name="id_familiar" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarFamiliarPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:familiar" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDireccion">
+    <xs:sequence>
+      <xs:element name="id_direccion" type="xs:int" />
+      <xs:element minOccurs="0" name="calle" type="xs:string" />
+      <xs:element minOccurs="0" name="comuna" type="xs:string" />
+      <xs:element minOccurs="0" name="ciudad" type="xs:string" />
+      <xs:element minOccurs="0" name="region" type="xs:string" />
+      <xs:element name="codigoPostal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDireccionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarInfoPersonal">
+    <xs:sequence>
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidopat" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidomat" type="xs:string" />
+      <xs:element minOccurs="0" name="rut" type="xs:string" />
+      <xs:element minOccurs="0" name="fechanac" type="xs:string" />
+      <xs:element name="telefono" type="xs:int" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element name="id_direccion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarInfoPersonalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoDireccion">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoDireccionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:direccion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="direccion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="calle" type="xs:string" />
+      <xs:element minOccurs="0" name="ciudad" type="xs:string" />
+      <xs:element name="codigoPostal" type="xs:int" />
+      <xs:element minOccurs="0" name="comuna" type="xs:string" />
+      <xs:element name="id_direccion" type="xs:int" />
+      <xs:element minOccurs="0" name="region" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDireccionPorId">
+    <xs:sequence>
+      <xs:element name="id_direccion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDireccionPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:direccion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarParamedico">
+    <xs:sequence>
+      <xs:element name="id_paramedico" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarParamedicoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoProveedor">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoProveedorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:proveedor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarHistoMedico">
+    <xs:sequence>
+      <xs:element name="id_historialmed" type="xs:int" />
+      <xs:element minOccurs="0" name="enfermedades" type="xs:string" />
+      <xs:element minOccurs="0" name="alergias" type="xs:string" />
+      <xs:element minOccurs="0" name="tratam_especial" type="xs:string" />
+      <xs:element name="id_fic_residente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarHistoMedicoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoInfoPersonal">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoInfoPersonalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:infoPersonal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoEnfermera">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoEnfermeraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:enfermera" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarBodegaMed">
+    <xs:sequence>
+      <xs:element name="id_bodega_med" type="xs:int" />
+      <xs:element name="id_medicina" type="xs:int" />
+      <xs:element name="stock" type="xs:int" />
+      <xs:element name="id_inventario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarBodegaMedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarUsuarioPorRutUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="rut_usuario" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarUsuarioPorRutUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:usuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoReporteInventario">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoReporteInventarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:reporteInventario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reporteInventario">
+    <xs:sequence>
+      <xs:element name="cantidad_productos" type="xs:int" />
+      <xs:element minOccurs="0" name="fecha_inventario" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="nom_comercial" type="xs:string" />
+      <xs:element minOccurs="0" name="observaciones" type="xs:string" />
+      <xs:element name="stock" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDonacion">
+    <xs:sequence>
+      <xs:element name="id_donacion" type="xs:int" />
+      <xs:element minOccurs="0" name="fec_donacion" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_donacion" type="xs:string" />
+      <xs:element name="monto" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDonacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoInventario">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoInventarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:inventario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="inventario">
+    <xs:sequence>
+      <xs:element name="cantidad_productos" type="xs:int" />
+      <xs:element minOccurs="0" name="fecha_inventario" type="xs:dateTime" />
+      <xs:element name="id_inventario" type="xs:int" />
+      <xs:element minOccurs="0" name="observaciones" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarFicResidente">
+    <xs:sequence>
+      <xs:element name="id_fic_residente" type="xs:int" />
+      <xs:element minOccurs="0" name="fec_inscripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="comentarios" type="xs:string" />
+      <xs:element minOccurs="0" name="situacion_medica" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarFicResidenteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarParamedicoPorId">
+    <xs:sequence>
+      <xs:element name="id_paramedico" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarParamedicoPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:paramedico" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarResidente">
+    <xs:sequence>
+      <xs:element name="id_residente" type="xs:int" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element name="edad" type="xs:int" />
+      <xs:element name="id_familiar" type="xs:int" />
+      <xs:element name="id_ficresidente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarResidenteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarRol">
+    <xs:sequence>
+      <xs:element name="id_rol" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarRolResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarProveedor">
+    <xs:sequence>
+      <xs:element name="id_proveedor" type="xs:int" />
+      <xs:element minOccurs="0" name="rut_empresa" type="xs:string" />
+      <xs:element minOccurs="0" name="razon_social" type="xs:string" />
+      <xs:element name="id_direccion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarProveedorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDetSolicitudMed">
+    <xs:sequence>
+      <xs:element name="id_det_solic_med" type="xs:int" />
+      <xs:element minOccurs="0" name="estado_solicitud" type="xs:string" />
+      <xs:element minOccurs="0" name="motivo" type="xs:string" />
+      <xs:element minOccurs="0" name="cuidados_espe" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDetSolicitudMedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarContrato">
+    <xs:sequence>
+      <xs:element name="id_contrato" type="xs:int" />
+      <xs:element name="id_det_contrato" type="xs:int" />
+      <xs:element minOccurs="0" name="condiciones_perm" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarContratoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarRol">
+    <xs:sequence>
+      <xs:element name="id_rol" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_rol" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion_rol" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarRolResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDetCompra">
+    <xs:sequence>
+      <xs:element name="id_det_compra" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDetCompraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoMedicina">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoMedicinaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:medicina" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="medicina">
+    <xs:sequence>
+      <xs:element name="cantidad" type="xs:int" />
+      <xs:element minOccurs="0" name="contenido" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="fec_fabricacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fec_vencimiento" type="xs:dateTime" />
+      <xs:element name="id_medicina" type="xs:int" />
+      <xs:element minOccurs="0" name="nom_comercial" type="xs:string" />
+      <xs:element minOccurs="0" name="nom_generico" type="xs:string" />
+      <xs:element minOccurs="0" name="unidad_medida" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarInventarioPorId">
+    <xs:sequence>
+      <xs:element name="id_inventario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarInventarioPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:inventario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoServicio">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoServicioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:servicio" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarFamiliar">
+    <xs:sequence>
+      <xs:element name="id_familiar" type="xs:int" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element minOccurs="0" name="parentezco" type="xs:string" />
+      <xs:element name="id_contrato" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarFamiliarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarRetiro">
+    <xs:sequence>
+      <xs:element name="id_retiro" type="xs:int" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element name="id_direccion" type="xs:int" />
+      <xs:element name="id_donacionpapel" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarRetiroResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDetSolicitudIDMedicina">
+    <xs:sequence>
+      <xs:element name="id_medicina" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDetSolicitudIDMedicinaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:detSolicitud" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarCompra">
+    <xs:sequence>
+      <xs:element name="id_compra" type="xs:int" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element name="montoTotal" type="xs:int" />
+      <xs:element minOccurs="0" name="fecha" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarCompraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarInventarioPorFechaYObs">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fecha_inventario" type="xs:string" />
+      <xs:element minOccurs="0" name="observaciones" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarInventarioPorFechaYObsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarProductoPorId">
+    <xs:sequence>
+      <xs:element name="id_producto" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarProductoPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:producto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="producto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="categoria" type="xs:string" />
+      <xs:element name="id_producto" type="xs:int" />
+      <xs:element name="id_proveedor" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="precio" type="xs:int" />
+      <xs:element minOccurs="0" name="tipo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IngresarEnfermera">
+    <xs:sequence>
+      <xs:element name="id_enfermera" type="xs:int" />
+      <xs:element minOccurs="0" name="turno" type="xs:string" />
+      <xs:element minOccurs="0" name="especialidad" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaIngreso" type="xs:string" />
+      <xs:element name="id_infoPersonal" type="xs:int" />
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IngresarEnfermeraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoFamiliar">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoFamiliarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:familiar" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDetCompra">
+    <xs:sequence>
+      <xs:element name="id_det_compra" type="xs:int" />
+      <xs:element name="cantidad" type="xs:int" />
+      <xs:element name="total" type="xs:int" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element name="id_compra" type="xs:int" />
+      <xs:element name="id_producto" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDetCompraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDetSolicitud">
+    <xs:sequence>
+      <xs:element name="id_det_solicitud" type="xs:int" />
+      <xs:element minOccurs="0" name="fecha" type="xs:string" />
+      <xs:element name="cantidad" type="xs:int" />
+      <xs:element name="id_medicina" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDetSolicitudResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarEnfermera">
+    <xs:sequence>
+      <xs:element name="id_enfermera" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarEnfermeraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarIdHistoMporIdficha">
+    <xs:sequence>
+      <xs:element name="id_fichaResidente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarIdHistoMporIdfichaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:histoMedico" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDonacionPapel">
+    <xs:sequence>
+      <xs:element name="id_donacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDonacionPapelResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarRolPorNombre">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre_rol" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarRolPorNombreResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:rol" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDetContratoPorId">
+    <xs:sequence>
+      <xs:element name="id_det_contrato" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDetContratoPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:detContrato" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="detContrato">
+    <xs:sequence>
+      <xs:element name="costo_total" type="xs:int" />
+      <xs:element name="id_det_contrato" type="xs:int" />
+      <xs:element name="id_servicio" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoReporteCompra">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoReporteCompraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:reporteCompra" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reporteCompra">
+    <xs:sequence>
+      <xs:element name="cantidadDetCom" type="xs:int" />
+      <xs:element minOccurs="0" name="categoriaProd" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcionCom" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcionDetCom" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaCom" type="xs:dateTime" />
+      <xs:element name="id_compraCom" type="xs:int" />
+      <xs:element name="id_detCompraDetCom" type="xs:int" />
+      <xs:element name="id_productoProd" type="xs:int" />
+      <xs:element name="montoTotalCom" type="xs:int" />
+      <xs:element minOccurs="0" name="nombreProd" type="xs:string" />
+      <xs:element name="precioProd" type="xs:int" />
+      <xs:element minOccurs="0" name="tipoProd" type="xs:string" />
+      <xs:element name="totalDetCom" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarRetiroPorId">
+    <xs:sequence>
+      <xs:element name="id_retiro" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarRetiroPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:retiro" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDetCompraPorDescripcionYIdProd">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element name="id_producto" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDetCompraPorDescripcionYIdProdResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarFamiliar">
+    <xs:sequence>
+      <xs:element name="id_familiar" type="xs:int" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element minOccurs="0" name="parentezco" type="xs:string" />
+      <xs:element name="id_contrato" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarFamiliarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarFamiliar">
+    <xs:sequence>
+      <xs:element name="id_familiar" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarFamiliarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarInfoPersonal">
+    <xs:sequence>
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidopat" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidomat" type="xs:string" />
+      <xs:element minOccurs="0" name="rut" type="xs:string" />
+      <xs:element minOccurs="0" name="fechanac" type="xs:string" />
+      <xs:element name="telefono" type="xs:int" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element name="id_direccion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarInfoPersonalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarMedicinaPorNombreComercial">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nom_comercial" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarMedicinaPorNombreComercialResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:medicina" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDetSolicitudMedpormotcuida">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="motivo" type="xs:string" />
+      <xs:element minOccurs="0" name="Cuidados_Especiales" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDetSolicitudMedpormotcuidaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:detSolicitudMed" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarMandato">
+    <xs:sequence>
+      <xs:element name="id_mandato" type="xs:int" />
+      <xs:element name="nro_tarjeta" type="xs:int" />
+      <xs:element minOccurs="0" name="fec_creacion" type="xs:string" />
+      <xs:element minOccurs="0" name="fec_modificacion" type="xs:string" />
+      <xs:element name="id_donacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarMandatoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDonacionPapel">
+    <xs:sequence>
+      <xs:element name="id_donacionpapel" type="xs:int" />
+      <xs:element minOccurs="0" name="fec_donacionpapel" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_donacionpapel" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_donacionpapel" type="xs:string" />
+      <xs:element name="peso_donacionpapel" type="xs:int" />
+      <xs:element name="id_donacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDonacionPapelResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarBodegaProd">
+    <xs:sequence>
+      <xs:element name="id_bodega_prod" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarBodegaProdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarProveedor">
+    <xs:sequence>
+      <xs:element name="id_proveedor" type="xs:int" />
+      <xs:element minOccurs="0" name="rut_empresa" type="xs:string" />
+      <xs:element minOccurs="0" name="razon_social" type="xs:string" />
+      <xs:element name="id_direccion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarProveedorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarAportador">
+    <xs:sequence>
+      <xs:element name="id_aportador" type="xs:int" />
+      <xs:element minOccurs="0" name="fecha_inscripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="xs:string" />
+      <xs:element name="id_mandato" type="xs:int" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarAportadorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoRol">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoRolResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:rol" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarInfoPersonalPorId">
+    <xs:sequence>
+      <xs:element name="id_infopersonal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarInfoPersonalPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:infoPersonal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoContrato">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoContratoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:contrato" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarMedicina">
+    <xs:sequence>
+      <xs:element name="id_medicina" type="xs:int" />
+      <xs:element minOccurs="0" name="nom_comercial" type="xs:string" />
+      <xs:element minOccurs="0" name="nom_generico" type="xs:string" />
+      <xs:element minOccurs="0" name="contenido" type="xs:string" />
+      <xs:element minOccurs="0" name="unidad_medida" type="xs:string" />
+      <xs:element minOccurs="0" name="fec_fabricacion" type="xs:string" />
+      <xs:element minOccurs="0" name="fec_vencimiento" type="xs:string" />
+      <xs:element name="cantidad" type="xs:int" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarMedicinaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarProducto">
+    <xs:sequence>
+      <xs:element name="id_producto" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="categoria" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo" type="xs:string" />
+      <xs:element name="precio" type="xs:int" />
+      <xs:element name="id_proveedor" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarProductoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarCompra">
+    <xs:sequence>
+      <xs:element name="id_compra" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarCompraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoBodegaMed">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoBodegaMedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:bodegaMed" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bodegaMed">
+    <xs:sequence>
+      <xs:element name="id_bodega_med" type="xs:int" />
+      <xs:element name="id_inventario" type="xs:int" />
+      <xs:element name="id_medicina" type="xs:int" />
+      <xs:element name="stock" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarProducto">
+    <xs:sequence>
+      <xs:element name="id_producto" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="categoria" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo" type="xs:string" />
+      <xs:element name="precio" type="xs:int" />
+      <xs:element name="id_proveedor" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarProductoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarMedicina">
+    <xs:sequence>
+      <xs:element name="id_medicina" type="xs:int" />
+      <xs:element minOccurs="0" name="nom_comercial" type="xs:string" />
+      <xs:element minOccurs="0" name="nom_generico" type="xs:string" />
+      <xs:element minOccurs="0" name="contenido" type="xs:string" />
+      <xs:element minOccurs="0" name="unidad_medida" type="xs:string" />
+      <xs:element minOccurs="0" name="fec_fabricacion" type="xs:string" />
+      <xs:element minOccurs="0" name="fec_vencimiento" type="xs:string" />
+      <xs:element name="cantidad" type="xs:int" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarMedicinaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IngresarParamedico">
+    <xs:sequence>
+      <xs:element name="id_paramedico" type="xs:int" />
+      <xs:element minOccurs="0" name="turno" type="xs:string" />
+      <xs:element minOccurs="0" name="especialidad" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaIngreso" type="xs:string" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IngresarParamedicoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoDonacion">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoDonacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:donacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="donacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado_donacion" type="xs:string" />
+      <xs:element minOccurs="0" name="fec_donacion" type="xs:dateTime" />
+      <xs:element name="id_donacion" type="xs:int" />
+      <xs:element name="monto" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoResidente">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoResidenteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:residente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarMedicinaPorNombre">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nom_comercial" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarMedicinaPorNombreResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarProducto">
+    <xs:sequence>
+      <xs:element name="id_producto" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarProductoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDetCompraPorId">
+    <xs:sequence>
+      <xs:element name="id_det_compra" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDetCompraPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:detCompra" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDonacionPapel">
+    <xs:sequence>
+      <xs:element name="id_donacionpapel" type="xs:int" />
+      <xs:element minOccurs="0" name="fec_donacionpapel" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_donacionpapel" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_donacionpapel" type="xs:string" />
+      <xs:element name="peso_donacionpapel" type="xs:int" />
+      <xs:element name="id_donacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDonacionPapelResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarCompraPorFecha">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fecha" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarCompraPorFechaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:compra" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarParamedicoPorIdInfoP">
+    <xs:sequence>
+      <xs:element name="id_infopersonal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarParamedicoPorIdInfoPResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:paramedico" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarProveedorPorId">
+    <xs:sequence>
+      <xs:element name="id_proveedor" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarProveedorPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:proveedor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarResidente">
+    <xs:sequence>
+      <xs:element name="id_residente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarResidenteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarFicResidente">
+    <xs:sequence>
+      <xs:element name="id_fic_residente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarFicResidenteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarMedicinaPorId">
+    <xs:sequence>
+      <xs:element name="id_medicina" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarMedicinaPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:medicina" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarMandatoPorId">
+    <xs:sequence>
+      <xs:element name="id_mandato" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarMandatoPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:mandato" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="mandato">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fec_creacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fec_modificacion" type="xs:dateTime" />
+      <xs:element name="id_donacion" type="xs:int" />
+      <xs:element name="id_mandato" type="xs:int" />
+      <xs:element name="nro_tarjeta" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarMandato">
+    <xs:sequence>
+      <xs:element name="id_mandato" type="xs:int" />
+      <xs:element name="nro_tarjeta" type="xs:int" />
+      <xs:element minOccurs="0" name="fec_creacion" type="xs:string" />
+      <xs:element minOccurs="0" name="fec_modificacion" type="xs:string" />
+      <xs:element name="id_donacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarMandatoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoMandato">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoMandatoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:mandato" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoDetSolicitud">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoDetSolicitudResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:detSolicitud" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoDetContrato">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoDetContratoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:detContrato" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarHistoMedico">
+    <xs:sequence>
+      <xs:element name="id_historialmed" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarHistoMedicoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoAportador">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoAportadorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:aportador" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarUsuario">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarResidentePorIdInforPersonal">
+    <xs:sequence>
+      <xs:element name="id_infopersonal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarResidentePorIdInforPersonalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:residente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDonacion">
+    <xs:sequence>
+      <xs:element name="id_donacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDonacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarAportador">
+    <xs:sequence>
+      <xs:element name="id_aportador" type="xs:int" />
+      <xs:element minOccurs="0" name="fecha_inscripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="xs:string" />
+      <xs:element name="id_mandato" type="xs:int" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarAportadorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDonacionPapelPorId">
+    <xs:sequence>
+      <xs:element name="id_donacionpapel" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDonacionPapelPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:donacionpapel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoBodegaProd">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoBodegaProdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:bodegaProd" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarMandato">
+    <xs:sequence>
+      <xs:element name="id_mandato" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarMandatoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarUsuario">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+      <xs:element minOccurs="0" name="rut_usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
+      <xs:element name="id_rol" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoProducto">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoProductoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:producto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarEnfermeraPorIdInfoP">
+    <xs:sequence>
+      <xs:element name="id_infopersonal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarEnfermeraPorIdInfoPResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:enfermera" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDonacion">
+    <xs:sequence>
+      <xs:element name="id_donacion" type="xs:int" />
+      <xs:element minOccurs="0" name="fec_donacion" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_donacion" type="xs:string" />
+      <xs:element name="monto" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDonacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoUsuario">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:usuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDetContrato">
+    <xs:sequence>
+      <xs:element name="id_det_contrato" type="xs:int" />
+      <xs:element name="id_servicio" type="xs:int" />
+      <xs:element name="costo_total" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDetContratoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarProveedor">
+    <xs:sequence>
+      <xs:element name="id_proveedor" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarProveedorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarAportador">
+    <xs:sequence>
+      <xs:element name="id_aportador" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarAportadorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarHistoMedicoPorId">
+    <xs:sequence>
+      <xs:element name="id_historialmed" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarHistoMedicoPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:histoMedico" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDetSolicitud">
+    <xs:sequence>
+      <xs:element name="id_det_solicitud" type="xs:int" />
+      <xs:element minOccurs="0" name="fecha" type="xs:string" />
+      <xs:element name="cantidad" type="xs:int" />
+      <xs:element name="id_medicina" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDetSolicitudResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDonacionPorId">
+    <xs:sequence>
+      <xs:element name="id_donacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDonacionPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:donacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarContrato">
+    <xs:sequence>
+      <xs:element name="id_contrato" type="xs:int" />
+      <xs:element name="id_det_contrato" type="xs:int" />
+      <xs:element minOccurs="0" name="condiciones_perm" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarContratoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDetCompra">
+    <xs:sequence>
+      <xs:element name="id_det_compra" type="xs:int" />
+      <xs:element name="cantidad" type="xs:int" />
+      <xs:element name="total" type="xs:int" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element name="id_compra" type="xs:int" />
+      <xs:element name="id_producto" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDetCompraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarResidentePorId">
+    <xs:sequence>
+      <xs:element name="id_residente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarResidentePorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:residente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarCompraPorId">
+    <xs:sequence>
+      <xs:element name="id_compra" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarCompraPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:compra" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarProductoPorNombre">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarProductoPorNombreResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:producto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarRetiro">
+    <xs:sequence>
+      <xs:element name="id_retiro" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarRetiroResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarBodegaMedPorId">
+    <xs:sequence>
+      <xs:element name="id_bodega_med" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarBodegaMedPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:bodegaMed" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarFicResidentePorComSitua">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="comentarios" type="xs:string" />
+      <xs:element minOccurs="0" name="situacion_medica" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarFicResidentePorComSituaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:ficResidente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarBodegaProd">
+    <xs:sequence>
+      <xs:element name="id_bodega_prod" type="xs:int" />
+      <xs:element name="id_producto" type="xs:int" />
+      <xs:element name="stock" type="xs:int" />
+      <xs:element name="id_inventario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarBodegaProdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

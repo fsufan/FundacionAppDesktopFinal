@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CapaNegocio.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Negocio_webServiceFundacion_webServiceFundacion" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8281/FundacionWS/webServiceFundacion</Value>
+    </Setting>
+    <Setting Name="Negocio_localhost_WebServiceModaOutlet" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8281/ModaOutletWS/WebServiceModaOutlet</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

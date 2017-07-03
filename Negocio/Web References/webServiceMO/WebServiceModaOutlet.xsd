@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://WebServices/" targetNamespace="http://WebServices/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="buscarAportadorPorId" type="tns:buscarAportadorPorId" />
+  <xs:element name="buscarAportadorPorIdResponse" type="tns:buscarAportadorPorIdResponse" />
+  <xs:element name="buscarAportadorPorUsuario" type="tns:buscarAportadorPorUsuario" />
+  <xs:element name="buscarAportadorPorUsuarioResponse" type="tns:buscarAportadorPorUsuarioResponse" />
+  <xs:element name="buscarDireccionPorCalle" type="tns:buscarDireccionPorCalle" />
+  <xs:element name="buscarDireccionPorCalleResponse" type="tns:buscarDireccionPorCalleResponse" />
+  <xs:element name="buscarDireccionPorId" type="tns:buscarDireccionPorId" />
+  <xs:element name="buscarDireccionPorIdResponse" type="tns:buscarDireccionPorIdResponse" />
+  <xs:element name="buscarDonacionPapelPorId" type="tns:buscarDonacionPapelPorId" />
+  <xs:element name="buscarDonacionPapelPorIdDonacion" type="tns:buscarDonacionPapelPorIdDonacion" />
+  <xs:element name="buscarDonacionPapelPorIdDonacionResponse" type="tns:buscarDonacionPapelPorIdDonacionResponse" />
+  <xs:element name="buscarDonacionPapelPorIdResponse" type="tns:buscarDonacionPapelPorIdResponse" />
+  <xs:element name="buscarDonacionPorId" type="tns:buscarDonacionPorId" />
+  <xs:element name="buscarDonacionPorIdResponse" type="tns:buscarDonacionPorIdResponse" />
+  <xs:element name="buscarDonacionPorRut" type="tns:buscarDonacionPorRut" />
+  <xs:element name="buscarDonacionPorRutMonto" type="tns:buscarDonacionPorRutMonto" />
+  <xs:element name="buscarDonacionPorRutMontoResponse" type="tns:buscarDonacionPorRutMontoResponse" />
+  <xs:element name="buscarDonacionPorRutResponse" type="tns:buscarDonacionPorRutResponse" />
+  <xs:element name="buscarInfoPersonalPorId" type="tns:buscarInfoPersonalPorId" />
+  <xs:element name="buscarInfoPersonalPorIdResponse" type="tns:buscarInfoPersonalPorIdResponse" />
+  <xs:element name="buscarInfoPersonalPorRut" type="tns:buscarInfoPersonalPorRut" />
+  <xs:element name="buscarInfoPersonalPorRutResponse" type="tns:buscarInfoPersonalPorRutResponse" />
+  <xs:element name="buscarMandatoPorId" type="tns:buscarMandatoPorId" />
+  <xs:element name="buscarMandatoPorIdResponse" type="tns:buscarMandatoPorIdResponse" />
+  <xs:element name="buscarRetiroPorId" type="tns:buscarRetiroPorId" />
+  <xs:element name="buscarRetiroPorIdDonacionPapel" type="tns:buscarRetiroPorIdDonacionPapel" />
+  <xs:element name="buscarRetiroPorIdDonacionPapelResponse" type="tns:buscarRetiroPorIdDonacionPapelResponse" />
+  <xs:element name="buscarRetiroPorIdResponse" type="tns:buscarRetiroPorIdResponse" />
+  <xs:element name="buscarRolPorId" type="tns:buscarRolPorId" />
+  <xs:element name="buscarRolPorIdResponse" type="tns:buscarRolPorIdResponse" />
+  <xs:element name="buscarRolPorNombre" type="tns:buscarRolPorNombre" />
+  <xs:element name="buscarRolPorNombreResponse" type="tns:buscarRolPorNombreResponse" />
+  <xs:element name="buscarUsuarioPorId" type="tns:buscarUsuarioPorId" />
+  <xs:element name="buscarUsuarioPorIdResponse" type="tns:buscarUsuarioPorIdResponse" />
+  <xs:element name="buscarUsuarioPorRut" type="tns:buscarUsuarioPorRut" />
+  <xs:element name="buscarUsuarioPorRutResponse" type="tns:buscarUsuarioPorRutResponse" />
+  <xs:element name="eliminarAportador" type="tns:eliminarAportador" />
+  <xs:element name="eliminarAportadorResponse" type="tns:eliminarAportadorResponse" />
+  <xs:element name="eliminarDireccion" type="tns:eliminarDireccion" />
+  <xs:element name="eliminarDireccionResponse" type="tns:eliminarDireccionResponse" />
+  <xs:element name="eliminarDonacion" type="tns:eliminarDonacion" />
+  <xs:element name="eliminarDonacionPapel" type="tns:eliminarDonacionPapel" />
+  <xs:element name="eliminarDonacionPapelResponse" type="tns:eliminarDonacionPapelResponse" />
+  <xs:element name="eliminarDonacionResponse" type="tns:eliminarDonacionResponse" />
+  <xs:element name="eliminarInfoPersonal" type="tns:eliminarInfoPersonal" />
+  <xs:element name="eliminarInfoPersonalResponse" type="tns:eliminarInfoPersonalResponse" />
+  <xs:element name="eliminarMandato" type="tns:eliminarMandato" />
+  <xs:element name="eliminarMandatoResponse" type="tns:eliminarMandatoResponse" />
+  <xs:element name="eliminarRetiro" type="tns:eliminarRetiro" />
+  <xs:element name="eliminarRetiroResponse" type="tns:eliminarRetiroResponse" />
+  <xs:element name="eliminarRol" type="tns:eliminarRol" />
+  <xs:element name="eliminarRolResponse" type="tns:eliminarRolResponse" />
+  <xs:element name="eliminarUsuario" type="tns:eliminarUsuario" />
+  <xs:element name="eliminarUsuarioResponse" type="tns:eliminarUsuarioResponse" />
+  <xs:element name="ingresarAportador" type="tns:ingresarAportador" />
+  <xs:element name="ingresarAportadorResponse" type="tns:ingresarAportadorResponse" />
+  <xs:element name="ingresarDireccion" type="tns:ingresarDireccion" />
+  <xs:element name="ingresarDireccionResponse" type="tns:ingresarDireccionResponse" />
+  <xs:element name="ingresarDonacion" type="tns:ingresarDonacion" />
+  <xs:element name="ingresarDonacionPapel" type="tns:ingresarDonacionPapel" />
+  <xs:element name="ingresarDonacionPapelResponse" type="tns:ingresarDonacionPapelResponse" />
+  <xs:element name="ingresarDonacionResponse" type="tns:ingresarDonacionResponse" />
+  <xs:element name="ingresarInfoPersonal" type="tns:ingresarInfoPersonal" />
+  <xs:element name="ingresarInfoPersonalResponse" type="tns:ingresarInfoPersonalResponse" />
+  <xs:element name="ingresarMandato" type="tns:ingresarMandato" />
+  <xs:element name="ingresarMandatoResponse" type="tns:ingresarMandatoResponse" />
+  <xs:element name="ingresarRetiro" type="tns:ingresarRetiro" />
+  <xs:element name="ingresarRetiroResponse" type="tns:ingresarRetiroResponse" />
+  <xs:element name="ingresarRol" type="tns:ingresarRol" />
+  <xs:element name="ingresarRolResponse" type="tns:ingresarRolResponse" />
+  <xs:element name="ingresarUsuario" type="tns:ingresarUsuario" />
+  <xs:element name="ingresarUsuarioResponse" type="tns:ingresarUsuarioResponse" />
+  <xs:element name="listadoAportador" type="tns:listadoAportador" />
+  <xs:element name="listadoAportadorResponse" type="tns:listadoAportadorResponse" />
+  <xs:element name="listadoDireccion" type="tns:listadoDireccion" />
+  <xs:element name="listadoDireccionResponse" type="tns:listadoDireccionResponse" />
+  <xs:element name="listadoDonacion" type="tns:listadoDonacion" />
+  <xs:element name="listadoDonacionPapel" type="tns:listadoDonacionPapel" />
+  <xs:element name="listadoDonacionPapelResponse" type="tns:listadoDonacionPapelResponse" />
+  <xs:element name="listadoDonacionResponse" type="tns:listadoDonacionResponse" />
+  <xs:element name="listadoInfoPersonal" type="tns:listadoInfoPersonal" />
+  <xs:element name="listadoInfoPersonalResponse" type="tns:listadoInfoPersonalResponse" />
+  <xs:element name="listadoMandato" type="tns:listadoMandato" />
+  <xs:element name="listadoMandatoResponse" type="tns:listadoMandatoResponse" />
+  <xs:element name="listadoRetiro" type="tns:listadoRetiro" />
+  <xs:element name="listadoRetiroResponse" type="tns:listadoRetiroResponse" />
+  <xs:element name="listadoRol" type="tns:listadoRol" />
+  <xs:element name="listadoRolResponse" type="tns:listadoRolResponse" />
+  <xs:element name="listadoUsuario" type="tns:listadoUsuario" />
+  <xs:element name="listadoUsuarioResponse" type="tns:listadoUsuarioResponse" />
+  <xs:element name="modificarAportador" type="tns:modificarAportador" />
+  <xs:element name="modificarAportadorResponse" type="tns:modificarAportadorResponse" />
+  <xs:element name="modificarDireccion" type="tns:modificarDireccion" />
+  <xs:element name="modificarDireccionResponse" type="tns:modificarDireccionResponse" />
+  <xs:element name="modificarDonacion" type="tns:modificarDonacion" />
+  <xs:element name="modificarDonacionPapel" type="tns:modificarDonacionPapel" />
+  <xs:element name="modificarDonacionPapelResponse" type="tns:modificarDonacionPapelResponse" />
+  <xs:element name="modificarDonacionResponse" type="tns:modificarDonacionResponse" />
+  <xs:element name="modificarEstado" type="tns:modificarEstado" />
+  <xs:element name="modificarEstadoResponse" type="tns:modificarEstadoResponse" />
+  <xs:element name="modificarInfoPersonal" type="tns:modificarInfoPersonal" />
+  <xs:element name="modificarInfoPersonalResponse" type="tns:modificarInfoPersonalResponse" />
+  <xs:element name="modificarMandato" type="tns:modificarMandato" />
+  <xs:element name="modificarMandatoResponse" type="tns:modificarMandatoResponse" />
+  <xs:element name="modificarRetiro" type="tns:modificarRetiro" />
+  <xs:element name="modificarRetiroResponse" type="tns:modificarRetiroResponse" />
+  <xs:element name="modificarRol" type="tns:modificarRol" />
+  <xs:element name="modificarRolResponse" type="tns:modificarRolResponse" />
+  <xs:element name="modificarUsuario" type="tns:modificarUsuario" />
+  <xs:element name="modificarUsuarioResponse" type="tns:modificarUsuarioResponse" />
+  <xs:complexType name="modificarRol">
+    <xs:sequence>
+      <xs:element name="id_rol" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_rol" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion_rol" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarRolResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarUsuarioPorRut">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="rut_usuario" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarUsuarioPorRutResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:usuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="usuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
+      <xs:element name="id_rol" type="xs:int" />
+      <xs:element name="id_usuario" type="xs:int" />
+      <xs:element minOccurs="0" name="rut_usuario" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarRetiro">
+    <xs:sequence>
+      <xs:element name="id_retiro" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarRetiroResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarAportador">
+    <xs:sequence>
+      <xs:element name="id_aportador" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarAportadorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDonacion">
+    <xs:sequence>
+      <xs:element name="id_donacion" type="xs:int" />
+      <xs:element minOccurs="0" name="fec_donacion" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_donacion" type="xs:string" />
+      <xs:element name="monto" type="xs:int" />
+      <xs:element minOccurs="0" name="rut_donante" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDonacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoUsuario">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:usuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDonacionPorId">
+    <xs:sequence>
+      <xs:element name="id_donacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDonacionPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:donacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="donacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado_donacion" type="xs:string" />
+      <xs:element minOccurs="0" name="fec_donacion" type="xs:dateTime" />
+      <xs:element name="id_donacion" type="xs:int" />
+      <xs:element name="monto" type="xs:int" />
+      <xs:element minOccurs="0" name="rut_donante" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarRol">
+    <xs:sequence>
+      <xs:element name="id_rol" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarRolResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDonacionPapelPorIdDonacion">
+    <xs:sequence>
+      <xs:element name="id_donacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDonacionPapelPorIdDonacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:donacionpapel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="donacionpapel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado_donacionpapel" type="xs:string" />
+      <xs:element minOccurs="0" name="fec_donacionpapel" type="xs:dateTime" />
+      <xs:element name="id_donacion" type="xs:int" />
+      <xs:element name="id_donacionpapel" type="xs:int" />
+      <xs:element name="peso_donacionpapel" type="xs:int" />
+      <xs:element minOccurs="0" name="tipo_donacionpapel" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarMandato">
+    <xs:sequence>
+      <xs:element name="id_mandato" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarMandatoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarUsuario">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+      <xs:element minOccurs="0" name="rut_usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
+      <xs:element name="id_rol" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDonacion">
+    <xs:sequence>
+      <xs:element name="id_donacion" type="xs:int" />
+      <xs:element minOccurs="0" name="fec_donacion" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_donacion" type="xs:string" />
+      <xs:element name="monto" type="xs:int" />
+      <xs:element minOccurs="0" name="rut_donante" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDonacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarUsuario">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoAportador">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoAportadorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:aportador" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="aportador">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_inscripcion" type="xs:dateTime" />
+      <xs:element name="id_aportador" type="xs:int" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDonacion">
+    <xs:sequence>
+      <xs:element name="id_donacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDonacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarAportador">
+    <xs:sequence>
+      <xs:element name="id_aportador" type="xs:int" />
+      <xs:element minOccurs="0" name="fecha_inscripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="xs:string" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarAportadorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDonacionPapelPorId">
+    <xs:sequence>
+      <xs:element name="id_donacionpapel" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDonacionPapelPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:donacionpapel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoInfoPersonal">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoInfoPersonalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:infoPersonal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="infoPersonal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellidoMat" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoPat" type="xs:string" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element minOccurs="0" name="fechanac" type="xs:dateTime" />
+      <xs:element name="id_direccion" type="xs:int" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="rut" type="xs:string" />
+      <xs:element name="telefono" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoMandato">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoMandatoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:mandato" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="mandato">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fec_creacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fec_modificacion" type="xs:dateTime" />
+      <xs:element name="id_aportador" type="xs:int" />
+      <xs:element name="id_donacion" type="xs:int" />
+      <xs:element name="id_mandato" type="xs:int" />
+      <xs:element name="nro_tarjeta" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDireccion">
+    <xs:sequence>
+      <xs:element name="id_direccion" type="xs:int" />
+      <xs:element minOccurs="0" name="calle" type="xs:string" />
+      <xs:element minOccurs="0" name="comuna" type="xs:string" />
+      <xs:element minOccurs="0" name="ciudad" type="xs:string" />
+      <xs:element minOccurs="0" name="region" type="xs:string" />
+      <xs:element name="codigoPostal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDireccionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarInfoPersonal">
+    <xs:sequence>
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidopat" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidomat" type="xs:string" />
+      <xs:element minOccurs="0" name="rut" type="xs:string" />
+      <xs:element minOccurs="0" name="fechanac" type="xs:string" />
+      <xs:element name="telefono" type="xs:int" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element name="id_direccion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarInfoPersonalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDireccionPorId">
+    <xs:sequence>
+      <xs:element name="id_direccion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDireccionPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:direccion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="direccion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="calle" type="xs:string" />
+      <xs:element minOccurs="0" name="ciudad" type="xs:string" />
+      <xs:element name="codigoPostal" type="xs:int" />
+      <xs:element minOccurs="0" name="comuna" type="xs:string" />
+      <xs:element name="id_direccion" type="xs:int" />
+      <xs:element minOccurs="0" name="region" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoDireccion">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoDireccionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:direccion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarRolPorId">
+    <xs:sequence>
+      <xs:element name="id_rol" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarRolPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:rol" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rol">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion_rol" type="xs:string" />
+      <xs:element name="id_rol" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_rol" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarMandato">
+    <xs:sequence>
+      <xs:element name="id_mandato" type="xs:int" />
+      <xs:element name="nro_tarjeta" type="xs:int" />
+      <xs:element minOccurs="0" name="fec_creacion" type="xs:string" />
+      <xs:element minOccurs="0" name="fec_modificacion" type="xs:string" />
+      <xs:element name="id_donacion" type="xs:int" />
+      <xs:element name="id_aportador" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarMandatoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarMandatoPorId">
+    <xs:sequence>
+      <xs:element name="id_mandato" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarMandatoPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:mandato" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarUsuarioPorId">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarUsuarioPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:usuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarRetiroPorIdDonacionPapel">
+    <xs:sequence>
+      <xs:element name="id_donacionpapel" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarRetiroPorIdDonacionPapelResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:retiro" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="retiro">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element name="id_direccion" type="xs:int" />
+      <xs:element name="id_donacionpapel" type="xs:int" />
+      <xs:element name="id_retiro" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarInfoPersonalPorRut">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="rut" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarInfoPersonalPorRutResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:infoPersonal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoRetiro">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoRetiroResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:retiro" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDonacionPapel">
+    <xs:sequence>
+      <xs:element name="id_donacionpapel" type="xs:int" />
+      <xs:element minOccurs="0" name="fec_donacionpapel" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_donacionpapel" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_donacionpapel" type="xs:string" />
+      <xs:element name="peso_donacionpapel" type="xs:int" />
+      <xs:element name="id_donacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDonacionPapelResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDireccionPorCalle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="calle" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDireccionPorCalleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:direccion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarEstado">
+    <xs:sequence>
+      <xs:element name="id_aportador" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarEstadoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDireccion">
+    <xs:sequence>
+      <xs:element name="id_direccion" type="xs:int" />
+      <xs:element minOccurs="0" name="calle" type="xs:string" />
+      <xs:element minOccurs="0" name="comuna" type="xs:string" />
+      <xs:element minOccurs="0" name="ciudad" type="xs:string" />
+      <xs:element minOccurs="0" name="region" type="xs:string" />
+      <xs:element name="codigoPostal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDireccionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoDonacion">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoDonacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:donacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoDonacionPapel">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoDonacionPapelResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:donacionpapel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarUsuario">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+      <xs:element minOccurs="0" name="rut_usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
+      <xs:element name="id_rol" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDireccion">
+    <xs:sequence>
+      <xs:element name="id_direccion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDireccionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarAportador">
+    <xs:sequence>
+      <xs:element name="id_aportador" type="xs:int" />
+      <xs:element minOccurs="0" name="fecha_inscripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="xs:string" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarAportadorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoRol">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoRolResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:rol" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarInfoPersonalPorId">
+    <xs:sequence>
+      <xs:element name="id_infopersonal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarInfoPersonalPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:infoPersonal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarRetiro">
+    <xs:sequence>
+      <xs:element name="id_retiro" type="xs:int" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element name="id_direccion" type="xs:int" />
+      <xs:element name="id_donacionpapel" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarRetiroResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDonacionPapel">
+    <xs:sequence>
+      <xs:element name="id_donacionpapel" type="xs:int" />
+      <xs:element minOccurs="0" name="fec_donacionpapel" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_donacionpapel" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_donacionpapel" type="xs:string" />
+      <xs:element name="peso_donacionpapel" type="xs:int" />
+      <xs:element name="id_donacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDonacionPapelResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarMandato">
+    <xs:sequence>
+      <xs:element name="id_mandato" type="xs:int" />
+      <xs:element name="nro_tarjeta" type="xs:int" />
+      <xs:element minOccurs="0" name="fec_creacion" type="xs:string" />
+      <xs:element minOccurs="0" name="fec_modificacion" type="xs:string" />
+      <xs:element name="id_donacion" type="xs:int" />
+      <xs:element name="id_aportador" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarMandatoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarRol">
+    <xs:sequence>
+      <xs:element name="id_rol" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_rol" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion_rol" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarRolResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarAportadorPorId">
+    <xs:sequence>
+      <xs:element name="id_aportador" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarAportadorPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:aportador" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarInfoPersonal">
+    <xs:sequence>
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidopat" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidomat" type="xs:string" />
+      <xs:element minOccurs="0" name="rut" type="xs:string" />
+      <xs:element minOccurs="0" name="fechanac" type="xs:string" />
+      <xs:element name="telefono" type="xs:int" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element name="id_direccion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarInfoPersonalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDonacionPapel">
+    <xs:sequence>
+      <xs:element name="id_donacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDonacionPapelResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarRolPorNombre">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre_rol" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarRolPorNombreResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:rol" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarRetiroPorId">
+    <xs:sequence>
+      <xs:element name="id_retiro" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarRetiroPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:retiro" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarRetiro">
+    <xs:sequence>
+      <xs:element name="id_retiro" type="xs:int" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element name="id_direccion" type="xs:int" />
+      <xs:element name="id_donacionpapel" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarRetiroResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarInfoPersonal">
+    <xs:sequence>
+      <xs:element name="id_infopersonal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarInfoPersonalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDonacionPorRut">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="rut_donacion" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDonacionPorRutResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:donacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarAportadorPorUsuario">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarAportadorPorUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:aportador" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDonacionPorRutMonto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="rut_donacion" type="xs:string" />
+      <xs:element name="monto" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDonacionPorRutMontoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:donacion" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

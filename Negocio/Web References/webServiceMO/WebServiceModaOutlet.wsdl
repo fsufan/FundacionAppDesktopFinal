@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://WebServices/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="WebServiceModaOutlet" targetNamespace="http://WebServices/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8281/ModaOutletWS/WebServiceModaOutlet?xsd=1" namespace="http://WebServices/" />
+    </xsd:schema>
+  </types>
+  <message name="listadoAportador">
+    <part name="parameters" element="tns:listadoAportador" />
+  </message>
+  <message name="listadoAportadorResponse">
+    <part name="parameters" element="tns:listadoAportadorResponse" />
+  </message>
+  <message name="listadoDireccion">
+    <part name="parameters" element="tns:listadoDireccion" />
+  </message>
+  <message name="listadoDireccionResponse">
+    <part name="parameters" element="tns:listadoDireccionResponse" />
+  </message>
+  <message name="ingresarDonacion">
+    <part name="parameters" element="tns:ingresarDonacion" />
+  </message>
+  <message name="ingresarDonacionResponse">
+    <part name="parameters" element="tns:ingresarDonacionResponse" />
+  </message>
+  <message name="listadoDonacion">
+    <part name="parameters" element="tns:listadoDonacion" />
+  </message>
+  <message name="listadoDonacionResponse">
+    <part name="parameters" element="tns:listadoDonacionResponse" />
+  </message>
+  <message name="eliminarDonacion">
+    <part name="parameters" element="tns:eliminarDonacion" />
+  </message>
+  <message name="eliminarDonacionResponse">
+    <part name="parameters" element="tns:eliminarDonacionResponse" />
+  </message>
+  <message name="ingresarMandato">
+    <part name="parameters" element="tns:ingresarMandato" />
+  </message>
+  <message name="ingresarMandatoResponse">
+    <part name="parameters" element="tns:ingresarMandatoResponse" />
+  </message>
+  <message name="modificarMandato">
+    <part name="parameters" element="tns:modificarMandato" />
+  </message>
+  <message name="modificarMandatoResponse">
+    <part name="parameters" element="tns:modificarMandatoResponse" />
+  </message>
+  <message name="listadoMandato">
+    <part name="parameters" element="tns:listadoMandato" />
+  </message>
+  <message name="listadoMandatoResponse">
+    <part name="parameters" element="tns:listadoMandatoResponse" />
+  </message>
+  <message name="eliminarMandato">
+    <part name="parameters" element="tns:eliminarMandato" />
+  </message>
+  <message name="eliminarMandatoResponse">
+    <part name="parameters" element="tns:eliminarMandatoResponse" />
+  </message>
+  <message name="ingresarRetiro">
+    <part name="parameters" element="tns:ingresarRetiro" />
+  </message>
+  <message name="ingresarRetiroResponse">
+    <part name="parameters" element="tns:ingresarRetiroResponse" />
+  </message>
+  <message name="modificarRetiro">
+    <part name="parameters" element="tns:modificarRetiro" />
+  </message>
+  <message name="modificarRetiroResponse">
+    <part name="parameters" element="tns:modificarRetiroResponse" />
+  </message>
+  <message name="listadoRetiro">
+    <part name="parameters" element="tns:listadoRetiro" />
+  </message>
+  <message name="listadoRetiroResponse">
+    <part name="parameters" element="tns:listadoRetiroResponse" />
+  </message>
+  <message name="eliminarRetiro">
+    <part name="parameters" element="tns:eliminarRetiro" />
+  </message>
+  <message name="eliminarRetiroResponse">
+    <part name="parameters" element="tns:eliminarRetiroResponse" />
+  </message>
+  <message name="ingresarRol">
+    <part name="parameters" element="tns:ingresarRol" />
+  </message>
+  <message name="ingresarRolResponse">
+    <part name="parameters" element="tns:ingresarRolResponse" />
+  </message>
+  <message name="modificarRol">
+    <part name="parameters" element="tns:modificarRol" />
+  </message>
+  <message name="modificarRolResponse">
+    <part name="parameters" element="tns:modificarRolResponse" />
+  </message>
+  <message name="buscarRolPorId">
+    <part name="parameters" element="tns:buscarRolPorId" />
+  </message>
+  <message name="buscarRolPorIdResponse">
+    <part name="parameters" element="tns:buscarRolPorIdResponse" />
+  </message>
+  <message name="listadoRol">
+    <part name="parameters" element="tns:listadoRol" />
+  </message>
+  <message name="listadoRolResponse">
+    <part name="parameters" element="tns:listadoRolResponse" />
+  </message>
+  <message name="eliminarRol">
+    <part name="parameters" element="tns:eliminarRol" />
+  </message>
+  <message name="eliminarRolResponse">
+    <part name="parameters" element="tns:eliminarRolResponse" />
+  </message>
+  <message name="ingresarUsuario">
+    <part name="parameters" element="tns:ingresarUsuario" />
+  </message>
+  <message name="ingresarUsuarioResponse">
+    <part name="parameters" element="tns:ingresarUsuarioResponse" />
+  </message>
+  <message name="modificarUsuario">
+    <part name="parameters" element="tns:modificarUsuario" />
+  </message>
+  <message name="modificarUsuarioResponse">
+    <part name="parameters" element="tns:modificarUsuarioResponse" />
+  </message>
+  <message name="listadoUsuario">
+    <part name="parameters" element="tns:listadoUsuario" />
+  </message>
+  <message name="listadoUsuarioResponse">
+    <part name="parameters" element="tns:listadoUsuarioResponse" />
+  </message>
+  <message name="eliminarUsuario">
+    <part name="parameters" element="tns:eliminarUsuario" />
+  </message>
+  <message name="eliminarUsuarioResponse">
+    <part name="parameters" element="tns:eliminarUsuarioResponse" />
+  </message>
+  <message name="ingresarAportador">
+    <part name="parameters" element="tns:ingresarAportador" />
+  </message>
+  <message name="ingresarAportadorResponse">
+    <part name="parameters" element="tns:ingresarAportadorResponse" />
+  </message>
+  <message name="modificarAportador">
+    <part name="parameters" element="tns:modificarAportador" />
+  </message>
+  <message name="modificarAportadorResponse">
+    <part name="parameters" element="tns:modificarAportadorResponse" />
+  </message>
+  <message name="buscarAportadorPorId">
+    <part name="parameters" element="tns:buscarAportadorPorId" />
+  </message>
+  <message name="buscarAportadorPorIdResponse">
+    <part name="parameters" element="tns:buscarAportadorPorIdResponse" />
+  </message>
+  <message name="eliminarAportador">
+    <part name="parameters" element="tns:eliminarAportador" />
+  </message>
+  <message name="eliminarAportadorResponse">
+    <part name="parameters" element="tns:eliminarAportadorResponse" />
+  </message>
+  <message name="ingresarDireccion">
+    <part name="parameters" element="tns:ingresarDireccion" />
+  </message>
+  <message name="ingresarDireccionResponse">
+    <part name="parameters" element="tns:ingresarDireccionResponse" />
+  </message>
+  <message name="modificarDireccion">
+    <part name="parameters" element="tns:modificarDireccion" />
+  </message>
+  <message name="modificarDireccionResponse">
+    <part name="parameters" element="tns:modificarDireccionResponse" />
+  </message>
+  <message name="buscarDireccionPorId">
+    <part name="parameters" element="tns:buscarDireccionPorId" />
+  </message>
+  <message name="buscarDireccionPorIdResponse">
+    <part name="parameters" element="tns:buscarDireccionPorIdResponse" />
+  </message>
+  <message name="buscarDireccionPorCalle">
+    <part name="parameters" element="tns:buscarDireccionPorCalle" />
+  </message>
+  <message name="buscarDireccionPorCalleResponse">
+    <part name="parameters" element="tns:buscarDireccionPorCalleResponse" />
+  </message>
+  <message name="eliminarDireccion">
+    <part name="parameters" element="tns:eliminarDireccion" />
+  </message>
+  <message name="eliminarDireccionResponse">
+    <part name="parameters" element="tns:eliminarDireccionResponse" />
+  </message>
+  <message name="modificarDonacion">
+    <part name="parameters" element="tns:modificarDonacion" />
+  </message>
+  <message name="modificarDonacionResponse">
+    <part name="parameters" element="tns:modificarDonacionResponse" />
+  </message>
+  <message name="buscarDonacionPorId">
+    <part name="parameters" element="tns:buscarDonacionPorId" />
+  </message>
+  <message name="buscarDonacionPorIdResponse">
+    <part name="parameters" element="tns:buscarDonacionPorIdResponse" />
+  </message>
+  <message name="ingresarDonacionPapel">
+    <part name="parameters" element="tns:ingresarDonacionPapel" />
+  </message>
+  <message name="ingresarDonacionPapelResponse">
+    <part name="parameters" element="tns:ingresarDonacionPapelResponse" />
+  </message>
+  <message name="modificarDonacionPapel">
+    <part name="parameters" element="tns:modificarDonacionPapel" />
+  </message>
+  <message name="modificarDonacionPapelResponse">
+    <part name="parameters" element="tns:modificarDonacionPapelResponse" />
+  </message>
+  <message name="buscarDonacionPapelPorId">
+    <part name="parameters" element="tns:buscarDonacionPapelPorId" />
+  </message>
+  <message name="buscarDonacionPapelPorIdResponse">
+    <part name="parameters" element="tns:buscarDonacionPapelPorIdResponse" />
+  </message>
+  <message name="listadoDonacionPapel">
+    <part name="parameters" element="tns:listadoDonacionPapel" />
+  </message>
+  <message name="listadoDonacionPapelResponse">
+    <part name="parameters" element="tns:listadoDonacionPapelResponse" />
+  </message>
+  <message name="eliminarDonacionPapel">
+    <part name="parameters" element="tns:eliminarDonacionPapel" />
+  </message>
+  <message name="eliminarDonacionPapelResponse">
+    <part name="parameters" element="tns:eliminarDonacionPapelResponse" />
+  </message>
+  <message name="ingresarInfoPersonal">
+    <part name="parameters" element="tns:ingresarInfoPersonal" />
+  </message>
+  <message name="ingresarInfoPersonalResponse">
+    <part name="parameters" element="tns:ingresarInfoPersonalResponse" />
+  </message>
+  <message name="modificarInfoPersonal">
+    <part name="parameters" element="tns:modificarInfoPersonal" />
+  </message>
+  <message name="modificarInfoPersonalResponse">
+    <part name="parameters" element="tns:modificarInfoPersonalResponse" />
+  </message>
+  <message name="buscarInfoPersonalPorId">
+    <part name="parameters" element="tns:buscarInfoPersonalPorId" />
+  </message>
+  <message name="buscarInfoPersonalPorIdResponse">
+    <part name="parameters" element="tns:buscarInfoPersonalPorIdResponse" />
+  </message>
+  <message name="buscarInfoPersonalPorRut">
+    <part name="parameters" element="tns:buscarInfoPersonalPorRut" />
+  </message>
+  <message name="buscarInfoPersonalPorRutResponse">
+    <part name="parameters" element="tns:buscarInfoPersonalPorRutResponse" />
+  </message>
+  <message name="listadoInfoPersonal">
+    <part name="parameters" element="tns:listadoInfoPersonal" />
+  </message>
+  <message name="listadoInfoPersonalResponse">
+    <part name="parameters" element="tns:listadoInfoPersonalResponse" />
+  </message>
+  <message name="eliminarInfoPersonal">
+    <part name="parameters" element="tns:eliminarInfoPersonal" />
+  </message>
+  <message name="eliminarInfoPersonalResponse">
+    <part name="parameters" element="tns:eliminarInfoPersonalResponse" />
+  </message>
+  <message name="buscarMandatoPorId">
+    <part name="parameters" element="tns:buscarMandatoPorId" />
+  </message>
+  <message name="buscarMandatoPorIdResponse">
+    <part name="parameters" element="tns:buscarMandatoPorIdResponse" />
+  </message>
+  <message name="buscarRetiroPorId">
+    <part name="parameters" element="tns:buscarRetiroPorId" />
+  </message>
+  <message name="buscarRetiroPorIdResponse">
+    <part name="parameters" element="tns:buscarRetiroPorIdResponse" />
+  </message>
+  <message name="buscarRolPorNombre">
+    <part name="parameters" element="tns:buscarRolPorNombre" />
+  </message>
+  <message name="buscarRolPorNombreResponse">
+    <part name="parameters" element="tns:buscarRolPorNombreResponse" />
+  </message>
+  <message name="buscarUsuarioPorId">
+    <part name="parameters" element="tns:buscarUsuarioPorId" />
+  </message>
+  <message name="buscarUsuarioPorIdResponse">
+    <part name="parameters" element="tns:buscarUsuarioPorIdResponse" />
+  </message>
+  <message name="buscarAportadorPorUsuario">
+    <part name="parameters" element="tns:buscarAportadorPorUsuario" />
+  </message>
+  <message name="buscarAportadorPorUsuarioResponse">
+    <part name="parameters" element="tns:buscarAportadorPorUsuarioResponse" />
+  </message>
+  <message name="buscarDonacionPorRut">
+    <part name="parameters" element="tns:buscarDonacionPorRut" />
+  </message>
+  <message name="buscarDonacionPorRutResponse">
+    <part name="parameters" element="tns:buscarDonacionPorRutResponse" />
+  </message>
+  <message name="buscarDonacionPorRutMonto">
+    <part name="parameters" element="tns:buscarDonacionPorRutMonto" />
+  </message>
+  <message name="buscarDonacionPorRutMontoResponse">
+    <part name="parameters" element="tns:buscarDonacionPorRutMontoResponse" />
+  </message>
+  <message name="buscarDonacionPapelPorIdDonacion">
+    <part name="parameters" element="tns:buscarDonacionPapelPorIdDonacion" />
+  </message>
+  <message name="buscarDonacionPapelPorIdDonacionResponse">
+    <part name="parameters" element="tns:buscarDonacionPapelPorIdDonacionResponse" />
+  </message>
+  <message name="buscarRetiroPorIdDonacionPapel">
+    <part name="parameters" element="tns:buscarRetiroPorIdDonacionPapel" />
+  </message>
+  <message name="buscarRetiroPorIdDonacionPapelResponse">
+    <part name="parameters" element="tns:buscarRetiroPorIdDonacionPapelResponse" />
+  </message>
+  <message name="buscarUsuarioPorRut">
+    <part name="parameters" element="tns:buscarUsuarioPorRut" />
+  </message>
+  <message name="buscarUsuarioPorRutResponse">
+    <part name="parameters" element="tns:buscarUsuarioPorRutResponse" />
+  </message>
+  <message name="modificarEstado">
+    <part name="parameters" element="tns:modificarEstado" />
+  </message>
+  <message name="modificarEstadoResponse">
+    <part name="parameters" element="tns:modificarEstadoResponse" />
+  </message>
+  <portType name="WebServiceModaOutlet">
+    <operation name="listadoAportador">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/listadoAportadorRequest" message="tns:listadoAportador" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/listadoAportadorResponse" message="tns:listadoAportadorResponse" />
+    </operation>
+    <operation name="listadoDireccion">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/listadoDireccionRequest" message="tns:listadoDireccion" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/listadoDireccionResponse" message="tns:listadoDireccionResponse" />
+    </operation>
+    <operation name="ingresarDonacion">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/ingresarDonacionRequest" message="tns:ingresarDonacion" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/ingresarDonacionResponse" message="tns:ingresarDonacionResponse" />
+    </operation>
+    <operation name="listadoDonacion">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/listadoDonacionRequest" message="tns:listadoDonacion" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/listadoDonacionResponse" message="tns:listadoDonacionResponse" />
+    </operation>
+    <operation name="eliminarDonacion">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/eliminarDonacionRequest" message="tns:eliminarDonacion" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/eliminarDonacionResponse" message="tns:eliminarDonacionResponse" />
+    </operation>
+    <operation name="ingresarMandato">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/ingresarMandatoRequest" message="tns:ingresarMandato" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/ingresarMandatoResponse" message="tns:ingresarMandatoResponse" />
+    </operation>
+    <operation name="modificarMandato">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/modificarMandatoRequest" message="tns:modificarMandato" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/modificarMandatoResponse" message="tns:modificarMandatoResponse" />
+    </operation>
+    <operation name="listadoMandato">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/listadoMandatoRequest" message="tns:listadoMandato" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/listadoMandatoResponse" message="tns:listadoMandatoResponse" />
+    </operation>
+    <operation name="eliminarMandato">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/eliminarMandatoRequest" message="tns:eliminarMandato" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/eliminarMandatoResponse" message="tns:eliminarMandatoResponse" />
+    </operation>
+    <operation name="ingresarRetiro">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/ingresarRetiroRequest" message="tns:ingresarRetiro" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/ingresarRetiroResponse" message="tns:ingresarRetiroResponse" />
+    </operation>
+    <operation name="modificarRetiro">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/modificarRetiroRequest" message="tns:modificarRetiro" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/modificarRetiroResponse" message="tns:modificarRetiroResponse" />
+    </operation>
+    <operation name="listadoRetiro">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/listadoRetiroRequest" message="tns:listadoRetiro" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/listadoRetiroResponse" message="tns:listadoRetiroResponse" />
+    </operation>
+    <operation name="eliminarRetiro">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/eliminarRetiroRequest" message="tns:eliminarRetiro" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/eliminarRetiroResponse" message="tns:eliminarRetiroResponse" />
+    </operation>
+    <operation name="ingresarRol">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/ingresarRolRequest" message="tns:ingresarRol" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/ingresarRolResponse" message="tns:ingresarRolResponse" />
+    </operation>
+    <operation name="modificarRol">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/modificarRolRequest" message="tns:modificarRol" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/modificarRolResponse" message="tns:modificarRolResponse" />
+    </operation>
+    <operation name="buscarRolPorId">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/buscarRolPorIdRequest" message="tns:buscarRolPorId" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/buscarRolPorIdResponse" message="tns:buscarRolPorIdResponse" />
+    </operation>
+    <operation name="listadoRol">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/listadoRolRequest" message="tns:listadoRol" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/listadoRolResponse" message="tns:listadoRolResponse" />
+    </operation>
+    <operation name="eliminarRol">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/eliminarRolRequest" message="tns:eliminarRol" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/eliminarRolResponse" message="tns:eliminarRolResponse" />
+    </operation>
+    <operation name="ingresarUsuario">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/ingresarUsuarioRequest" message="tns:ingresarUsuario" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/ingresarUsuarioResponse" message="tns:ingresarUsuarioResponse" />
+    </operation>
+    <operation name="modificarUsuario">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/modificarUsuarioRequest" message="tns:modificarUsuario" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/modificarUsuarioResponse" message="tns:modificarUsuarioResponse" />
+    </operation>
+    <operation name="listadoUsuario">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/listadoUsuarioRequest" message="tns:listadoUsuario" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/listadoUsuarioResponse" message="tns:listadoUsuarioResponse" />
+    </operation>
+    <operation name="eliminarUsuario">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/eliminarUsuarioRequest" message="tns:eliminarUsuario" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/eliminarUsuarioResponse" message="tns:eliminarUsuarioResponse" />
+    </operation>
+    <operation name="ingresarAportador">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/ingresarAportadorRequest" message="tns:ingresarAportador" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/ingresarAportadorResponse" message="tns:ingresarAportadorResponse" />
+    </operation>
+    <operation name="modificarAportador">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/modificarAportadorRequest" message="tns:modificarAportador" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/modificarAportadorResponse" message="tns:modificarAportadorResponse" />
+    </operation>
+    <operation name="buscarAportadorPorId">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/buscarAportadorPorIdRequest" message="tns:buscarAportadorPorId" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/buscarAportadorPorIdResponse" message="tns:buscarAportadorPorIdResponse" />
+    </operation>
+    <operation name="eliminarAportador">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/eliminarAportadorRequest" message="tns:eliminarAportador" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/eliminarAportadorResponse" message="tns:eliminarAportadorResponse" />
+    </operation>
+    <operation name="ingresarDireccion">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/ingresarDireccionRequest" message="tns:ingresarDireccion" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/ingresarDireccionResponse" message="tns:ingresarDireccionResponse" />
+    </operation>
+    <operation name="modificarDireccion">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/modificarDireccionRequest" message="tns:modificarDireccion" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/modificarDireccionResponse" message="tns:modificarDireccionResponse" />
+    </operation>
+    <operation name="buscarDireccionPorId">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/buscarDireccionPorIdRequest" message="tns:buscarDireccionPorId" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/buscarDireccionPorIdResponse" message="tns:buscarDireccionPorIdResponse" />
+    </operation>
+    <operation name="buscarDireccionPorCalle">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/buscarDireccionPorCalleRequest" message="tns:buscarDireccionPorCalle" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/buscarDireccionPorCalleResponse" message="tns:buscarDireccionPorCalleResponse" />
+    </operation>
+    <operation name="eliminarDireccion">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/eliminarDireccionRequest" message="tns:eliminarDireccion" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/eliminarDireccionResponse" message="tns:eliminarDireccionResponse" />
+    </operation>
+    <operation name="modificarDonacion">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/modificarDonacionRequest" message="tns:modificarDonacion" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/modificarDonacionResponse" message="tns:modificarDonacionResponse" />
+    </operation>
+    <operation name="buscarDonacionPorId">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/buscarDonacionPorIdRequest" message="tns:buscarDonacionPorId" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/buscarDonacionPorIdResponse" message="tns:buscarDonacionPorIdResponse" />
+    </operation>
+    <operation name="ingresarDonacionPapel">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/ingresarDonacionPapelRequest" message="tns:ingresarDonacionPapel" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/ingresarDonacionPapelResponse" message="tns:ingresarDonacionPapelResponse" />
+    </operation>
+    <operation name="modificarDonacionPapel">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/modificarDonacionPapelRequest" message="tns:modificarDonacionPapel" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/modificarDonacionPapelResponse" message="tns:modificarDonacionPapelResponse" />
+    </operation>
+    <operation name="buscarDonacionPapelPorId">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/buscarDonacionPapelPorIdRequest" message="tns:buscarDonacionPapelPorId" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/buscarDonacionPapelPorIdResponse" message="tns:buscarDonacionPapelPorIdResponse" />
+    </operation>
+    <operation name="listadoDonacionPapel">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/listadoDonacionPapelRequest" message="tns:listadoDonacionPapel" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/listadoDonacionPapelResponse" message="tns:listadoDonacionPapelResponse" />
+    </operation>
+    <operation name="eliminarDonacionPapel">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/eliminarDonacionPapelRequest" message="tns:eliminarDonacionPapel" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/eliminarDonacionPapelResponse" message="tns:eliminarDonacionPapelResponse" />
+    </operation>
+    <operation name="ingresarInfoPersonal">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/ingresarInfoPersonalRequest" message="tns:ingresarInfoPersonal" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/ingresarInfoPersonalResponse" message="tns:ingresarInfoPersonalResponse" />
+    </operation>
+    <operation name="modificarInfoPersonal">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/modificarInfoPersonalRequest" message="tns:modificarInfoPersonal" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/modificarInfoPersonalResponse" message="tns:modificarInfoPersonalResponse" />
+    </operation>
+    <operation name="buscarInfoPersonalPorId">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/buscarInfoPersonalPorIdRequest" message="tns:buscarInfoPersonalPorId" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/buscarInfoPersonalPorIdResponse" message="tns:buscarInfoPersonalPorIdResponse" />
+    </operation>
+    <operation name="buscarInfoPersonalPorRut">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/buscarInfoPersonalPorRutRequest" message="tns:buscarInfoPersonalPorRut" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/buscarInfoPersonalPorRutResponse" message="tns:buscarInfoPersonalPorRutResponse" />
+    </operation>
+    <operation name="listadoInfoPersonal">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/listadoInfoPersonalRequest" message="tns:listadoInfoPersonal" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/listadoInfoPersonalResponse" message="tns:listadoInfoPersonalResponse" />
+    </operation>
+    <operation name="eliminarInfoPersonal">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/eliminarInfoPersonalRequest" message="tns:eliminarInfoPersonal" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/eliminarInfoPersonalResponse" message="tns:eliminarInfoPersonalResponse" />
+    </operation>
+    <operation name="buscarMandatoPorId">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/buscarMandatoPorIdRequest" message="tns:buscarMandatoPorId" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/buscarMandatoPorIdResponse" message="tns:buscarMandatoPorIdResponse" />
+    </operation>
+    <operation name="buscarRetiroPorId">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/buscarRetiroPorIdRequest" message="tns:buscarRetiroPorId" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/buscarRetiroPorIdResponse" message="tns:buscarRetiroPorIdResponse" />
+    </operation>
+    <operation name="buscarRolPorNombre">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/buscarRolPorNombreRequest" message="tns:buscarRolPorNombre" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/buscarRolPorNombreResponse" message="tns:buscarRolPorNombreResponse" />
+    </operation>
+    <operation name="buscarUsuarioPorId">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/buscarUsuarioPorIdRequest" message="tns:buscarUsuarioPorId" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/buscarUsuarioPorIdResponse" message="tns:buscarUsuarioPorIdResponse" />
+    </operation>
+    <operation name="buscarAportadorPorUsuario">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/buscarAportadorPorUsuarioRequest" message="tns:buscarAportadorPorUsuario" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/buscarAportadorPorUsuarioResponse" message="tns:buscarAportadorPorUsuarioResponse" />
+    </operation>
+    <operation name="buscarDonacionPorRut">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/buscarDonacionPorRutRequest" message="tns:buscarDonacionPorRut" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/buscarDonacionPorRutResponse" message="tns:buscarDonacionPorRutResponse" />
+    </operation>
+    <operation name="buscarDonacionPorRutMonto">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/buscarDonacionPorRutMontoRequest" message="tns:buscarDonacionPorRutMonto" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/buscarDonacionPorRutMontoResponse" message="tns:buscarDonacionPorRutMontoResponse" />
+    </operation>
+    <operation name="buscarDonacionPapelPorIdDonacion">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/buscarDonacionPapelPorIdDonacionRequest" message="tns:buscarDonacionPapelPorIdDonacion" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/buscarDonacionPapelPorIdDonacionResponse" message="tns:buscarDonacionPapelPorIdDonacionResponse" />
+    </operation>
+    <operation name="buscarRetiroPorIdDonacionPapel">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/buscarRetiroPorIdDonacionPapelRequest" message="tns:buscarRetiroPorIdDonacionPapel" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/buscarRetiroPorIdDonacionPapelResponse" message="tns:buscarRetiroPorIdDonacionPapelResponse" />
+    </operation>
+    <operation name="buscarUsuarioPorRut">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/buscarUsuarioPorRutRequest" message="tns:buscarUsuarioPorRut" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/buscarUsuarioPorRutResponse" message="tns:buscarUsuarioPorRutResponse" />
+    </operation>
+    <operation name="modificarEstado">
+      <input wsam:Action="http://WebServices/WebServiceModaOutlet/modificarEstadoRequest" message="tns:modificarEstado" />
+      <output wsam:Action="http://WebServices/WebServiceModaOutlet/modificarEstadoResponse" message="tns:modificarEstadoResponse" />
+    </operation>
+  </portType>
+  <binding name="WebServiceModaOutletPortBinding" type="tns:WebServiceModaOutlet">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listadoAportador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listadoDireccion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ingresarDonacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listadoDonacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarDonacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ingresarMandato">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarMandato">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listadoMandato">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarMandato">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ingresarRetiro">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarRetiro">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listadoRetiro">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarRetiro">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ingresarRol">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarRol">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarRolPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listadoRol">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarRol">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ingresarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listadoUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ingresarAportador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarAportador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarAportadorPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarAportador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ingresarDireccion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarDireccion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarDireccionPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarDireccionPorCalle">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarDireccion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarDonacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarDonacionPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ingresarDonacionPapel">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarDonacionPapel">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarDonacionPapelPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listadoDonacionPapel">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarDonacionPapel">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ingresarInfoPersonal">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarInfoPersonal">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarInfoPersonalPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarInfoPersonalPorRut">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listadoInfoPersonal">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarInfoPersonal">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarMandatoPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarRetiroPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarRolPorNombre">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarUsuarioPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarAportadorPorUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarDonacionPorRut">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarDonacionPorRutMonto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarDonacionPapelPorIdDonacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarRetiroPorIdDonacionPapel">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarUsuarioPorRut">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarEstado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WebServiceModaOutlet">
+    <port name="WebServiceModaOutletPort" binding="tns:WebServiceModaOutletPortBinding">
+      <soap:address location="http://localhost:8281/ModaOutletWS/WebServiceModaOutlet" />
+    </port>
+  </service>
+</definitions>
