@@ -265,8 +265,7 @@
             this.txtNombreP.Name = "txtNombreP";
             this.txtNombreP.Size = new System.Drawing.Size(179, 20);
             this.txtNombreP.TabIndex = 51;
-            this.txtNombreP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRutP_KeyPress);
-            this.txtNombreP.Validating += new System.ComponentModel.CancelEventHandler(this.txtRutP_Validating);
+            this.txtNombreP.Validating += new System.ComponentModel.CancelEventHandler(this.txtNombreP_Validating);
             // 
             // lblNombre
             // 
