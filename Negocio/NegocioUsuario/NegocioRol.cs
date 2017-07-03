@@ -78,6 +78,22 @@ namespace CapaNegocio.NegocioUsuario
             }
 
         }
+
+        public int eliminarRolMO(int id_rol)
+        {
+
+            webServiceMO.WebServiceModaOutlet wsMO = new webServiceMO.WebServiceModaOutlet();
+            String objeto = wsMO.eliminarRol(id_rol);
+            if (objeto != null)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+
+        }
         public int actualizarRol(Rol rol)
         {
           
@@ -159,7 +175,28 @@ namespace CapaNegocio.NegocioUsuario
             }
         
         }
+        public Rol rolPorNombreMO(string nombre)
+        {
+            Rol auxRol = new Rol();
+            try
+            {
+                webServiceMO.WebServiceModaOutlet wsMO = new webServiceMO.WebServiceModaOutlet();
+                Array objeto = wsMO.buscarRolPorNombre(nombre);
+                
+                foreach (webServiceFundacion.rol item in objeto)
+                {
+                    auxRol.IdRol = item.id_rol;
+                    auxRol.NombreRol = item.nombre_rol;
+                    auxRol.DescripcionRol = item.descripcion_rol;
+                }
+                return auxRol;
+            }
+            catch (Exception)
+            {
+                return auxRol;
+            }
 
+        }
         public Array rolPorId(int idR)
         {
             try
