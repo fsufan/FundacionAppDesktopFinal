@@ -133,7 +133,7 @@ namespace AplicacionDesktop.CRUD
                 {
                     if (auxInfoPersonal.consultarRut(txtRut.Text) == false)
                     {
-                        if (validarRut(txtRut.Text))
+                        if (seguridad.validarRut(txtRut.Text))
                         {
                             if (DateTime.Compare(DateTime.Today, DateFechaNac.Value.Date) > 0)
                             {
@@ -411,9 +411,9 @@ namespace AplicacionDesktop.CRUD
 
         private void txtRut_Validating(object sender, CancelEventArgs e)
         {
-            if ((!Regex.IsMatch(this.txtRut.Text, @"^\d+$")) && (txtRut.Text != ""))
+            if ((!Regex.IsMatch(this.txtRut.Text, @"\b\d{7,8}\-[K|k|0-9]")) && (txtRut.Text != ""))
             {
-                MessageBox.Show("Si su Rut termina en K reemplace a un cero");
+                MessageBox.Show("Debe ingresar sólo caracteres válidos");
                 this.txtRut.Focus();
                 txtRut.Text = "";
             }
@@ -421,12 +421,7 @@ namespace AplicacionDesktop.CRUD
 
         private void txtRut_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
-            {
-                MessageBox.Show("Si su rut termina en K reemplace por un cero", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
+
         }
 
         private void txtNombre_Validating(object sender, CancelEventArgs e)

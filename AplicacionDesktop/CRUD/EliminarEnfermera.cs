@@ -13,6 +13,7 @@ using CapaNegocio.NegocioResidente;
 using CapaNegocio.NegocioUsuario;
 using AplicacionDesktop.MENU;
 using System.Text.RegularExpressions;
+using Capa_DTO.Seguridad;
 
 namespace AplicacionDesktop.CRUD
 {
@@ -37,12 +38,13 @@ namespace AplicacionDesktop.CRUD
                 NegocioInfoPersonal AuxInfo = new NegocioInfoPersonal();
                 Enfermera enfermera = new Enfermera();
                 NegocioEnfermera auxEnfermera = new NegocioEnfermera();
+                Seguridad seguridad = new Seguridad();
                
                 if (txtRut.Text != "")
                 {
 
 
-                    if (validarRut(txtRut.Text))
+                    if (seguridad.validarRut(txtRut.Text))
                     {
 
                         if (AuxInfo.consultarRut(txtRut.Text) == true)
@@ -181,19 +183,14 @@ namespace AplicacionDesktop.CRUD
 
         private void txtRut_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
-            {
-                MessageBox.Show("Si su rut termina en K reemplace por un cero", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
+
         }
 
         private void txtRut_Validating(object sender, CancelEventArgs e)
         {
-            if ((!Regex.IsMatch(this.txtRut.Text, @"^\d+$")) && (txtRut.Text != ""))
+            if ((!Regex.IsMatch(this.txtRut.Text, @"\b\d{7,8}\-[K|k|0-9]")) && (txtRut.Text != ""))
             {
-                MessageBox.Show("Si su Rut termina en K reemplace a un cero");
+                MessageBox.Show("Debe ingresar sólo caracteres válidos");
                 this.txtRut.Focus();
                 txtRut.Text = "";
             }

@@ -15,6 +15,7 @@ using Capa_DTO.Farmacia;
 using CapaNegocio.NegocioResidente;
 using CapaNegocio.NegocioUsuario;
 using System.Text.RegularExpressions;
+using Capa_DTO.Seguridad;
 
 namespace AplicacionDesktop.MENU
 {
@@ -81,6 +82,7 @@ namespace AplicacionDesktop.MENU
                 NegocioDetalleSolictudMed auxDetaSoliMed = new NegocioDetalleSolictudMed();
                 Medicina medicina = new Medicina();
                 NegocioMedicina auxMedicina = new NegocioMedicina();
+                
 
                 if (txtRutResidente.Text != "" && txtRutEnfermera.Text != "" && txtCantidad.Text != "" && txtCuidadosEspe.Text != "" && txtMotivo.Text !="")
                 {
@@ -240,12 +242,12 @@ namespace AplicacionDesktop.MENU
                 NegocioResidente auxResidente = new NegocioResidente();
                 FichaResidente fichaR = new FichaResidente();
                 NegocioFichaResidente auxFichaR = new NegocioFichaResidente();
+                Seguridad seguridad = new Seguridad();
 
                 if (txtRutResidente.Text != "")
                 {
-
-
-                    if (validarRut(txtRutResidente.Text))
+                    
+                    if (seguridad.validarRut(txtRutResidente.Text))
                     {
 
                         if (AuxInfo.consultarRut(txtRutResidente.Text) == true)
@@ -295,11 +297,12 @@ namespace AplicacionDesktop.MENU
                 NegocioInfoPersonal AuxInfo = new NegocioInfoPersonal();                
                 Enfermera enfermera = new Enfermera();
                 NegocioEnfermera auxEnfermera = new NegocioEnfermera();
+                Seguridad seguridad = new Seguridad();
 
                 if (txtRutEnfermera.Text != "")
                 {
                     
-                    if (validarRut(txtRutEnfermera.Text))
+                    if (seguridad.validarRut(txtRutEnfermera.Text))
                     {
 
                         if (AuxInfo.consultarRut(txtRutEnfermera.Text) == true)
@@ -346,11 +349,12 @@ namespace AplicacionDesktop.MENU
 
                 Paramedico paramedico = new Paramedico();
                 NegocioParamedico auxParamedico = new NegocioParamedico();
+                Seguridad seguridad = new Seguridad();
 
                 if (txtRutParamedico.Text != "")
                 {
                     
-                    if (validarRut(txtRutParamedico.Text))
+                    if (seguridad.validarRut(txtRutParamedico.Text))
                     {
 
                         if (AuxInfo.consultarRut(txtRutParamedico.Text) == true)
@@ -427,9 +431,9 @@ namespace AplicacionDesktop.MENU
 
         private void txtRutResidente_Validating(object sender, CancelEventArgs e)
         {
-            if ((!Regex.IsMatch(this.txtRutResidente.Text, @"^\d+$")) && (txtRutResidente.Text != ""))
+            if ((!Regex.IsMatch(this.txtRutResidente.Text, @"\b\d{7,8}\-[K|k|0-9]")) && (txtRutResidente.Text != ""))
             {
-                MessageBox.Show("Si su Rut termina en K reemplace a un cero");
+                MessageBox.Show("Debe ingresar sólo caracteres válidos");
                 this.txtRutResidente.Focus();
                 txtRutResidente.Text = "";
             }
@@ -437,19 +441,14 @@ namespace AplicacionDesktop.MENU
 
         private void txtRutResidente_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
-            {
-                MessageBox.Show("Si su rut termina en K reemplace por un cero", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
+
         }
 
         private void txtRutEnfermera_Validating(object sender, CancelEventArgs e)
         {
-            if ((!Regex.IsMatch(this.txtRutEnfermera.Text, @"^\d+$")) && (txtRutEnfermera.Text != ""))
+            if ((!Regex.IsMatch(this.txtRutEnfermera.Text, @"\b\d{7,8}\-[K|k|0-9]")) && (txtRutEnfermera.Text != ""))
             {
-                MessageBox.Show("Si su Rut termina en K reemplace a un cero");
+                MessageBox.Show("Debe ingresar sólo caracteres válidos");
                 this.txtRutEnfermera.Focus();
                 txtRutEnfermera.Text = "";
             }
@@ -457,9 +456,9 @@ namespace AplicacionDesktop.MENU
 
         private void txtRutParamedico_Validating(object sender, CancelEventArgs e)
         {
-            if ((!Regex.IsMatch(this.txtRutParamedico.Text, @"^\d+$")) && (txtRutParamedico.Text != ""))
+            if ((!Regex.IsMatch(this.txtRutParamedico.Text, @"\b\d{7,8}\-[K|k|0-9]")) && (txtRutParamedico.Text != ""))
             {
-                MessageBox.Show("Si su Rut termina en K reemplace a un cero");
+                MessageBox.Show("Debe ingresar sólo caracteres válidos");
                 this.txtRutParamedico.Focus();
                 txtRutParamedico.Text = "";
             }

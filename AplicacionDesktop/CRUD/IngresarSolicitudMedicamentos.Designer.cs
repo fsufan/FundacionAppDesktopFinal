@@ -166,11 +166,10 @@
             // txtRutResidente
             // 
             this.txtRutResidente.Location = new System.Drawing.Point(104, 17);
-            this.txtRutResidente.MaxLength = 9;
+            this.txtRutResidente.MaxLength = 10;
             this.txtRutResidente.Name = "txtRutResidente";
             this.txtRutResidente.Size = new System.Drawing.Size(115, 20);
             this.txtRutResidente.TabIndex = 8;
-            this.txtRutResidente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRutResidente_KeyPress);
             this.txtRutResidente.Validating += new System.ComponentModel.CancelEventHandler(this.txtRutResidente_Validating);
             // 
             // lblApellidoResidente
@@ -309,11 +308,10 @@
             // txtRutParamedico
             // 
             this.txtRutParamedico.Location = new System.Drawing.Point(108, 135);
-            this.txtRutParamedico.MaxLength = 9;
+            this.txtRutParamedico.MaxLength = 10;
             this.txtRutParamedico.Name = "txtRutParamedico";
             this.txtRutParamedico.Size = new System.Drawing.Size(115, 20);
             this.txtRutParamedico.TabIndex = 14;
-            this.txtRutParamedico.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRutResidente_KeyPress);
             this.txtRutParamedico.Validating += new System.ComponentModel.CancelEventHandler(this.txtRutParamedico_Validating);
             // 
             // btnBuscarParamedico
@@ -372,11 +370,10 @@
             // txtRutEnfermera
             // 
             this.txtRutEnfermera.Location = new System.Drawing.Point(108, 17);
-            this.txtRutEnfermera.MaxLength = 9;
+            this.txtRutEnfermera.MaxLength = 10;
             this.txtRutEnfermera.Name = "txtRutEnfermera";
             this.txtRutEnfermera.Size = new System.Drawing.Size(115, 20);
             this.txtRutEnfermera.TabIndex = 7;
-            this.txtRutEnfermera.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRutResidente_KeyPress);
             this.txtRutEnfermera.Validating += new System.ComponentModel.CancelEventHandler(this.txtRutEnfermera_Validating);
             // 
             // btnBuscarEnfermera

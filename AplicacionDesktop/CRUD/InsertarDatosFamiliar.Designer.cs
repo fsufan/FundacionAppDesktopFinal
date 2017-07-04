@@ -391,11 +391,10 @@
             // 
             this.txtRutP.Location = new System.Drawing.Point(185, 27);
             this.txtRutP.Margin = new System.Windows.Forms.Padding(4, 8, 4, 8);
-            this.txtRutP.MaxLength = 9;
+            this.txtRutP.MaxLength = 10;
             this.txtRutP.Name = "txtRutP";
             this.txtRutP.Size = new System.Drawing.Size(179, 20);
             this.txtRutP.TabIndex = 31;
-            this.txtRutP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRutP_KeyPress);
             this.txtRutP.Validating += new System.ComponentModel.CancelEventHandler(this.txtRutP_Validating);
             // 
             // txtNombreP

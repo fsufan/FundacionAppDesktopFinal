@@ -16,6 +16,7 @@ using CapaNegocio.NegocioResidente;
 using CapaNegocio.NegocioFarmacia;
 using System.Text.RegularExpressions;
 using AplicacionDesktop.MENU;
+using Capa_DTO.Seguridad;
 
 namespace AplicacionDesktop.CRUD
 {
@@ -327,13 +328,14 @@ namespace AplicacionDesktop.CRUD
 
                 Paramedico paramedico = new Paramedico();
                 NegocioParamedico auxParamedico = new NegocioParamedico();
+                Seguridad seguridad = new Seguridad();
 
 
                 if (txtRut.Text != "" && txtNombre.Text != "" && txtNombre.Text != "" && txtApePaterno.Text != "" && txtApeMaterno.Text != "" && DateFechaNac.Text != "" && txtTelefono.Text != "" && txtEmail.Text != "" &&
                         txtCiudad.Text != "" && txtCalle.Text != "" && txtCodigoP.Text != "" && txtTurno.Text != "" && txtDescripcion.Text != "" && txtEspecialidad.Text != "")
                 {
 
-                    if (validarRut(txtRut.Text))
+                    if (seguridad.validarRut(txtRut.Text))
                     {
                         if (DateTime.Compare(DateTime.Today, DateFechaNac.Value.Date) > 0)
                         {
@@ -497,12 +499,13 @@ namespace AplicacionDesktop.CRUD
                 NegocioParamedico auxParamedico = new NegocioParamedico();
                 NegocioDireccion auxDireccion = new NegocioDireccion();
                 Direccion direccion = new Direccion();
+                Seguridad seguridad = new Seguridad();
 
                 if (txtRut.Text != "")
                 {
 
 
-                    if (validarRut(txtRut.Text))
+                    if (seguridad.validarRut(txtRut.Text))
                     {
 
                         if (AuxInfo.consultarRut(txtRut.Text) == true)
@@ -578,9 +581,9 @@ namespace AplicacionDesktop.CRUD
 
         private void txtRut_Validating(object sender, CancelEventArgs e)
         {
-            if ((!Regex.IsMatch(this.txtRut.Text, @"^\d+$")) && (txtRut.Text != ""))
+            if ((!Regex.IsMatch(this.txtRut.Text, @"\b\d{7,8}\-[K|k|0-9]")) && (txtRut.Text != ""))
             {
-                MessageBox.Show("Si su Rut termina en K reemplace a un cero");
+                MessageBox.Show("Debe ingresar sólo caracteres válidos");
                 this.txtRut.Focus();
                 txtRut.Text = "";
             }
@@ -588,12 +591,7 @@ namespace AplicacionDesktop.CRUD
 
         private void txtRut_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
-            {
-                MessageBox.Show("Si su rut termina en K reemplace por un cero", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
+
         }
 
         private void txtNombre_Validating(object sender, CancelEventArgs e)

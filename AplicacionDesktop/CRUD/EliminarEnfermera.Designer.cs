@@ -136,11 +136,10 @@
             // txtRut
             // 
             this.txtRut.Location = new System.Drawing.Point(81, 19);
-            this.txtRut.MaxLength = 9;
+            this.txtRut.MaxLength = 10;
             this.txtRut.Name = "txtRut";
             this.txtRut.Size = new System.Drawing.Size(100, 20);
             this.txtRut.TabIndex = 5;
-            this.txtRut.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRut_KeyPress);
             this.txtRut.Validating += new System.ComponentModel.CancelEventHandler(this.txtRut_Validating);
             // 
             // label1

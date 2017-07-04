@@ -15,6 +15,7 @@ using System.Text.RegularExpressions;
 using System.Globalization;
 using AplicacionDesktop.CRUD;
 using AplicacionDesktop.CRUDUsuario;
+using Capa_DTO.Seguridad;
 
 namespace AplicacionDesktop.CRUD
 {
@@ -98,6 +99,7 @@ namespace AplicacionDesktop.CRUD
 
                 InformacionPersonal infoPersonal = new InformacionPersonal();
                 NegocioInfoPersonal auxInfoPersonal = new NegocioInfoPersonal();
+                Seguridad seguridad = new Seguridad();
 
 
                 if (txtRutP.Text != "" || txtNombreP.Text != "" || txtNombreP.Text != "" || txtApePaternoP.Text != "" || txtApeMaternoP.Text != "" || DateFechaNacP.Text != "" || txtTelefonoP.Text != "" || txtEmailP.Text != "" ||
@@ -105,7 +107,7 @@ namespace AplicacionDesktop.CRUD
                 {
                     if (auxInfoPersonal.consultarRut(txtRutP.Text) == false)
                     {
-                        if (validarRut(txtRutP.Text))
+                        if (seguridad.validarRut(txtRutP.Text))
                         {
                             if (DateTime.Compare(DateTime.Today, DateFechaNacP.Value.Date) > 0)
                             {
@@ -326,9 +328,9 @@ namespace AplicacionDesktop.CRUD
         
         private void txtRutP_Validating(object sender, CancelEventArgs e)
         {
-            if ((!Regex.IsMatch(this.txtRutP.Text, @"^\d+$")) && (txtRutP.Text != ""))
+            if ((!Regex.IsMatch(this.txtRutP.Text, @"\b\d{7,8}\-[K|k|0-9]")) && (txtRutP.Text != ""))
             {
-                MessageBox.Show("Si su Rut termina en K reemplace a un cero");
+                MessageBox.Show("Debe ingresar sólo caracteres válidos");
                 this.txtRutP.Focus();
                 txtRutP.Text = "";
             }
@@ -336,7 +338,12 @@ namespace AplicacionDesktop.CRUD
 
         private void txtNombreP_Validating(object sender, CancelEventArgs e)
         {
-
+            if ((!Regex.IsMatch(this.txtNombreP.Text, @"^[a-zA-Z_áéíóúñ\s]*$")) && (txtNombreP.Text != ""))
+            {
+                MessageBox.Show("Debe ingresar sólo caracteres validos");
+                this.txtNombreP.Focus();
+                txtNombreP.Text = "";
+            }
         }
 
         private void txtApePaternoP_Validating(object sender, CancelEventArgs e)

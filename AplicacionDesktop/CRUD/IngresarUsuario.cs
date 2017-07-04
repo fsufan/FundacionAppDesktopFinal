@@ -264,7 +264,6 @@ namespace AplicacionDesktop.CRUDUsuario
                 txtrut.Text = "";
             }
             
-            
         }
 
         private void txtContraseña_Validating(object sender, CancelEventArgs e)

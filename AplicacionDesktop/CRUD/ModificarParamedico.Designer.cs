@@ -430,11 +430,10 @@
             // 
             this.txtRut.Location = new System.Drawing.Point(139, 27);
             this.txtRut.Margin = new System.Windows.Forms.Padding(4, 8, 4, 8);
-            this.txtRut.MaxLength = 9;
+            this.txtRut.MaxLength = 10;
             this.txtRut.Name = "txtRut";
             this.txtRut.Size = new System.Drawing.Size(101, 20);
             this.txtRut.TabIndex = 31;
-            this.txtRut.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRut_KeyPress);
             this.txtRut.Validating += new System.ComponentModel.CancelEventHandler(this.txtRut_Validating);
             // 
             // txtNombre

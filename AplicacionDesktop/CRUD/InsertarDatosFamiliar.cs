@@ -13,6 +13,7 @@ using Capa_DTO.Residente;
 using Capa_DTO.Farmacia;
 using System.Text.RegularExpressions;
 using AplicacionDesktop.CRUDUsuario;
+using Capa_DTO.Seguridad;
 
 
 namespace AplicacionDesktop.CRUD
@@ -153,6 +154,7 @@ namespace AplicacionDesktop.CRUD
 
                 Servicio servicio = new Servicio();
                 NegocioServicio auxServicio = new NegocioServicio();
+                Seguridad seguridad = new Seguridad();
 
 
                 if (txtRutP.Text != "" || txtNombreP.Text != "" || txtNombreP.Text != "" || txtApePaternoP.Text != "" || txtApeMaternoP.Text != "" || DateFechaNacP.Text != "" || txtTelefonoP.Text != "" || txtEmailP.Text != "" ||
@@ -160,7 +162,7 @@ namespace AplicacionDesktop.CRUD
                 {
                     if (auxInfoPersonal.consultarRut(txtRutP.Text) == false)
                     {
-                        if (validarRut(txtRutP.Text))
+                        if (seguridad.validarRut(txtRutP.Text))
                         {
                             if (DateTime.Compare(DateTime.Today, DateFechaNacP.Value.Date) > 0)
                             {
@@ -457,9 +459,9 @@ namespace AplicacionDesktop.CRUD
 
         private void txtRutP_Validating(object sender, CancelEventArgs e)
         {
-            if ((!Regex.IsMatch(this.txtRutP.Text, @"^\d+$")) && (txtRutP.Text != ""))
+            if ((!Regex.IsMatch(this.txtRutP.Text, @"\b\d{7,8}\-[K|k|0-9]")) && (txtRutP.Text != ""))
             {
-                MessageBox.Show("Si su Rut termina en K reemplace a un cero");
+                MessageBox.Show("Debe ingresar sólo caracteres válidos");
                 this.txtRutP.Focus();
                 txtRutP.Text = "";
             }
@@ -509,12 +511,7 @@ namespace AplicacionDesktop.CRUD
 
         private void txtRutP_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
-            {
-                MessageBox.Show("Si su rut termina en K reemplzace por un cero", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
+
         }
 
         private void txtCalle_Validating(object sender, CancelEventArgs e)
