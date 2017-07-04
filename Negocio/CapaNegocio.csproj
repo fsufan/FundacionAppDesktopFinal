@@ -105,10 +105,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Datos\Capa_Conexion.csproj">
-      <Project>{11f714f3-4d19-41bb-a38c-e6aff1cd5c17}</Project>
-      <Name>Capa_Conexion</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Entidades\Capa_DTO.csproj">
       <Project>{a26c85c2-88c9-46e1-8703-36c25d241c77}</Project>
       <Name>Capa_DTO</Name>
