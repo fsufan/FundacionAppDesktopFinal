@@ -129,34 +129,7 @@ namespace AplicacionDesktop.CRUDUsuario
                                                 
                                                 if (usuario.ingresarUsuario(auxUsuario) > 0)
                                                 {
-                                                    if (cmbxidrol.Text.Equals("APORTADOR") || cmbxidrol.Text.Equals("RECICLAR"))
-                                                    {
-                                                        if (rol.consultaRolMO(cmbxidrol.Text.ToUpper().ToString())>0)
-                                                        {
-                                                            int ide = rol.consultaRolMO(cmbxidrol.Text.ToUpper().ToString());
-                                                            auxUsuario.IdRol = ide;
-                                                            if (usuario.usuarioMORut(txtrut.Text).IdRol==0)
-                                                            {
-                                                                if (usuario.ingresarUsuarioMO(auxUsuario) > 0)
-                                                                {
-                                                                    MessageBox.Show("Usuario web ingresado");
-                                                                }
-                                                                else
-                                                                {
-                                                                    MessageBox.Show("Error al crear Usuario web");
-                                                                }
-                                                            }
-                                                            else
-                                                            {
-                                                                MessageBox.Show("El usuario ya existe en Moda Outlet");
-                                                            }
-                                                            
-                                                        }
-                                                        else
-                                                        {
-                                                            MessageBox.Show("Error al buscar e Rol");
-                                                        }
-                                                    }
+                                                    
                                                     MessageBox.Show("Usuario ingresado", "Información");
                                                     dtingresou.DataSource = usuario.listarUsuarios();
                                                     dtingresou.Update();
@@ -170,6 +143,34 @@ namespace AplicacionDesktop.CRUDUsuario
                                                 else
                                                 {
                                                     MessageBox.Show("Error al ingresar usuario");
+                                                }
+                                                if (cmbxidrol.Text.Equals("APORTADOR") || cmbxidrol.Text.Equals("RECICLAR"))
+                                                {
+                                                    if (rol.consultaRolMO(cmbxidrol.Text.ToUpper().ToString()) > 0)
+                                                    {
+                                                        int ide = rol.consultaRolMO(cmbxidrol.Text.ToUpper().ToString());
+                                                        auxUsuario.IdRol = ide;
+                                                        if (usuario.usuarioMORut(txtrut.Text).IdRol == 0)
+                                                        {
+                                                            if (usuario.ingresarUsuarioMO(auxUsuario) > 0)
+                                                            {
+                                                                MessageBox.Show("Usuario ingresado al sistema WEB");
+                                                            }
+                                                            else
+                                                            {
+                                                                MessageBox.Show("Error al crear Usuario web");
+                                                            }
+                                                        }
+                                                        else
+                                                        {
+                                                            MessageBox.Show("El usuario ya existe en Moda Outlet");
+                                                        }
+
+                                                    }
+                                                    else
+                                                    {
+                                                        MessageBox.Show("Error al buscar el Rol");
+                                                    }
                                                 }
                                                 break;
                                             case DialogResult.No:

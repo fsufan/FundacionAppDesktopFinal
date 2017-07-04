@@ -70,25 +70,33 @@ namespace AplicacionDesktop.CRUDUsuario
 
                             if (auxNegUsuario.eliminarUsuario(auxUsuario.IdUsuario) > 0)
                             {
-                                auxUsuario = auxNegUsuario.usuarioMORut(cmbxid.Text);
-                                if (auxUsuario.IdUsuario > 0)
-                                {
-                                    
-                                    if (auxNegUsuario.eliminarUsuario(auxUsuario.IdUsuario)>0)
-                                    {
-                                        MessageBox.Show("Usuario eliminado en Moda outlet");
-                                    }
-                                }
-                                else
-                                {
-                                    MessageBox.Show("El Usuario no existe en Moda Outlet");
-                                }
-                                MessageBox.Show("Usuario eliminado.", "Información");
+                                
+                                MessageBox.Show("Usuario eliminado");
                                 cargarCombx();
                             }
                             else
                             {
                                 MessageBox.Show("Error al eliminar al usuario");
+                            }
+                            NegocioRol rol = new NegocioRol();
+                            Rol auxRol = rol.rolId(auxUsuario.IdRol);
+
+                            if (auxRol.NombreRol.Equals("APORTADOR") || auxRol.NombreRol.Equals("RECICLAR"))
+                            {
+                                
+                                auxUsuario = auxNegUsuario.usuarioMORut(cmbxid.Text);
+                                if (auxUsuario.IdUsuario > 0)
+                                {
+
+                                    if (auxNegUsuario.eliminarUsuario(auxUsuario.IdUsuario) > 0)
+                                    {
+                                        MessageBox.Show("Usuario eliminado en sistema WEB");
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("El Usuario no existe en sistema WEB");
+                                }
                             }
 
                             break;

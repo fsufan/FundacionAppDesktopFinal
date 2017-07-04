@@ -75,13 +75,6 @@ C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Entidades\b
 C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Entidades\obj\Debug\Capa_DTO.csprojResolveAssemblyReference.cache
 C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Entidades\obj\Debug\Entidades.dll
 C:\Users\nathalia\Documents\GitHub\proyecto\FundacionDesktopComplete\Entidades\obj\Debug\Entidades.pdb
-C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Entidades\bin\Debug\Entidades.dll
-C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Entidades\bin\Debug\Entidades.pdb
-C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Entidades\bin\Debug\itextsharp.dll
-C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Entidades\bin\Debug\itextsharp.xml
-C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Entidades\obj\Debug\Capa_DTO.csprojResolveAssemblyReference.cache
-C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Entidades\obj\Debug\Entidades.dll
-C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Entidades\obj\Debug\Entidades.pdb
 C:\Users\Francisco\Desktop\GitAplicacion\FundacionAppDesktop\Entidades\bin\Debug\Entidades.dll
 C:\Users\Francisco\Desktop\GitAplicacion\FundacionAppDesktop\Entidades\bin\Debug\Entidades.pdb
 C:\Users\Francisco\Desktop\GitAplicacion\FundacionAppDesktop\Entidades\bin\Debug\itextsharp.dll
@@ -89,3 +82,9 @@ C:\Users\Francisco\Desktop\GitAplicacion\FundacionAppDesktop\Entidades\bin\Debug
 C:\Users\Francisco\Desktop\GitAplicacion\FundacionAppDesktop\Entidades\obj\Debug\Capa_DTO.csprojResolveAssemblyReference.cache
 C:\Users\Francisco\Desktop\GitAplicacion\FundacionAppDesktop\Entidades\obj\Debug\Entidades.dll
 C:\Users\Francisco\Desktop\GitAplicacion\FundacionAppDesktop\Entidades\obj\Debug\Entidades.pdb
+C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Entidades\bin\Debug\Entidades.dll
+C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Entidades\bin\Debug\Entidades.pdb
+C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Entidades\bin\Debug\itextsharp.dll
+C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Entidades\bin\Debug\itextsharp.xml
+C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Entidades\obj\Debug\Entidades.dll
+C:\Users\nathalia\Documents\GitHub\FundacionAppDesktopFinal\Entidades\obj\Debug\Entidades.pdb

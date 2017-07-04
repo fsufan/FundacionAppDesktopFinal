@@ -55,7 +55,7 @@ namespace AplicacionDesktop.MENU
                     InicioSesion ise = new InicioSesion();
                     ise.Show();
                     Hide();
-                    Close();
+                    
                     break;
                 case DialogResult.No:
                     break;

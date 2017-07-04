@@ -75,15 +75,22 @@ namespace AplicacionDesktop.CRUD
                             {
                                 MessageBox.Show("Error al eliminar el rol");
                             }
-                            auxRol = auxRole.rolPorNombreMO(cmbxerol.Text);
-                            if (auxRole.eliminarRolMO(auxRol.IdRol)>0)
+                            if (auxRol.NombreRol.Equals("APORTADOR")||auxRol.NombreRol.Equals("RECICLAR"))
                             {
-                                MessageBox.Show("Rol Moda Outlet eliminado", "Información");
+                                auxRol = auxRole.rolPorNombreMO(cmbxerol.Text);
+                                if (auxRol.IdRol>0)
+                                {
+                                    if (auxRole.eliminarRolMO(auxRol.IdRol) > 0)
+                                    {
+                                        MessageBox.Show("Rol WEB eliminado", "Información");
+                                    }  
+                                }                               
+                                else
+                                {
+                                    MessageBox.Show("Error al eliminar rol WEB");
+                                }
                             }
-                            else
-                            {
-                                MessageBox.Show("Error al eliminar el rol Moda Outlet");
-                            }
+                           
                             break;
                         case DialogResult.No:
                             break;

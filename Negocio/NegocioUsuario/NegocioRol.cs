@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Capa_Conexion;
+
 using Capa_DTO.Usuario;
 
 
@@ -44,7 +44,22 @@ namespace CapaNegocio.NegocioUsuario
 
 
         }
+        public int modificarRolMO(Rol rol)
+        {
 
+            webServiceMO.WebServiceModaOutlet wsMO = new webServiceMO.WebServiceModaOutlet();
+            String objeto = wsMO.modificarRol(rol.IdRol, rol.NombreRol, rol.DescripcionRol);
+            if (objeto != null)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+
+
+        }
         public Array listarRoles()
         {
           
@@ -180,8 +195,8 @@ namespace CapaNegocio.NegocioUsuario
             {
                 webServiceMO.WebServiceModaOutlet wsMO = new webServiceMO.WebServiceModaOutlet();
                 Array objeto = wsMO.buscarRolPorNombre(nombre);
-                
-                foreach (webServiceFundacion.rol item in objeto)
+
+                foreach (webServiceMO.rol item in objeto)
                 {
                     auxRol.IdRol = item.id_rol;
                     auxRol.NombreRol = item.nombre_rol;
@@ -209,7 +224,27 @@ namespace CapaNegocio.NegocioUsuario
                 return aux;
             }
 	}
-
+        public Rol rolId(int idR)
+        {
+            Rol auxRol = new Rol();
+            try
+            {
+                webServiceFundacion.webServiceFundacion webServFund = new webServiceFundacion.webServiceFundacion();
+                Array objeto = webServFund.buscarRolPorId(idR);
+                
+                foreach (webServiceFundacion.rol item in objeto)
+                {
+                    auxRol.IdRol = item.id_rol;
+                    auxRol.NombreRol = item.nombre_rol;
+                    auxRol.DescripcionRol = item.descripcion_rol;
+                }
+                return auxRol;
+            }
+            catch (Exception)
+            {
+                return auxRol;
+            }
+        }
         public Rol consultaRolporId(int idR)
         {
             Rol auxRol = new Rol();

@@ -24,6 +24,7 @@ namespace AplicacionDesktop.CRUD
         public IngresarRol()
         {
             InitializeComponent();
+            txtRol.Focus();
         }
 
         private void focusComponente(TextBox text)
@@ -74,19 +75,7 @@ namespace AplicacionDesktop.CRUD
                                     {
                                         case DialogResult.Yes:
                                             if(rol.ingresarRol(auxRol) != 0)  
-                                            {
-                                                if (auxRol.NombreRol.Equals("RECICLAR") || auxRol.NombreRol.Equals("APORTADOR"))
-                                                {
-                                                    if (rol.ingresarRolMO(auxRol) != 0)
-                                                    {
-                                                        MessageBox.Show("Rol Web ingresado", "Información");
-                                                    }
-                                                    else
-                                                    {
-                                                        MessageBox.Show("Error al crea Usuario web");
-                                                    }
-                                                }
-                                               
+                                            {                                                
                                                 MessageBox.Show("Rol ingresado", "Información");
                                                 dttingrol.DataSource = rol.listarRoles();
                                                 dttingrol.Update();
@@ -98,6 +87,25 @@ namespace AplicacionDesktop.CRUD
                                             else
                                             {
                                                 MessageBox.Show("Error al ingresar Rol, intente de nuevo");
+                                            }
+                                            if (auxRol.NombreRol.Equals("RECICLAR") || auxRol.NombreRol.Equals("APORTADOR"))
+                                            {
+                                                if (rol.consultaRolMO(auxRol.NombreRol)==0)
+                                                {
+                                                    if (rol.ingresarRolMO(auxRol) != 0)
+                                                    {
+                                                        MessageBox.Show("Rol ingresado en sistema WEB", "Información");
+                                                    }
+                                                    else
+                                                    {
+                                                        MessageBox.Show("Error al crear usuario web");
+                                                    }
+                                                    
+                                                }else
+                                                {
+                                                    MessageBox.Show("El usuario ya existe en el sistema WEB");
+                                                }
+                                                
                                             }
                                             break;
                                         case DialogResult.No:

@@ -113,31 +113,7 @@ namespace AplicacionDesktop.CRUDUsuario
                                     
 
                                     if (usuario.actualizarUsuario(auxUsuario) > 0)
-                                    {
-                                        if (cbxRol.Text.Equals("APORTADOR") || cbxRol.Text.Equals("RECICLAR"))
-                                        {
-                                            if (rol.consultaRolMO(cbxRol.Text.ToUpper().ToString()) > 0)
-                                            {
-                                                auxUsuario = usuario.usuarioMORut(cmboxRut.Text);
-                                                int ide = rol.consultaRolMO(cbxRol.Text.ToUpper().ToString());
-                                                auxUsuario.IdRol = ide;
-                                                
-                                                
-                                                    if (usuario.modificarUsuarioMO(auxUsuario) > 0)
-                                                    {
-                                                        MessageBox.Show("Usuario web modificado");
-                                                    }
-                                                    else
-                                                    {
-                                                        MessageBox.Show("Error al modificar Usuario web");
-                                                    }
-                                                
-                                            }
-                                            else
-                                            {
-                                                MessageBox.Show("Error al buscar el Rol");
-                                            }
-                                        }
+                                    {                                        
                                         MessageBox.Show("Usuario Modificado");
                                         cmboxRut.DataSource = usuario.listarUsuarios();
                                         txtContraseña.Text = "";
@@ -150,6 +126,30 @@ namespace AplicacionDesktop.CRUDUsuario
                                     else
                                     {
                                         MessageBox.Show("Error al modificar");
+                                    }
+                                    if (cbxRol.Text.Equals("APORTADOR") || cbxRol.Text.Equals("RECICLAR"))
+                                    {
+                                        if (rol.consultaRolMO(cbxRol.Text.ToUpper().ToString()) > 0)
+                                        {
+                                            auxUsuario = usuario.usuarioMORut(cmboxRut.Text);
+                                            int ide = rol.consultaRolMO(cbxRol.Text.ToUpper().ToString());
+                                            auxUsuario.IdRol = ide;
+
+
+                                            if (usuario.modificarUsuarioMO(auxUsuario) > 0)
+                                            {
+                                                MessageBox.Show("Usuario web modificado");
+                                            }
+                                            else
+                                            {
+                                                MessageBox.Show("Error al modificar Usuario web");
+                                            }
+
+                                        }
+                                        else
+                                        {
+                                            MessageBox.Show("Error al buscar el Rol");
+                                        }
                                     }
                                 }
                                 else

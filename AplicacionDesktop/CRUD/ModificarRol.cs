@@ -22,6 +22,7 @@ namespace AplicacionDesktop.CRUD
         public ModificarRol()
         {
             InitializeComponent();
+            cmbnrol.Focus();
             NegocioRol rol = new NegocioRol();
             if (rol.listarRoles()!=null)
             {
@@ -98,6 +99,19 @@ namespace AplicacionDesktop.CRUD
                                     {
                                         MessageBox.Show("Error al modificar, vuelva a intentarlo");
                                     }
+                                    if (auxRol.NombreRol.Equals("APORTADOR")||auxRol.NombreRol.Equals("RECICLAR"))
+                                    {
+                                        auxRol = rol.rolPorNombreMO(cmbnrol.Text);
+                                        if (rol.modificarRolMO(auxRol) > 0)
+                                        {
+                                            MessageBox.Show("Usuario modificado en el sistema WEB");
+                                        }
+                                        else
+                                        {
+                                            MessageBox.Show("Error al modificar en el sistema WEB");
+                                        }
+                                    }
+                                    
                             }
                             else
                             {
