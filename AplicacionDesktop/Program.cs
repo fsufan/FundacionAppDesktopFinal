@@ -19,7 +19,7 @@ namespace AplicacionDesktop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MenuAdmin());
+            Application.Run(new InicioSesion());
         }
     }
 }

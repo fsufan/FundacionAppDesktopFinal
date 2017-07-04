@@ -45,7 +45,7 @@ namespace AplicacionDesktop.CRUD
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            MenuAdminParamedico MAP = new MenuAdminParamedico();
+            MenuAdminEnfermera MAP = new MenuAdminEnfermera();
             MAP.Show();
             this.Hide();
         }

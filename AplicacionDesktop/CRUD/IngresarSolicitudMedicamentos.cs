@@ -220,16 +220,21 @@ namespace AplicacionDesktop.MENU
 
         private void btnVolverr_Click(object sender, EventArgs e)
         {
-            MenuSupervisor MS = new MenuSupervisor();
-            MenuEnfermera ME = new MenuEnfermera();
-            if (lblRol.Text.Equals("SUPERVISOR"))
-            {
-                MS.Show();
-            }
-            else
-            {
-                ME.Show();
-            }
+            //MenuSupervisor MS = new MenuSupervisor();
+            //MenuEnfermera ME = new MenuEnfermera();
+            //if (lblRol.Text.Equals("SUPERVISOR"))
+            //{
+            //    MS.Show();
+            //    this.Hide();
+            //}
+            //else
+            //{
+            //    ME.Show();
+            //    this.Hide();
+            //}
+            MenuAdminSolicitudMedica MASM = new MenuAdminSolicitudMedica();
+            MASM.Show();
+            this.Hide();
         }
 
         private void btnbuscarResidente_Click(object sender, EventArgs e)

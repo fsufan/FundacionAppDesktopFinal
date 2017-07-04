@@ -19,23 +19,23 @@ namespace AplicacionDesktop.MENU
         }
         public MenuAdminSolicitudMedica(string rol)
         {
-            InitializeComponent();
-            
+            InitializeComponent();            
             lblSM.Text = rol;
             lblSM.Visible = false;
         }
         private void btnVolverU_Click(object sender, EventArgs e)
         {
-            MenuSupervisor MS = new MenuSupervisor();
-
-            MenuEnfermera ME = new MenuEnfermera();
+            MenuSupervisor MS = new MenuSupervisor(lblSM.Text);
+            MenuEnfermera ME = new MenuEnfermera(lblSM.Text);
             if (lblSM.Text.Equals("SUPERVISOR"))
             {
                 MS.Show();
+                this.Hide();
             }
             else if (lblSM.Text.Equals("ENFERMERA"))
             {
-                
+                ME.Show();
+                this.Hide();
             }
            
             //MenuParamedico MP = new MenuParamedico();
@@ -50,7 +50,6 @@ namespace AplicacionDesktop.MENU
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             ListarSolicitudMedicamentos SM = new ListarSolicitudMedicamentos(lblSM.Text);
             SM.Show();
             this.Hide();

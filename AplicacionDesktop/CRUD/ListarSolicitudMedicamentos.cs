@@ -55,14 +55,23 @@ namespace AplicacionDesktop.CRUD
         {
             MenuSupervisor MS = new MenuSupervisor();
             MenuEnfermera ME = new MenuEnfermera();
+            MenuAdminSolicitudMedica MASM = new MenuAdminSolicitudMedica();
             if (lblRol.Text.Equals("SUPERVISOR"))
             {
                 MS.Show();
+                this.Hide();
+            }
+            else if (lblRol.Text.Equals("ENFERMERA"))
+            {
+                ME.Show();
+                this.Hide();
             }
             else
             {
-                ME.Show();
+                MASM.Show();
+                this.Hide();
             }
+            
         }
     }
 }

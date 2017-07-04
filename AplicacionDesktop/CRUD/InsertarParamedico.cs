@@ -15,6 +15,7 @@ using CapaNegocio.NegocioResidente;
 using CapaNegocio.NegocioUsuario;
 using System.Text.RegularExpressions;
 using AplicacionDesktop.MENU;
+using Capa_DTO.Seguridad;
 
 namespace AplicacionDesktop.CRUD
 {
@@ -124,6 +125,7 @@ namespace AplicacionDesktop.CRUD
 
                 Paramedico paramedico = new Paramedico();
                 NegocioParamedico auxParamedico = new NegocioParamedico();
+                Seguridad seguridad = new Seguridad();
 
 
                 if (txtRut.Text != "" && txtNombre.Text != "" && txtNombre.Text != "" && txtApePaterno.Text != "" && txtApeMaterno.Text != "" && DateFechaNac.Text != "" && txtTelefono.Text != "" && txtEmail.Text != "" &&
@@ -131,7 +133,7 @@ namespace AplicacionDesktop.CRUD
                 {
                     if (auxInfoPersonal.consultarRut(txtRut.Text) == false)
                     {
-                        if (validarRut(txtRut.Text))
+                        if (seguridad.validarRut(txtRut.Text))
                         {
                             if (DateTime.Compare(DateTime.Today, DateFechaNac.Value.Date) > 0)
                             {
@@ -190,7 +192,7 @@ namespace AplicacionDesktop.CRUD
 
                                                                                                                                
                                                                 usuario.RutUsuario = txtRut.Text.ToUpper().Trim();
-                                                                usuario.Contrasena = txtContraseña.Text.ToUpper().Trim();
+                                                                usuario.Contrasena = seguridad.SHA256Encrypt(txtContraseña.Text.ToUpper().Trim());
                                                                 usuario.IdRol = buscarrol.IdRol;
 
                                                                 if (auxUsuario.ingresarUsuario(usuario) > 0)
@@ -399,9 +401,9 @@ namespace AplicacionDesktop.CRUD
 
         private void txtRut_Validating(object sender, CancelEventArgs e)
         {
-            if ((!Regex.IsMatch(this.txtRut.Text, @"^\d+$")) && (txtRut.Text != ""))
+            if ((!Regex.IsMatch(this.txtRut.Text, @"\b\d{7,8}\-[K|k|0-9]")) && (txtRut.Text != ""))
             {
-                MessageBox.Show("Si su Rut termina en K reemplace a un cero");
+                MessageBox.Show("Debe ingresar sólo caracteres válidos");
                 this.txtRut.Focus();
                 txtRut.Text = "";
             }

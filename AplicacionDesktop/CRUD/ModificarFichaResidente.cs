@@ -280,15 +280,17 @@ namespace AplicacionDesktop.CRUD
         private void button2_Click(object sender, EventArgs e)
         {
             MenuEnfermera ME = new MenuEnfermera();
-            MenuSupervisor MS = new MenuSupervisor();
-            if (lblRol.Text.Equals("SUPERVISOR"))
-            {
-                MS.Show();
-            }
-            else
-            {
-                ME.Show();
-            }
+            //MenuSupervisor MS = new MenuSupervisor();
+            //if (lblRol.Text.Equals("ENFERMERA"))
+            //{
+            //    MS.Show();
+            //}
+            //else
+            //{
+            //    ME.Show();
+            //}
+            ME.Show();
+            this.Hide();
         }
 
 

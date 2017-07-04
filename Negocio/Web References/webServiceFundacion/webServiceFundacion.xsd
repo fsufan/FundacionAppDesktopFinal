@@ -453,6 +453,16 @@
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="buscarFamiliarPorParentezco">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="parentezco" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarFamiliarPorParentezcoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:familiar" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="buscarServicioPorId">
     <xs:sequence>
       <xs:element name="id_servicio" type="xs:int" />
@@ -469,16 +479,6 @@
       <xs:element minOccurs="0" name="descripcion" type="xs:string" />
       <xs:element name="id_servicio" type="xs:int" />
       <xs:element minOccurs="0" name="nombre_serv" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="buscarFamiliarPorParentezco">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="parentezco" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="buscarFamiliarPorParentezcoResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:familiar" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listadoDetCompra">
@@ -562,18 +562,6 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:solicMed" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="modificarDetContrato">
-    <xs:sequence>
-      <xs:element name="id_det_contrato" type="xs:int" />
-      <xs:element name="id_servicio" type="xs:int" />
-      <xs:element name="costo_total" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="modificarDetContratoResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="buscarBodegaProdPorId">
     <xs:sequence>
       <xs:element name="id_bodega_prod" type="xs:int" />
@@ -590,6 +578,18 @@
       <xs:element name="id_inventario" type="xs:int" />
       <xs:element name="id_producto" type="xs:int" />
       <xs:element name="stock" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDetContrato">
+    <xs:sequence>
+      <xs:element name="id_det_contrato" type="xs:int" />
+      <xs:element name="id_servicio" type="xs:int" />
+      <xs:element name="costo_total" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDetContratoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="eliminarDetSolicitudMed">
@@ -688,6 +688,20 @@
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="ingresarResidente">
+    <xs:sequence>
+      <xs:element name="id_residente" type="xs:int" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element name="edad" type="xs:int" />
+      <xs:element name="id_familiar" type="xs:int" />
+      <xs:element name="id_ficresidente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarResidenteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="modificarSolicMed">
     <xs:sequence>
       <xs:element name="id_solic_med" type="xs:int" />
@@ -699,20 +713,6 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="modificarSolicMedResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="ingresarResidente">
-    <xs:sequence>
-      <xs:element name="id_residente" type="xs:int" />
-      <xs:element name="id_infopersonal" type="xs:int" />
-      <xs:element name="edad" type="xs:int" />
-      <xs:element name="id_familiar" type="xs:int" />
-      <xs:element name="id_ficresidente" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="ingresarResidenteResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
@@ -759,6 +759,16 @@
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="buscarFicResidentePorFecha">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fec_inscripcion" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarFicResidentePorFechaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:ficResidente" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="buscarDetSolicitudPorId">
     <xs:sequence>
       <xs:element name="id_det_solicitud" type="xs:int" />
@@ -775,16 +785,6 @@
       <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
       <xs:element name="id_det_solicitud" type="xs:int" />
       <xs:element name="id_medicina" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="buscarFicResidentePorFecha">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="fec_inscripcion" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="buscarFicResidentePorFechaResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:ficResidente" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="ingresarBodegaMed">
@@ -813,16 +813,6 @@
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="buscarFicResidentePorId">
-    <xs:sequence>
-      <xs:element name="id_fic_residente" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="buscarFicResidentePorIdResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:ficResidente" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="modificarUsuario">
     <xs:sequence>
       <xs:element name="id_usuario" type="xs:int" />
@@ -834,6 +824,16 @@
   <xs:complexType name="modificarUsuarioResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarFicResidentePorId">
+    <xs:sequence>
+      <xs:element name="id_fic_residente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarFicResidentePorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:ficResidente" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listadoDonacionPapel">
@@ -966,16 +966,6 @@
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="eliminarDetContrato">
-    <xs:sequence>
-      <xs:element name="id_det_contrato" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="eliminarDetContratoResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="ingresarBodegaProd">
     <xs:sequence>
       <xs:element name="id_bodega_prod" type="xs:int" />
@@ -985,6 +975,16 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="ingresarBodegaProdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDetContrato">
+    <xs:sequence>
+      <xs:element name="id_det_contrato" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDetContratoResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
@@ -999,16 +999,6 @@
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="buscarDireccionPorCalle">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="calle" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="buscarDireccionPorCalleResponse">
-    <xs:sequence>
-      <xs:element name="return" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="modificarEstado">
     <xs:sequence>
       <xs:element name="id_aportador" type="xs:int" />
@@ -1017,6 +1007,16 @@
   <xs:complexType name="modificarEstadoResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDireccionPorCalle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="calle" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDireccionPorCalleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="modificarInventario">
@@ -1047,6 +1047,19 @@
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="ingresarDetSolicitudMed">
+    <xs:sequence>
+      <xs:element name="id_det_solic_med" type="xs:int" />
+      <xs:element minOccurs="0" name="estado_solicitud" type="xs:string" />
+      <xs:element minOccurs="0" name="motivo" type="xs:string" />
+      <xs:element minOccurs="0" name="cuidados_espe" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDetSolicitudMedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="buscarProveedorPorRazonSocial">
     <xs:sequence>
       <xs:element minOccurs="0" name="razon_social" type="xs:string" />
@@ -1063,19 +1076,6 @@
       <xs:element name="id_proveedor" type="xs:int" />
       <xs:element minOccurs="0" name="razon_social" type="xs:string" />
       <xs:element minOccurs="0" name="rut_empresa" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="ingresarDetSolicitudMed">
-    <xs:sequence>
-      <xs:element name="id_det_solic_med" type="xs:int" />
-      <xs:element minOccurs="0" name="estado_solicitud" type="xs:string" />
-      <xs:element minOccurs="0" name="motivo" type="xs:string" />
-      <xs:element minOccurs="0" name="cuidados_espe" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="ingresarDetSolicitudMedResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="ingresarFicResidente">
@@ -1422,16 +1422,6 @@
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="buscarParamedicoPorId">
-    <xs:sequence>
-      <xs:element name="id_paramedico" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="buscarParamedicoPorIdResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:paramedico" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="modificarFicResidente">
     <xs:sequence>
       <xs:element name="id_fic_residente" type="xs:int" />
@@ -1443,6 +1433,16 @@
   <xs:complexType name="modificarFicResidenteResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarParamedicoPorId">
+    <xs:sequence>
+      <xs:element name="id_paramedico" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarParamedicoPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:paramedico" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="modificarResidente">
@@ -1459,6 +1459,16 @@
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="eliminarRol">
+    <xs:sequence>
+      <xs:element name="id_rol" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarRolResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="ingresarProveedor">
     <xs:sequence>
       <xs:element name="id_proveedor" type="xs:int" />
@@ -1468,16 +1478,6 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="ingresarProveedorResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="eliminarRol">
-    <xs:sequence>
-      <xs:element name="id_rol" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="eliminarRolResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
@@ -1517,16 +1517,6 @@
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="eliminarDetCompra">
-    <xs:sequence>
-      <xs:element name="id_det_compra" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="eliminarDetCompraResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="modificarRol">
     <xs:sequence>
       <xs:element name="id_rol" type="xs:int" />
@@ -1535,6 +1525,16 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="modificarRolResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDetCompra">
+    <xs:sequence>
+      <xs:element name="id_det_compra" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDetCompraResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
@@ -1588,19 +1588,6 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:donacion" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="ingresarFamiliar">
-    <xs:sequence>
-      <xs:element name="id_familiar" type="xs:int" />
-      <xs:element name="id_infopersonal" type="xs:int" />
-      <xs:element minOccurs="0" name="parentezco" type="xs:string" />
-      <xs:element name="id_contrato" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="ingresarFamiliarResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="modificarRetiro">
     <xs:sequence>
       <xs:element name="id_retiro" type="xs:int" />
@@ -1610,6 +1597,19 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="modificarRetiroResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarFamiliar">
+    <xs:sequence>
+      <xs:element name="id_familiar" type="xs:int" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element minOccurs="0" name="parentezco" type="xs:string" />
+      <xs:element name="id_contrato" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarFamiliarResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
@@ -1647,17 +1647,6 @@
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="buscarInventarioPorFechaYObs">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="fecha_inventario" type="xs:string" />
-      <xs:element minOccurs="0" name="observaciones" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="buscarInventarioPorFechaYObsResponse">
-    <xs:sequence>
-      <xs:element name="return" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="buscarProductoPorId">
     <xs:sequence>
       <xs:element name="id_producto" type="xs:int" />
@@ -1676,6 +1665,17 @@
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
       <xs:element name="precio" type="xs:int" />
       <xs:element minOccurs="0" name="tipo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarInventarioPorFechaYObs">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fecha_inventario" type="xs:string" />
+      <xs:element minOccurs="0" name="observaciones" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarInventarioPorFechaYObsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="IngresarEnfermera">
@@ -1702,19 +1702,6 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:familiar" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="ingresarDetSolicitud">
-    <xs:sequence>
-      <xs:element name="id_det_solicitud" type="xs:int" />
-      <xs:element minOccurs="0" name="fecha" type="xs:string" />
-      <xs:element name="cantidad" type="xs:int" />
-      <xs:element name="id_medicina" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="ingresarDetSolicitudResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="modificarDetCompra">
     <xs:sequence>
       <xs:element name="id_det_compra" type="xs:int" />
@@ -1726,6 +1713,19 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="modificarDetCompraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDetSolicitud">
+    <xs:sequence>
+      <xs:element name="id_det_solicitud" type="xs:int" />
+      <xs:element minOccurs="0" name="fecha" type="xs:string" />
+      <xs:element name="cantidad" type="xs:int" />
+      <xs:element name="id_medicina" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDetSolicitudResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
@@ -1962,6 +1962,14 @@
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="listadoRol">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoRolResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:rol" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="buscarInfoPersonalPorId">
     <xs:sequence>
       <xs:element name="id_infopersonal" type="xs:int" />
@@ -1970,14 +1978,6 @@
   <xs:complexType name="buscarInfoPersonalPorIdResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:infoPersonal" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="listadoRol">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="listadoRolResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:rol" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listadoContrato">
@@ -2021,16 +2021,6 @@
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="eliminarCompra">
-    <xs:sequence>
-      <xs:element name="id_compra" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="eliminarCompraResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="listadoBodegaMed">
     <xs:sequence />
   </xs:complexType>
@@ -2047,6 +2037,16 @@
       <xs:element name="stock" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="eliminarCompra">
+    <xs:sequence>
+      <xs:element name="id_compra" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarCompraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="ingresarProducto">
     <xs:sequence>
       <xs:element name="id_producto" type="xs:int" />
@@ -2058,22 +2058,6 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="ingresarProductoResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="IngresarParamedico">
-    <xs:sequence>
-      <xs:element name="id_paramedico" type="xs:int" />
-      <xs:element minOccurs="0" name="turno" type="xs:string" />
-      <xs:element minOccurs="0" name="especialidad" type="xs:string" />
-      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
-      <xs:element minOccurs="0" name="fechaIngreso" type="xs:string" />
-      <xs:element name="id_infopersonal" type="xs:int" />
-      <xs:element name="id_usuario" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="IngresarParamedicoResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
@@ -2092,6 +2076,22 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="modificarMedicinaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IngresarParamedico">
+    <xs:sequence>
+      <xs:element name="id_paramedico" type="xs:int" />
+      <xs:element minOccurs="0" name="turno" type="xs:string" />
+      <xs:element minOccurs="0" name="especialidad" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaIngreso" type="xs:string" />
+      <xs:element name="id_infopersonal" type="xs:int" />
+      <xs:element name="id_usuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IngresarParamedicoResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
@@ -2157,16 +2157,6 @@
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="buscarParamedicoPorIdInfoP">
-    <xs:sequence>
-      <xs:element name="id_infopersonal" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="buscarParamedicoPorIdInfoPResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:paramedico" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="buscarCompraPorFecha">
     <xs:sequence>
       <xs:element minOccurs="0" name="fecha" type="xs:string" />
@@ -2175,6 +2165,16 @@
   <xs:complexType name="buscarCompraPorFechaResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:compra" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarParamedicoPorIdInfoP">
+    <xs:sequence>
+      <xs:element name="id_infopersonal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarParamedicoPorIdInfoPResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:paramedico" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="eliminarResidente">
@@ -2252,20 +2252,20 @@
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listadoDetSolicitud">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="listadoDetSolicitudResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:detSolicitud" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="listadoMandato">
     <xs:sequence />
   </xs:complexType>
   <xs:complexType name="listadoMandatoResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:mandato" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listadoDetSolicitud">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listadoDetSolicitudResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:detSolicitud" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listadoDetContrato">
@@ -2397,26 +2397,12 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:enfermera" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="eliminarProveedor">
-    <xs:sequence>
-      <xs:element name="id_proveedor" type="xs:int" />
-    </xs:sequence>
+  <xs:complexType name="listadoUsuario">
+    <xs:sequence />
   </xs:complexType>
-  <xs:complexType name="eliminarProveedorResponse">
+  <xs:complexType name="listadoUsuarioResponse">
     <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="ingresarDetContrato">
-    <xs:sequence>
-      <xs:element name="id_det_contrato" type="xs:int" />
-      <xs:element name="id_servicio" type="xs:int" />
-      <xs:element name="costo_total" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="ingresarDetContratoResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:usuario" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="ingresarDonacion">
@@ -2433,12 +2419,26 @@
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listadoUsuario">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="listadoUsuarioResponse">
+  <xs:complexType name="ingresarDetContrato">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:usuario" />
+      <xs:element name="id_det_contrato" type="xs:int" />
+      <xs:element name="id_servicio" type="xs:int" />
+      <xs:element name="costo_total" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ingresarDetContratoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarProveedor">
+    <xs:sequence>
+      <xs:element name="id_proveedor" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarProveedorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="buscarHistoMedicoPorId">
@@ -2484,18 +2484,6 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:donacion" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="modificarContrato">
-    <xs:sequence>
-      <xs:element name="id_contrato" type="xs:int" />
-      <xs:element name="id_det_contrato" type="xs:int" />
-      <xs:element minOccurs="0" name="condiciones_perm" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="modificarContratoResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="ingresarDetCompra">
     <xs:sequence>
       <xs:element name="id_det_compra" type="xs:int" />
@@ -2507,6 +2495,18 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="ingresarDetCompraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarContrato">
+    <xs:sequence>
+      <xs:element name="id_contrato" type="xs:int" />
+      <xs:element name="id_det_contrato" type="xs:int" />
+      <xs:element minOccurs="0" name="condiciones_perm" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarContratoResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
@@ -2541,6 +2541,16 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:producto" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="eliminarRetiro">
+    <xs:sequence>
+      <xs:element name="id_retiro" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarRetiroResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="buscarBodegaMedPorId">
     <xs:sequence>
       <xs:element name="id_bodega_med" type="xs:int" />
@@ -2560,16 +2570,6 @@
   <xs:complexType name="buscarFicResidentePorComSituaResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:ficResidente" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="eliminarRetiro">
-    <xs:sequence>
-      <xs:element name="id_retiro" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="eliminarRetiroResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="modificarBodegaProd">

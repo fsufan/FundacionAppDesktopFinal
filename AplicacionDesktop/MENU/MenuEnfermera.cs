@@ -57,6 +57,7 @@ namespace AplicacionDesktop.MENU
         {
             ModificarFichaResidente FR = new ModificarFichaResidente(lblEnf.Text);
             FR.Show();
+            this.Hide();
 
         }
 
@@ -64,6 +65,7 @@ namespace AplicacionDesktop.MENU
         {
             MenuAdminSolicitudMedica MSM = new MenuAdminSolicitudMedica(lblEnf.Text);
             MSM.Show();
+            this.Hide();
         }
     }
 }
