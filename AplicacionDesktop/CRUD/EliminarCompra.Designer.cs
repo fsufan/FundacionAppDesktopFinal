@@ -132,7 +132,9 @@
             this.Controls.Add(this.TipoUsuario);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnEliminar);
+            this.MaximumSize = new System.Drawing.Size(540, 364);
             this.Name = "EliminarCompra";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarCompra";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -171,7 +171,9 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnEliminar);
+            this.MaximumSize = new System.Drawing.Size(332, 321);
             this.Name = "EliminarParamedico";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarParamedico";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

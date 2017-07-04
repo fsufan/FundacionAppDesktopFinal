@@ -516,7 +516,9 @@
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.TipoUsuario);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.MaximumSize = new System.Drawing.Size(714, 511);
             this.Name = "IngresarSolicitudMedicamentos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ingresar_Solicitud_Medicamentos";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

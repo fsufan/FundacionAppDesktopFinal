@@ -133,7 +133,9 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnEliminar);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.MaximumSize = new System.Drawing.Size(540, 364);
             this.Name = "EliminarInventario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarInventario";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -68,7 +68,9 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblRol);
             this.Controls.Add(this.btnVolver);
+            this.MaximumSize = new System.Drawing.Size(603, 416);
             this.Name = "ListarSolicitudMedicamentos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListarSolicitudMedicamentos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

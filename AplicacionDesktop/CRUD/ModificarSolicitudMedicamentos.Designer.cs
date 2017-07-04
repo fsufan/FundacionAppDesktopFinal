@@ -543,7 +543,9 @@
             this.Controls.Add(this.TipoUsuario);
             this.Controls.Add(this.lblRol);
             this.Controls.Add(this.btnVolver);
+            this.MaximumSize = new System.Drawing.Size(635, 553);
             this.Name = "ModificarSolicitudMedicamentos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificarSolicitudMedicamentos";
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();

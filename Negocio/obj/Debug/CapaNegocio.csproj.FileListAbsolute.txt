@@ -174,11 +174,8 @@ C:\Users\felip\Desktop\FundacionDesktopComplete-master\FundacionDesktopComplete-
 C:\Users\Francisco\Desktop\GitAplicacion\FundacionAppDesktop\Negocio\bin\Debug\Negocio.dll.config
 C:\Users\Francisco\Desktop\GitAplicacion\FundacionAppDesktop\Negocio\bin\Debug\Negocio.dll
 C:\Users\Francisco\Desktop\GitAplicacion\FundacionAppDesktop\Negocio\bin\Debug\Negocio.pdb
-C:\Users\Francisco\Desktop\GitAplicacion\FundacionAppDesktop\Negocio\bin\Debug\Datos.dll
 C:\Users\Francisco\Desktop\GitAplicacion\FundacionAppDesktop\Negocio\bin\Debug\Entidades.dll
 C:\Users\Francisco\Desktop\GitAplicacion\FundacionAppDesktop\Negocio\bin\Debug\itextsharp.dll
-C:\Users\Francisco\Desktop\GitAplicacion\FundacionAppDesktop\Negocio\bin\Debug\Oracle.DataAccess.dll
-C:\Users\Francisco\Desktop\GitAplicacion\FundacionAppDesktop\Negocio\bin\Debug\Datos.pdb
 C:\Users\Francisco\Desktop\GitAplicacion\FundacionAppDesktop\Negocio\bin\Debug\Entidades.pdb
 C:\Users\Francisco\Desktop\GitAplicacion\FundacionAppDesktop\Negocio\bin\Debug\itextsharp.xml
 C:\Users\Francisco\Desktop\GitAplicacion\FundacionAppDesktop\Negocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache

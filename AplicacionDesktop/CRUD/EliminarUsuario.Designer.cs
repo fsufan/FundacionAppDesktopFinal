@@ -84,7 +84,7 @@
             // 
             // btnVolverr
             // 
-            this.btnVolverr.Location = new System.Drawing.Point(590, 258);
+            this.btnVolverr.Location = new System.Drawing.Point(462, 259);
             this.btnVolverr.Name = "btnVolverr";
             this.btnVolverr.Size = new System.Drawing.Size(75, 32);
             this.btnVolverr.TabIndex = 85;
@@ -99,14 +99,13 @@
             this.cmbxid.Name = "cmbxid";
             this.cmbxid.Size = new System.Drawing.Size(217, 28);
             this.cmbxid.TabIndex = 86;
-            //this.cmbxid.SelectedIndexChanged += new System.EventHandler();
             // 
             // EliminarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(677, 312);
+            this.ClientSize = new System.Drawing.Size(550, 312);
             this.Controls.Add(this.cmbxid);
             this.Controls.Add(this.btnVolverr);
             this.Controls.Add(this.label8);
@@ -116,7 +115,9 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximumSize = new System.Drawing.Size(566, 351);
             this.Name = "EliminarUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarUsuario";
             this.ResumeLayout(false);
             this.PerformLayout();

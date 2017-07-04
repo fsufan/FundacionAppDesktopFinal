@@ -191,7 +191,9 @@
             this.Controls.Add(this.btnVolverr);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnModificar);
+            this.MaximumSize = new System.Drawing.Size(494, 659);
             this.Name = "ModificarCompra";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificarCompra";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

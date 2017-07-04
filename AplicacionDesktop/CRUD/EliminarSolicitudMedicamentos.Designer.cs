@@ -103,7 +103,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblRol);
             this.Controls.Add(this.btnVolver);
+            this.MaximumSize = new System.Drawing.Size(347, 292);
             this.Name = "EliminarSolicitudMedicamentos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarSolicitudMedicamentos";
             this.ResumeLayout(false);
             this.PerformLayout();

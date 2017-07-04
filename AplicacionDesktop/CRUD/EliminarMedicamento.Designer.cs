@@ -112,7 +112,9 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnEliminarM);
             this.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.MaximumSize = new System.Drawing.Size(415, 361);
             this.Name = "EliminarMedicamento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarMedicamento";
             this.ResumeLayout(false);
             this.PerformLayout();

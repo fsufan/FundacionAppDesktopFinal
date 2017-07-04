@@ -41,11 +41,14 @@ namespace AplicacionDesktop.MENU
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MenuSupervisor MS = new MenuSupervisor();
-            MS.Show();
-            Hide();
+            //MenuSupervisor MS = new MenuSupervisor();
+            //MS.Show();
+            //Hide();
 
-            MenuEnfermera MPM = new MenuEnfermera();
+            //MenuEnfermera MPM = new MenuEnfermera();
+            MenuAdmin MA = new MenuAdmin();
+            MA.Show();
+            this.Hide();
         }
 
         private void btnModificarU_Click(object sender, EventArgs e)

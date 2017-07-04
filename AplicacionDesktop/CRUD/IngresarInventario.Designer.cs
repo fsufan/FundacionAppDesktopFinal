@@ -225,7 +225,9 @@
             this.Controls.Add(this.lblIngresarInventario);
             this.Controls.Add(this.rdMedicina);
             this.Controls.Add(this.rdProducto);
+            this.MaximumSize = new System.Drawing.Size(808, 668);
             this.Name = "IngresarInventario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IngresarInventario";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

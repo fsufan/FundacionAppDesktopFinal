@@ -90,7 +90,9 @@
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.dataGridView1);
             this.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.MaximumSize = new System.Drawing.Size(959, 566);
             this.Name = "ListarMedicamento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListarMedicamento";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

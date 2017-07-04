@@ -74,7 +74,9 @@
             this.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximumSize = new System.Drawing.Size(649, 507);
             this.Name = "ListarRol";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListarRol";
             ((System.ComponentModel.ISupportInitialize)(this.dtlistarroles)).EndInit();
             this.ResumeLayout(false);

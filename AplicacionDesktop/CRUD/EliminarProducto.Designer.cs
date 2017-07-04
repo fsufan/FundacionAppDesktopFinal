@@ -115,7 +115,9 @@
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnEliminarM);
+            this.MaximumSize = new System.Drawing.Size(415, 361);
             this.Name = "EliminarProducto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarProducto";
             this.ResumeLayout(false);
             this.PerformLayout();

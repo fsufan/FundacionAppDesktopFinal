@@ -394,7 +394,9 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.groupdireccion);
             this.Controls.Add(this.groupBox1);
+            this.MaximumSize = new System.Drawing.Size(725, 345);
             this.Name = "ModificarInfoPResidente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificarInfoPResidente";
             this.groupdireccion.ResumeLayout(false);
             this.groupdireccion.PerformLayout();

@@ -284,7 +284,9 @@
             this.Controls.Add(this.lblNG);
             this.Controls.Add(this.lblNC);
             this.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.MaximumSize = new System.Drawing.Size(787, 669);
             this.Name = "ModificarMedicamento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificarMedicamento";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

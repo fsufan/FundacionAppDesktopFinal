@@ -521,7 +521,9 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.MaximumSize = new System.Drawing.Size(658, 603);
             this.Name = "ModificarEnfermera";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificarEnfermera";
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();

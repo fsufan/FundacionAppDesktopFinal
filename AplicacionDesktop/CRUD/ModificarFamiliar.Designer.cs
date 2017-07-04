@@ -546,7 +546,9 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupdireccion);
             this.Controls.Add(this.groupBox1);
+            this.MaximumSize = new System.Drawing.Size(756, 523);
             this.Name = "ModificarFamiliar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificarFamiliar";
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();

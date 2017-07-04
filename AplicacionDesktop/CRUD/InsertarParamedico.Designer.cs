@@ -521,7 +521,9 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.MaximumSize = new System.Drawing.Size(652, 599);
             this.Name = "InsertarParamedico";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InsertarParamedico";
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();

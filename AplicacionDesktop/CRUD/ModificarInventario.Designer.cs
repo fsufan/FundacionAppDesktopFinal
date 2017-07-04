@@ -204,7 +204,9 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnMod);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.MaximumSize = new System.Drawing.Size(798, 643);
             this.Name = "ModificarInventario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificarInventario";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

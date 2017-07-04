@@ -183,7 +183,9 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.MaximumSize = new System.Drawing.Size(765, 564);
             this.Name = "IngresarUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ingresar Usuario";
             ((System.ComponentModel.ISupportInitialize)(this.dtingresou)).EndInit();
             this.ResumeLayout(false);

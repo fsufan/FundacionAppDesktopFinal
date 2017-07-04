@@ -196,7 +196,9 @@
             this.Controls.Add(this.gpbCompra);
             this.Controls.Add(this.btnVolverr);
             this.Controls.Add(this.label8);
+            this.MaximumSize = new System.Drawing.Size(808, 668);
             this.Name = "IngresarCompra";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IngresarCompra";
             this.gpbCompra.ResumeLayout(false);
             this.gpbCompra.PerformLayout();

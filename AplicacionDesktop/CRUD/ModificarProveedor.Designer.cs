@@ -273,7 +273,9 @@
             this.Controls.Add(this.lblContenido);
             this.Controls.Add(this.lblng);
             this.Controls.Add(this.lblNC);
+            this.MaximumSize = new System.Drawing.Size(808, 668);
             this.Name = "ModificarProveedor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificarProveedor";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
