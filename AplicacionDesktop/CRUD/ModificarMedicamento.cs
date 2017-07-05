@@ -68,7 +68,7 @@ namespace AplicacionDesktop.CRUD
                             if (txtNombreG.Text != "" & txtContenido.Text != "" & txtContenido.Text != "" & cbxum.SelectedIndex != -1 & txtCantidad.Text != "" & txtDes.Text != "")
                             {
                                 // La fecha de fabricacion y vencimientos sean diferentes
-                                if (dtpff.Text.CompareTo(dtpfv.Text) != 0 & cbxNombre_C.Text != "" & cbxNombre_C.SelectedIndex != -1 & cbxum.SelectedIndex != 1 & !validaCampoVacio(txtContenido) & !validaCampoVacio(txtNombreG) & !validaCampoVacio(txtDes)&int.Parse(txtCantidad.Text)>=0)
+                                if (dtpff.Text.CompareTo(dtpfv.Text) != 0 & cbxNombre_C.Text != "" & cbxNombre_C.SelectedIndex != -1 & cbxum.SelectedIndex != -1 & !validaCampoVacio(txtContenido) & !validaCampoVacio(txtNombreG) & !validaCampoVacio(txtDes)&int.Parse(txtCantidad.Text)>=0)
                                 {
                                     //Que la fecha de fabricacion sea menor o igual a la fecha de hoy
                                     if (DateTime.Compare(dtpff.Value.Date, DateTime.Today) == 0 || DateTime.Compare(dtpff.Value.Date, DateTime.Today) < 0)

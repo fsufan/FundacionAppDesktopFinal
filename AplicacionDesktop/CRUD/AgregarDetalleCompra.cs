@@ -101,12 +101,16 @@ namespace AplicacionDesktop.CRUD
         }
         private void cargarGrillaDetCompra()
         {
-            NegocioDetalleCompra dCompra = new NegocioDetalleCompra();
-            DetalleCompra auxdCompra = new DetalleCompra();
+            try
+            {
+                NegocioDetalleCompra dCompra = new NegocioDetalleCompra();
+                DetalleCompra auxdCompra = new DetalleCompra();
 
-            dataGridView2.DataSource = dCompra.listarDetalleCompras();
-            dataGridView2.AutoSize = true;
-            dataGridView2.Update();
+                dataGridView2.DataSource = dCompra.listarDetalleCompras();
+                dataGridView2.AutoSize = true;
+                dataGridView2.Update();
+            }catch(Exception){
+            }
         
         }
         private void btningresarCompra_Click(object sender, EventArgs e)
